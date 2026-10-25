@@ -26,7 +26,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;text-decoration:none;color:var(--ink)}
 .brand img{width:36px;height:36px}
 .lang{display:flex;gap:4px;padding:4px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
-.lang button{min-height:36px;min-width:48px;border:0;border-radius:10px;background:none;color:var(--mut);font:700 14px/1 inherit;cursor:pointer}
+.lang button{min-height:36px;min-width:48px;border:0;border-radius:10px;background:none;color:var(--mut);font-weight:700;font-size:14px;line-height:1;font-family:inherit;cursor:pointer}
 .lang button[aria-pressed="true"]{background:var(--pt);color:var(--ink)}
 nav.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 24px}
 nav.tabs a{padding:8px 14px;border-radius:12px;background:var(--card);border:1px solid var(--line);text-decoration:none;color:var(--ink);font-weight:650;font-size:15px}
@@ -74,13 +74,13 @@ if(/[#?&](lang=)?en\b/.test(location.hash+location.search))l='en';document.docum
     <h1>Politique de confidentialité</h1>
     <p class="upd">Dernière mise à jour : 25 octobre 2026</p>
     
-<div class="box"><p><b>En bref.</b> Pas de compte, pas de publicité, pas de mesure d’audience, pas de rapport de plantage. Votre position est utilisée sur le téléphone et n’est jamais envoyée. L’éditeur ne reçoit aucune donnée vous concernant. Seuls les services contactés pour fonctionner (opérateurs, cartes, fichiers des villes) voient, comme pour toute connexion, l’adresse IP de votre téléphone.</p></div>
+<div class="box"><p><b>En bref.</b> Pas de compte, pas de publicité, pas de mesure d’audience, pas de rapport de plantage. Votre position est utilisée sur le téléphone et n’est jamais envoyée. L’éditeur ne reçoit aucune donnée vous concernant, sauf les messages que vous choisissez de lui envoyer. Seuls les services contactés pour fonctionner (opérateurs, cartes, fichiers des villes) voient, comme pour toute connexion, l’adresse IP de votre téléphone.</p></div>
 
 <h2>1. Responsable du traitement</h2>
 <p>Clément Martinez, particulier résidant en Belgique, éditeur de KasseiGo · <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>. Cette politique s’applique à l’application KasseiGo et au site kasseigo.com, conformément au règlement général sur la protection des données (RGPD, règlement (UE) 2016/679).</p>
 
-<h2>2. Ce que l’éditeur collecte : rien</h2>
-<p>KasseiGo n’a pas de serveur qui reçoit vos données. L’application ne contient ni compte, ni publicité, ni outil de mesure d’audience, ni outil de rapport de plantage, ni kit de suivi tiers. L’éditeur ne reçoit, ne voit et ne conserve ni votre position, ni vos trajets, ni vos recherches, ni vos favoris.</p>
+<h2>2. Ce que l’éditeur collecte : rien, sauf ce que vous lui envoyez</h2>
+<p>L’application n’envoie vos données à aucun serveur de KasseiGo. L’application ne contient ni compte, ni publicité, ni outil de mesure d’audience, ni outil de rapport de plantage, ni kit de suivi tiers. L’éditeur ne reçoit, ne voit et ne conserve ni votre position, ni vos trajets, ni vos recherches, ni vos favoris. Seuls les messages que vous envoyez vous-même, par le formulaire de retour ou par e-mail, lui parviennent (section 6).</p>
 
 <h2>3. Ce qui reste sur votre téléphone</h2>
 <ul>
@@ -106,16 +106,23 @@ if(/[#?&](lang=)?en\b/.test(location.hash+location.search))l='en';document.docum
 <p>L’application est distribuée par Apple (App Store, TestFlight), qui peut traiter des données selon ses propres conditions, en dehors du contrôle de l’éditeur.</p>
 
 <h2>5. Le site kasseigo.com</h2>
-<p>Le site ne dépose aucun cookie, n’utilise aucun traceur ni outil de mesure d’audience et ne charge aucune ressource externe. Il est hébergé par GitHub Pages (GitHub, Inc., États-Unis), qui peut enregistrer l’adresse IP des visiteurs dans ses journaux, notamment pour la sécurité du service, selon la <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">déclaration de confidentialité de GitHub</a>. L’éditeur n’a pas accès à ces journaux.</p>
+<p>Le site ne dépose aucun cookie, n’utilise aucun traceur ni outil de mesure d’audience et ne charge aucune ressource externe, sauf la page de retour (section 6). Il est hébergé par GitHub Pages (GitHub, Inc., États-Unis), qui peut enregistrer l’adresse IP des visiteurs dans ses journaux, notamment pour la sécurité du service, selon la <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">déclaration de confidentialité de GitHub</a>. L’éditeur n’a pas accès à ces journaux.</p>
 
-<h2>6. Si vous écrivez à l’éditeur</h2>
-<p>Si vous écrivez à <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>, votre adresse e-mail et le contenu de votre message sont utilisés uniquement pour vous répondre et assurer le suivi de votre demande, sur la base de l’intérêt légitime à répondre aux messages reçus. Ils sont conservés le temps nécessaire à ce suivi, puis supprimés, et ne sont jamais vendus ni transmis à des tiers. La messagerie est hébergée par OVH SAS (France).</p>
+<h2>6. Si vous envoyez un retour ou écrivez à l’éditeur</h2>
+<p><b>Formulaire de retour</b> (<a href="feedback.html">kasseigo.com/feedback</a>, aussi ouvert depuis l’application) : il transmet le type de retour, votre message, la ville si vous la choisissez, votre adresse e-mail seulement si vous la donnez, la langue de la page et, depuis l’application, la version de l’application et du système du téléphone. Rien d’autre n’est ajouté automatiquement : ni position, ni identifiant.</p>
+<ul>
+<li>Pour bloquer les robots, la page utilise <b>Cloudflare Turnstile</b> (Cloudflare, Inc., États-Unis), qui analyse des signaux techniques du navigateur, selon la <a href="https://www.cloudflare.com/privacypolicy/">politique de confidentialité de Cloudflare</a>.</li>
+<li>Le message est transmis par un service de Cloudflare Workers et enregistré comme ticket dans un dépôt <b>privé</b> sur GitHub (GitHub, Inc., États-Unis), accessible uniquement à l’éditeur.</li>
+<li>Finalité : corriger les erreurs, améliorer le service et, si vous avez donné votre e-mail, vous répondre. Base : l’intérêt légitime à traiter les retours reçus.</li>
+<li>Les tickets sont conservés le temps nécessaire à leur traitement et à leur suivi, puis supprimés. Ils ne sont jamais vendus ni transmis à d’autres tiers. Vous pouvez demander leur suppression à tout moment.</li>
+</ul>
+<p><b>Par e-mail</b> : si vous écrivez à <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>, votre adresse e-mail et le contenu de votre message sont utilisés uniquement pour vous répondre et assurer le suivi de votre demande, sur la base de l’intérêt légitime à répondre aux messages reçus. Ils sont conservés le temps nécessaire à ce suivi, puis supprimés, et ne sont jamais vendus ni transmis à des tiers. La messagerie est hébergée par OVH SAS (France).</p>
 
 <h2>7. Transferts hors de l’Union européenne</h2>
-<p>Certains services cités (notamment GitHub, Inc.) sont situés hors de l’Union européenne. Les données qu’ils traitent (adresse IP, données techniques de connexion) le sont sous leur propre responsabilité, selon leurs propres garanties.</p>
+<p>Certains services cités (notamment GitHub, Inc. et Cloudflare, Inc.) sont situés hors de l’Union européenne. Les données qu’ils traitent (adresse IP, données techniques de connexion et, pour les retours, le contenu du message) le sont sous leur propre responsabilité, selon leurs propres garanties.</p>
 
 <h2>8. Vos droits</h2>
-<p>Vous disposez des droits d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité. Comme l’éditeur ne détient aucune donnée issue de l’application, ces droits s’exercent surtout pour un échange d’e-mails, à <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>. Pour les données traitées par les services tiers cités, adressez-vous à eux directement.</p>
+<p>Vous disposez des droits d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité. Comme l’éditeur ne détient aucune donnée issue de l’application, ces droits s’exercent surtout pour un retour ou un échange d’e-mails, à <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>. Pour les données traitées par les services tiers cités, adressez-vous à eux directement.</p>
 <p>Vous pouvez introduire une réclamation auprès de l’<b>Autorité de protection des données</b>, rue de la Presse 35, 1000 Bruxelles, Belgique · <a href="https://www.autoriteprotectiondonnees.be">autoriteprotectiondonnees.be</a>, ou auprès de l’autorité de votre pays de résidence (en France, la CNIL · <a href="https://www.cnil.fr">cnil.fr</a>).</p>
 
 <h2>9. Mineurs</h2>
@@ -132,13 +139,13 @@ if(/[#?&](lang=)?en\b/.test(location.hash+location.search))l='en';document.docum
     <h1>Privacy policy</h1>
     <p class="upd">Last updated: 25 October 2026</p>
     
-<div class="box"><p><b>In short.</b> No account, no ads, no analytics, no crash reports. Your location is used on the phone and never sent. The publisher receives no data about you. Only the services contacted to make the app work (operators, maps, city files) see, as with any connection, your phone’s IP address.</p></div>
+<div class="box"><p><b>In short.</b> No account, no ads, no analytics, no crash reports. Your location is used on the phone and never sent. The publisher receives no data about you, except the messages you choose to send. Only the services contacted to make the app work (operators, maps, city files) see, as with any connection, your phone’s IP address.</p></div>
 
 <h2>1. Data controller</h2>
 <p>Clément Martinez, a private individual living in Belgium, publisher of KasseiGo · <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>. This policy covers the KasseiGo app and the kasseigo.com website, under the General Data Protection Regulation (GDPR, Regulation (EU) 2016/679).</p>
 
-<h2>2. What the publisher collects: nothing</h2>
-<p>KasseiGo has no server that receives your data. The app has no account, no ads, no analytics, no crash reporting and no third-party tracking SDK. The publisher does not receive, see or keep your location, trips, searches or favourites.</p>
+<h2>2. What the publisher collects: nothing, except what you send</h2>
+<p>The app sends your data to no KasseiGo server. The app has no account, no ads, no analytics, no crash reporting and no third-party tracking SDK. The publisher does not receive, see or keep your location, trips, searches or favourites. Only the messages you send yourself, through the feedback form or by email, reach the publisher (section 6).</p>
 
 <h2>3. What stays on your phone</h2>
 <ul>
@@ -164,16 +171,23 @@ if(/[#?&](lang=)?en\b/.test(location.hash+location.search))l='en';document.docum
 <p>The app is distributed by Apple (App Store, TestFlight), which may process data under its own terms, outside the publisher’s control.</p>
 
 <h2>5. The kasseigo.com website</h2>
-<p>The website sets no cookies, uses no trackers or analytics and loads no external resources. It is hosted on GitHub Pages (GitHub, Inc., United States), which may log visitors’ IP addresses, in particular for the security of the service, under the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. The publisher has no access to these logs.</p>
+<p>The website sets no cookies, uses no trackers or analytics and loads no external resources, except the feedback page (section 6). It is hosted on GitHub Pages (GitHub, Inc., United States), which may log visitors’ IP addresses, in particular for the security of the service, under the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. The publisher has no access to these logs.</p>
 
-<h2>6. If you write to the publisher</h2>
-<p>If you write to <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>, your email address and message are used only to reply and follow up on your request, on the basis of the legitimate interest in answering messages received. They are kept as long as needed for that follow-up, then deleted, and are never sold or passed on to third parties. The mailbox is hosted by OVH SAS (France).</p>
+<h2>6. If you send feedback or write to the publisher</h2>
+<p><b>Feedback form</b> (<a href="feedback.html">kasseigo.com/feedback</a>, also opened from the app): it sends the type of feedback, your message, the city if you choose one, your email address only if you give it, the page language and, from the app, the app and phone system versions. Nothing else is added automatically: no location, no identifier.</p>
+<ul>
+<li>To block robots, the page uses <b>Cloudflare Turnstile</b> (Cloudflare, Inc., United States), which analyses technical signals from the browser, under the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a>.</li>
+<li>The message goes through a Cloudflare Workers service and is stored as a ticket in a <b>private</b> GitHub repository (GitHub, Inc., United States), accessible to the publisher only.</li>
+<li>Purpose: fixing errors, improving the service and, if you gave your email, replying to you. Basis: the legitimate interest in handling the feedback received.</li>
+<li>Tickets are kept as long as needed to handle and follow them up, then deleted. They are never sold or passed on to other third parties. You can ask for their deletion at any time.</li>
+</ul>
+<p><b>By email</b>: if you write to <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>, your email address and message are used only to reply and follow up on your request, on the basis of the legitimate interest in answering messages received. They are kept as long as needed for that follow-up, then deleted, and are never sold or passed on to third parties. The mailbox is hosted by OVH SAS (France).</p>
 
 <h2>7. Transfers outside the European Union</h2>
-<p>Some of the services listed (GitHub, Inc. in particular) are located outside the European Union. The data they process (IP address, technical connection data) is processed under their own responsibility and safeguards.</p>
+<p>Some of the services listed (GitHub, Inc. and Cloudflare, Inc. in particular) are located outside the European Union. The data they process (IP address, technical connection data and, for feedback, the message content) is processed under their own responsibility and safeguards.</p>
 
 <h2>8. Your rights</h2>
-<p>You have the rights of access, rectification, erasure, restriction, objection and portability. Since the publisher holds no data from the app, these rights mainly apply to an email exchange, at <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>. For data processed by the third-party services listed, contact them directly.</p>
+<p>You have the rights of access, rectification, erasure, restriction, objection and portability. Since the publisher holds no data from the app, these rights mainly apply to feedback or an email exchange, at <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>. For data processed by the third-party services listed, contact them directly.</p>
 <p>You can lodge a complaint with the Belgian <b>Data Protection Authority</b> (Autorité de protection des données), rue de la Presse 35, 1000 Brussels, Belgium · <a href="https://www.dataprotectionauthority.be">dataprotectionauthority.be</a>, or with the authority of your country of residence (in France, the CNIL · <a href="https://www.cnil.fr">cnil.fr</a>).</p>
 
 <h2>9. Minors</h2>
@@ -189,6 +203,7 @@ if(/[#?&](lang=)?en\b/.test(location.hash+location.search))l='en';document.docum
 </main>
 <footer><div class="wrap">
   <a href="./">kasseigo.com</a>
+  <a href="feedback.html" data-l="fr">Envoyer un retour</a><a href="feedback.html?lang=en" data-l="en">Send feedback</a>
   <span>© 2026 Clément Martinez</span>
   <span data-l="fr">Fait avec <span class="heart" role="img" aria-label="amour">♥</span> à Bruxelles</span>
   <span data-l="en">Made with <span class="heart" role="img" aria-label="love">♥</span> in Brussels</span>

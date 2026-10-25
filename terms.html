@@ -26,7 +26,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;text-decoration:none;color:var(--ink)}
 .brand img{width:36px;height:36px}
 .lang{display:flex;gap:4px;padding:4px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
-.lang button{min-height:36px;min-width:48px;border:0;border-radius:10px;background:none;color:var(--mut);font:700 14px/1 inherit;cursor:pointer}
+.lang button{min-height:36px;min-width:48px;border:0;border-radius:10px;background:none;color:var(--mut);font-weight:700;font-size:14px;line-height:1;font-family:inherit;cursor:pointer}
 .lang button[aria-pressed="true"]{background:var(--pt);color:var(--ink)}
 nav.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 24px}
 nav.tabs a{padding:8px 14px;border-radius:12px;background:var(--card);border:1px solid var(--line);text-decoration:none;color:var(--ink);font-weight:650;font-size:15px}
@@ -221,6 +221,7 @@ if(/[#?&](lang=)?en\b/.test(location.hash+location.search))l='en';document.docum
 </main>
 <footer><div class="wrap">
   <a href="./">kasseigo.com</a>
+  <a href="feedback.html" data-l="fr">Envoyer un retour</a><a href="feedback.html?lang=en" data-l="en">Send feedback</a>
   <span>© 2026 Clément Martinez</span>
   <span data-l="fr">Fait avec <span class="heart" role="img" aria-label="amour">♥</span> à Bruxelles</span>
   <span data-l="en">Made with <span class="heart" role="img" aria-label="love">♥</span> in Brussels</span>
