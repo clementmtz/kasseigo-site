@@ -13,6 +13,8 @@
 <link rel="alternate" hreflang="x-default" href="https://kasseigo.com/">
 <meta name="author" content="Clément Martinez">
 <meta name="theme-color" content="#f3f0fa">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/icon-96.png">
 <link rel="icon" type="image/png" sizes="64x64" href="/img/icon-64.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
@@ -299,16 +301,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
         <div class="phone a"><img src="/img/accueil.jpg" width="640" height="1391" fetchpriority="high" alt="Startscherm: de deelvoertuigen rondom jou op de kaart, en de zoekbalk “Where to?”."></div>
         <div class="phone b"><img src="/img/apercu.jpg" width="640" height="1391" fetchpriority="high" alt="Overzicht van de rit: 12 min naar het Flageyplein, met vertrekpunt en parkeerplek al gekozen."></div>
         <div class="bubble b1" aria-hidden="true">
-          <div class="card-ui"><span class="tile tint" style="--c:var(--ok)"><svg class="ic"><use href="#cob"/></svg></span><div><b>No cobbles detected</b></div></div>
+          <div class="card-ui"><span class="tile tint" style="--c:var(--ok)"><svg class="ic"><use href="#cob"/></svg></span><div><b>Geen kasseien gevonden</b></div></div>
         </div>
         <div class="bubble b2" aria-hidden="true">
-          <div class="card-ui"><span class="tile tint" style="--c:var(--slow)"><svg class="ic"><use href="#snail"/></svg></span><div><b>Slow zone, 80 m</b><span>Speed limited by Bolt</span></div></div>
+          <div class="card-ui"><span class="tile tint" style="--c:var(--slow)"><svg class="ic"><use href="#snail"/></svg></span><div><b>Trage zone, 80 m</b><span>Snelheid beperkt door Bolt</span></div></div>
         </div>
         <div class="bubble b3" aria-hidden="true">
-          <div class="cue"><svg class="ic"><use href="#lock"/></svg><div><b>Unlock it</b><span>In the Bolt app</span></div></div>
+          <div class="cue"><svg class="ic"><use href="#lock"/></svg><div><b>Ontgrendel de fiets</b><span>In de Bolt-app</span></div></div>
         </div>
         <div class="bubble b4" aria-hidden="true">
-          <div class="toast">Nearest parking: 60 m <u>Undo</u></div>
+          <div class="toast">Dichtstbijzijnde parkeerplek: 60 m <u>Ongedaan maken</u></div>
         </div>
       </div>
     </div>
@@ -318,7 +320,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
     <div class="wrap">
       <div class="head reveal">
         <h2>Gemaakt voor het voertuig onder je voeten.</h2>
-        <p class="mut">Gewone kaartapps kennen auto’s en fietsen. Ze kennen geen kasseien, geen zones van operatoren en weten niet waar je een step mag achterlaten. De voorbeelden hieronder tonen de app, die in het Engels is.</p>
+        <p class="mut">Gewone kaartapps kennen auto’s en fietsen. Ze kennen geen kasseien, geen zones van operatoren en weten niet waar je een step mag achterlaten.</p>
       </div>
       <div class="tiles">
 
@@ -329,19 +331,19 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
           </div>
           <div class="demo">
             <div class="ui">
-              <p class="gtitle">Surface</p>
-              <p class="gdesc">The least comfortable surface you accept.</p>
+              <p class="gtitle">Wegdek</p>
+              <p class="gdesc">Het minst comfortabele wegdek dat je aanvaardt.</p>
               <div class="seg" id="surface" role="group" aria-label="Worst accepted surface">
-                <button type="button" aria-pressed="false" data-l="smooth"><svg class="ic"><use href="#s0"/></svg>Smooth</button>
-                <button type="button" aria-pressed="true" data-l="slabs"><svg class="ic"><use href="#s1"/></svg>Slabs</button>
-                <button type="button" aria-pressed="false" data-l="cobbles"><svg class="ic"><use href="#s2"/></svg>Cobbles</button>
-                <button type="button" aria-pressed="false" data-l="rough"><svg class="ic"><use href="#s3"/></svg>Rough</button>
+                <button type="button" aria-pressed="false" data-l="smooth"><svg class="ic"><use href="#s0"/></svg>Glad</button>
+                <button type="button" aria-pressed="true" data-l="slabs"><svg class="ic"><use href="#s1"/></svg>Tegels</button>
+                <button type="button" aria-pressed="false" data-l="cobbles"><svg class="ic"><use href="#s2"/></svg>Kasseien</button>
+                <button type="button" aria-pressed="false" data-l="rough"><svg class="ic"><use href="#s3"/></svg>Ruw</button>
               </div>
               <div class="gap"></div>
               <div class="steps">
-                <div class="st"><span class="tile"><svg class="ic"><use href="#bike"/></svg></span><div><b>8 min by bike</b><span>≈ 2.2 km to the parking spot</span></div></div>
-                <div class="st in"><span class="tile tint" style="--c:var(--warn)"><svg class="ic"><use href="#cob"/></svg></span><div><b>Cobbles, 70 m</b><span id="tol">Your tolerance: slabs</span></div></div>
-                <div class="st in"><span class="tile tint" style="--c:var(--ok)"><svg class="ic"><use href="#bike"/></svg></span><div><b>Cycle tracks, 11 % of the trip</b><span>240 m</span></div></div>
+                <div class="st"><span class="tile"><svg class="ic"><use href="#bike"/></svg></span><div><b>8 min met de fiets</b><span>≈ 2,2 km tot de parkeerplek</span></div></div>
+                <div class="st in"><span class="tile tint" style="--c:var(--warn)"><svg class="ic"><use href="#cob"/></svg></span><div><b>Kasseien, 70 m</b><span id="tol">Jouw tolerantie: tegels</span></div></div>
+                <div class="st in"><span class="tile tint" style="--c:var(--ok)"><svg class="ic"><use href="#bike"/></svg></span><div><b>Fietspaden, 11 % van de rit</b><span>240 m</span></div></div>
               </div>
             </div>
           </div>
@@ -354,17 +356,17 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
           </div>
           <div class="demo">
             <div class="ui">
-              <p class="gtitle">No-ride zones</p>
-              <p class="gdesc">Zones where the operator forbids riding: get off and push, or go around.</p>
+              <p class="gtitle">Verboden zones</p>
+              <p class="gdesc">Zones waar de operator rijden verbiedt: afstappen en duwen, of omrijden.</p>
               <div class="seg" role="group" aria-label="No-ride zones">
-                <button type="button" aria-pressed="false">Go around</button>
-                <button type="button" aria-pressed="true">Cross on foot</button>
+                <button type="button" aria-pressed="false">Omrijden</button>
+                <button type="button" aria-pressed="true">Te voet doorkruisen</button>
               </div>
               <div class="gap"></div>
               <div class="steps">
-                <div class="st"><span class="tile"><svg class="ic"><use href="#bike"/></svg></span><div><b>9 min by bike</b><span>≈ 2.4 km to the parking spot</span></div></div>
-                <div class="st in"><span class="tile tint" style="--c:var(--bad)"><svg class="ic"><use href="#forb"/></svg></span><div><b>No-ride zone, 120 m</b><span>Get off and push</span></div></div>
-                <div class="st in"><span class="tile tint" style="--c:var(--slow)"><svg class="ic"><use href="#snail"/></svg></span><div><b>Slow zone, 80 m</b><span>Speed limited by Bolt</span></div></div>
+                <div class="st"><span class="tile"><svg class="ic"><use href="#bike"/></svg></span><div><b>9 min met de fiets</b><span>≈ 2,4 km tot de parkeerplek</span></div></div>
+                <div class="st in"><span class="tile tint" style="--c:var(--bad)"><svg class="ic"><use href="#forb"/></svg></span><div><b>Verboden zone, 120 m</b><span>Afstappen en duwen</span></div></div>
+                <div class="st in"><span class="tile tint" style="--c:var(--slow)"><svg class="ic"><use href="#snail"/></svg></span><div><b>Trage zone, 80 m</b><span>Snelheid beperkt door Bolt</span></div></div>
               </div>
             </div>
           </div>
@@ -377,11 +379,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
           </div>
           <div class="demo">
             <div class="ui">
-              <p class="gtitle" style="font-size:22px;margin-bottom:14px">Choose a parking spot</p>
-              <p class="lbl">Closest to the destination</p>
+              <p class="gtitle" style="font-size:22px;margin-bottom:14px">Kies een parkeerplek</p>
+              <p class="lbl">Het dichtst bij de bestemming</p>
               <div class="it sel"><span class="tile"><svg class="ic"><use href="#p"/></svg></span><div class="tx"><b>Place Eugène Flagey</b><div class="meta"><span class="op" style="--c:var(--dott)">Dott</span><span><svg class="ic"><use href="#walk"/></svg>1 min</span><span class="n" style="color:var(--ok)"><svg class="ic"><use href="#p"/></svg>×6</span></div></div></div>
               <div class="it"><span class="tile"><svg class="ic"><use href="#p"/></svg></span><div class="tx"><b>Rue Lesbroussart</b><div class="meta"><span class="op" style="--c:var(--dott)">Dott</span><span><svg class="ic"><use href="#walk"/></svg>2 min</span><span class="n" style="color:var(--warn)"><svg class="ic"><use href="#p"/></svg>×1</span></div></div></div>
-              <div class="it"><span class="tile"><svg class="ic"><use href="#p"/></svg></span><div class="tx"><b>Dott parking</b><div class="meta"><span class="op" style="--c:var(--dott)">Dott</span><span><svg class="ic"><use href="#walk"/></svg>3 min</span><span class="n" style="color:var(--bad)"><svg class="ic"><use href="#p"/></svg>Full</span></div></div></div>
+              <div class="it"><span class="tile"><svg class="ic"><use href="#p"/></svg></span><div class="tx"><b>Dott-parking</b><div class="meta"><span class="op" style="--c:var(--dott)">Dott</span><span><svg class="ic"><use href="#walk"/></svg>3 min</span><span class="n" style="color:var(--bad)"><svg class="ic"><use href="#p"/></svg>Vol</span></div></div></div>
             </div>
           </div>
         </article>
@@ -393,13 +395,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
           </div>
           <div class="demo">
             <div class="ui">
-              <div class="banner"><svg class="ic"><use href="#walk"/></svg>Walking is faster: 7 min on foot, against 8 min by bike.<a href="#why" onclick="return false">Walk</a></div>
+              <div class="banner"><svg class="ic"><use href="#walk"/></svg>Wandelen is sneller: 7 min te voet, tegenover 8 min met de fiets.<a href="#why" onclick="return false">Wandelen</a></div>
             </div>
             <div class="gap"></div>
             <div class="ui">
-              <div class="sum"><b>6</b><em>min on foot</em><span>Arrival at 10:26</span></div>
-              <div class="banner"><svg class="ic"><use href="#bike"/></svg>Bike: 10 min with the walk to it.<a href="#why" onclick="return false">Ride anyway</a></div>
-              <div class="mainbtn"><svg class="ic" style="fill:currentColor;stroke:none;width:20px;height:20px"><use href="#play"/></svg>Start</div>
+              <div class="sum"><b>6</b><em>min te voet</em><span>Aankomst om 10:26</span></div>
+              <div class="banner"><svg class="ic"><use href="#bike"/></svg>Fiets: 10 min, met de wandeling ernaartoe.<a href="#why" onclick="return false">Toch rijden</a></div>
+              <div class="mainbtn"><svg class="ic" style="fill:currentColor;stroke:none;width:20px;height:20px"><use href="#play"/></svg>Starten</div>
             </div>
           </div>
         </article>
@@ -427,7 +429,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
     <div class="wrap reveal">
       <img src="/img/icon-192.png" alt="" width="88" height="88" loading="lazy">
       <h2>Je volgende rit, zonder schokken.</h2>
-      <p class="mut">Gratis. In bèta op iPhone, Android komt eraan. De app is in het Engels.</p>
+      <p class="mut">Gratis, in het Nederlands, Frans en Engels. In bèta op iPhone, Android komt eraan.</p>
       <div class="cta"><a class="btn btn-primary" href="#">Doe mee aan de iPhone-bèta</a></div>
       <p class="cities mut"><span><b>Brussel</b> · Dott, Bolt, Villo!</span><span><b>Parijs</b> · Dott, Voi, Vélib’</span></p>
     </div>
@@ -457,7 +459,7 @@ if ('IntersectionObserver' in window) {
 document.querySelectorAll('.seg').forEach(seg => seg.addEventListener('click', e => {
   const b = e.target.closest('button'); if (!b) return;
   seg.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b));
-  if (seg.id === 'surface') document.getElementById('tol').textContent = 'Your tolerance: ' + b.dataset.l;
+  if (seg.id === 'surface') document.getElementById('tol').textContent = 'Jouw tolerantie: ' + b.textContent.trim().toLowerCase();
 }));
 </script>
 </body>
