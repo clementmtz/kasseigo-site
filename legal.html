@@ -50,6 +50,8 @@ dd{margin:0}
 footer{padding:0 0 48px;color:var(--mut);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px}
 footer a{color:var(--mut)}
+.heart{color:#c23a3a}
+@media (prefers-color-scheme:dark){.heart{color:#ef7a7a}}
 :root[lang="en"] [data-l="fr"],:root[lang="fr"] [data-l="en"]{display:none}
 </style>
 <script>
@@ -178,6 +180,8 @@ if(/[#?&](lang=)?en\b/.test(location.hash+location.search))l='en';document.docum
 <footer><div class="wrap">
   <a href="./">kasseigo.com</a>
   <span>© 2026 Clément Martinez</span>
+  <span data-l="fr">Fait avec <span class="heart" role="img" aria-label="amour">♥</span> à Bruxelles</span>
+  <span data-l="en">Made with <span class="heart" role="img" aria-label="love">♥</span> in Brussels</span>
 </div></footer>
 <script>
 function setLang(l){
