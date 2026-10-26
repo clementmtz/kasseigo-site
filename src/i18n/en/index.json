@@ -78,9 +78,7 @@
     "finding_parking": "Finding parking…",
     "back_to_destination": "Back to destination",
     "nearest_parking_at": "Nearest parking: {m}",
-    "continue_to_parking": "Continue to the parking spot",
-    "more_options": "More options",
-    "turn_right": "Turn right"
+    "more_options": "More options"
   },
   "facts": {
     "free_title": "Free, for real",

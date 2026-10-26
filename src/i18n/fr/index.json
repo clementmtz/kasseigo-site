@@ -78,9 +78,7 @@
     "finding_parking": "Recherche d’un emplacement…",
     "back_to_destination": "Retour à la destination",
     "nearest_parking_at": "Emplacement le plus proche : {m}",
-    "continue_to_parking": "Continuez jusqu’à l’emplacement",
-    "more_options": "Plus d’options",
-    "turn_right": "Tournez à droite"
+    "more_options": "Plus d’options"
   },
   "facts": {
     "free_title": "Gratuit, vraiment",
