@@ -18,8 +18,6 @@
     "get_app": "Obtenir l’appli"
   },
   "hero": {
-    "free_badge": "GRATUIT",
-    "free_text": "Sans abonnement ni achat intégré",
     "title": "Roulez en douceur.",
     "title_2": "Garez-vous juste.",
     "lead": "Le guide des vélos et trottinettes partagés à Bruxelles et à Paris (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo vous fait éviter les pavés et les zones interdites, et termine votre trajet sur une vraie place de stationnement.",
@@ -37,8 +35,8 @@
     "zones_text": "Les zones lentes et interdites de votre opérateur font partie de l’itinéraire. Choisissez de les contourner ou de les traverser à pied, et voyez exactement où ça se passe.",
     "parking_title": "Sachez où vous garer",
     "parking_text": "Choisissez votre place avant de partir, avec le nombre de places libres quand l’opérateur le publie. Le guidage vous y mène directement.",
-    "walking_title": "Honnête quand la marche gagne",
-    "walking_text": "Chaque trajet est comparé à la marche. Quand vos pieds vont plus vite, KasseiGo le dit et vous évite les frais de déverrouillage. Le véhicule reste à portée de doigt."
+    "nearest_title": "Garez-vous en un geste, où que vous soyez",
+    "nearest_text": "En route et envie de vous arrêter ? « Emplacement le plus proche » trouve la place la plus proche de votre opérateur et vous y guide. Changé d’avis ? Annuler, et le guidage repart vers votre destination."
   },
   "mock": {
     "no_cobbles": "Aucun pavé détecté",
@@ -55,31 +53,36 @@
     "slabs": "Dalles",
     "cobbles": "Pavés",
     "rough": "Irrégulier",
-    "bike_8": "8 min à vélo",
-    "to_parking_22": "≈ 2,2 km jusqu’à l’emplacement",
-    "cobbles_70": "Pavés, 70 m",
-    "tolerance": "Votre tolérance :",
-    "tolerance_slabs": "Votre tolérance : dalles",
-    "cycle_tracks": "Pistes cyclables, 11 % du trajet",
     "no_ride_zones": "Zones interdites",
     "no_ride_desc": "Zones où l’opérateur interdit de rouler : descendre et pousser, ou contourner.",
     "go_around": "Contourner",
     "cross_on_foot": "Traverser à pied",
-    "bike_9": "9 min à vélo",
-    "to_parking_24": "≈ 2,4 km jusqu’à l’emplacement",
-    "no_ride_120": "Zone interdite, 120 m",
     "push": "Descendez et poussez",
     "choose_parking": "Choisir un emplacement",
     "closest": "Les plus proches de la destination",
     "dott_parking": "Parking Dott",
-    "full": "Complet",
-    "walking_faster": "La marche est plus rapide : 7 min à pied, contre 8 min à vélo.",
-    "walk": "Marcher",
-    "min_on_foot": "min à pied",
-    "arrival": "Arrivée à 10:26",
-    "bike_with_walk": "Vélo : 10 min avec la marche pour le rejoindre.",
-    "ride_anyway": "Rouler quand même",
-    "start": "Démarrer"
+    "full": "Complet"
+  },
+  "demo": {
+    "_comment": "Words of the app for the interactive demos; {n}, {km}, {m}, {s}, {p}, {op} are filled in by the page.",
+    "computing": "Calcul de l’itinéraire",
+    "min_by_bike": "{n} min à vélo",
+    "to_parking": "≈ {km} km jusqu’à l’emplacement",
+    "cobbles": "Pavés, {m}",
+    "tolerance": "Votre tolérance : {s}",
+    "cycle_tracks": "Pistes cyclables, {p} % du trajet",
+    "slow_zone": "Zone lente, {m}",
+    "speed_limited": "Vitesse limitée par {op}",
+    "no_ride": "Zone interdite, {m}",
+    "nearest_parking": "Emplacement le plus proche",
+    "finding_parking": "Recherche d’un emplacement…",
+    "back_to_destination": "Retour à la destination",
+    "nearest_parking_at": "Emplacement le plus proche : {m}",
+    "continue_to_parking": "Continuez jusqu’à l’emplacement",
+    "more_options": "Plus d’options",
+    "turn_right": "Tournez à droite",
+    "turn_left": "Tournez à gauche",
+    "straight": "Continuez tout droit"
   },
   "facts": {
     "free_title": "Gratuit, vraiment",
@@ -94,6 +97,19 @@
     "title": "Vos trajets ne regardent que vous.",
     "text": "Votre position, vos trajets, vos favoris et vos zones restent sur votre téléphone, tout comme la recherche d’adresses. Le réseau ne sert qu’aux véhicules en temps réel, aux fichiers des villes et aux tuiles de la carte.",
     "no_telemetry": "Sans télémétrie"
+  },
+  "feedback": {
+    "badge": "Bêta",
+    "title": "Vos retours font avancer l’appli.",
+    "text": "KasseiGo est en bêta et fait par une seule personne, à Bruxelles. Une rue fausse, une place de stationnement qui n’existe plus, une idée : chaque message est lu et aide à décider de la suite.",
+    "cta": "Envoyer un retour",
+    "note": "Sans compte, une minute suffit.",
+    "bug_title": "Quelque chose ne marche pas",
+    "bug_text": "Un itinéraire faux, un écran figé, un plantage.",
+    "data_title": "Donnée fausse sur la carte",
+    "data_text": "Une rue absente, des pavés non signalés, une place disparue.",
+    "idea_title": "Une idée",
+    "idea_text": "Une ville, un opérateur, une fonction qui vous manque."
   },
   "get": {
     "title": "Votre prochain trajet, sans les secousses.",

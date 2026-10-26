@@ -18,8 +18,6 @@
     "get_app": "Get the app"
   },
   "hero": {
-    "free_badge": "FREE",
-    "free_text": "No subscription, no in-app purchases",
     "title": "Ride smooth.",
     "title_2": "Park right.",
     "lead": "The guide for shared bikes and e-scooters in Brussels and Paris (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo takes you around cobblestones and no-ride zones, and ends your trip at a real parking spot.",
@@ -37,8 +35,8 @@
     "zones_text": "Your operator’s slow and no-ride zones are part of the route. Choose to go around them or cross on foot, and see exactly where it happens.",
     "parking_title": "Know where you’ll park",
     "parking_text": "Pick your drop-off spot before you leave, with its free places when the operator publishes them. Guidance takes you straight there.",
-    "walking_title": "Honest when walking wins",
-    "walking_text": "Every trip is compared with walking. When your feet are faster, KasseiGo says so and saves you the unlock fee. The vehicle stays one tap away."
+    "nearest_title": "Park in one tap, wherever you are",
+    "nearest_text": "Riding and want to stop now? Nearest parking finds your operator’s closest spot and guides you there. Changed your mind? Undo, and guidance goes back to your destination."
   },
   "mock": {
     "no_cobbles": "No cobbles detected",
@@ -55,31 +53,36 @@
     "slabs": "Slabs",
     "cobbles": "Cobbles",
     "rough": "Rough",
-    "bike_8": "8 min by bike",
-    "to_parking_22": "≈ 2.2 km to the parking spot",
-    "cobbles_70": "Cobbles, 70 m",
-    "tolerance": "Your tolerance:",
-    "tolerance_slabs": "Your tolerance: slabs",
-    "cycle_tracks": "Cycle tracks, 11 % of the trip",
     "no_ride_zones": "No-ride zones",
     "no_ride_desc": "Zones where the operator forbids riding: get off and push, or go around.",
     "go_around": "Go around",
     "cross_on_foot": "Cross on foot",
-    "bike_9": "9 min by bike",
-    "to_parking_24": "≈ 2.4 km to the parking spot",
-    "no_ride_120": "No-ride zone, 120 m",
     "push": "Get off and push",
     "choose_parking": "Choose a parking spot",
     "closest": "Closest to the destination",
     "dott_parking": "Dott parking",
-    "full": "Full",
-    "walking_faster": "Walking is faster: 7 min on foot, against 8 min by bike.",
-    "walk": "Walk",
-    "min_on_foot": "min on foot",
-    "arrival": "Arrival at 10:26",
-    "bike_with_walk": "Bike: 10 min with the walk to it.",
-    "ride_anyway": "Ride anyway",
-    "start": "Start"
+    "full": "Full"
+  },
+  "demo": {
+    "_comment": "Words of the app for the interactive demos; {n}, {km}, {m}, {s}, {p}, {op} are filled in by the page.",
+    "computing": "Computing the route",
+    "min_by_bike": "{n} min by bike",
+    "to_parking": "≈ {km} km to the parking spot",
+    "cobbles": "Cobbles, {m}",
+    "tolerance": "Your tolerance: {s}",
+    "cycle_tracks": "Cycle tracks, {p} % of the trip",
+    "slow_zone": "Slow zone, {m}",
+    "speed_limited": "Speed limited by {op}",
+    "no_ride": "No-ride zone, {m}",
+    "nearest_parking": "Nearest parking",
+    "finding_parking": "Finding parking…",
+    "back_to_destination": "Back to destination",
+    "nearest_parking_at": "Nearest parking: {m}",
+    "continue_to_parking": "Continue to the parking spot",
+    "more_options": "More options",
+    "turn_right": "Turn right",
+    "turn_left": "Turn left",
+    "straight": "Continue straight"
   },
   "facts": {
     "free_title": "Free, for real",
@@ -94,6 +97,19 @@
     "title": "Your trips are nobody’s business.",
     "text": "Your location, trips, favourites and zones stay on your phone. Address search runs on the phone too. The network is only used for live vehicles, city packs and map tiles.",
     "no_telemetry": "No telemetry"
+  },
+  "feedback": {
+    "badge": "Beta",
+    "title": "Your feedback shapes the app.",
+    "text": "KasseiGo is in beta and made by one person in Brussels. A street that is wrong, a parking spot that no longer exists, an idea: every message is read and helps decide what comes next.",
+    "cta": "Send feedback",
+    "note": "No account needed, a minute is enough.",
+    "bug_title": "Something does not work",
+    "bug_text": "A wrong route, a screen that freezes, a crash.",
+    "data_title": "Wrong data on the map",
+    "data_text": "A missing street, cobbles not shown, a parking spot that is gone.",
+    "idea_title": "An idea",
+    "idea_text": "A city, an operator, a feature you miss."
   },
   "get": {
     "title": "Your next ride, without the bumps.",

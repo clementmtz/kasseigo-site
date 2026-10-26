@@ -35,8 +35,11 @@ How `src/build.py` works (details at the top of the script):
 - Texts: `src/i18n/<lang>/<page>.json`, in every language of the page. A new text is a new `{{key}}`
   in the template and the same key in each dictionary of that page. Layout, styles and scripts: the
   template.
-- Home page: the `mock` keys are the app's own words: keep them in sync with
-  `kasseigo/app/lib/l10n/app_*.arb`.
+- Home page: the `mock` and `demo` keys are the app's own words: keep them in sync with
+  `kasseigo/app/lib/l10n/app_*.arb`. The `demo` keys are patterns (`{n}`, `{km}`, `{m}`…) filled by
+  the page's script: the surface and no-ride zone selectors recompute a trip (drawn at random, with
+  the app's loading shimmer) and the guidance card plays "Nearest parking". The selector, loader and
+  guidance styles copy the app (`seg_control.dart`, `Skeleton`, `nav.dart`).
 - Legal pages (`legal`, `terms`, `privacy`): French is the legal reference; change
   `src/i18n/fr/<page>.json` first, then the English one, and the `updated` date of both. Keys follow
   the sections (`s3.p1`: section 3, first paragraph); a sentence identical in both languages is
@@ -45,7 +48,7 @@ How `src/build.py` works (details at the top of the script):
 - Feedback form (`src/templates/feedback.html`): posts to the Cloudflare Worker in
   `kasseigo/backend/feedback` (Turnstile site key there, secret on Cloudflare). Only
   `https://kasseigo.com` is accepted. Messages shown by its script come from `data-` attributes of
-  the form.
+  the form. `?type=bug|idea|data|other` picks the type (links of the home page's feedback section).
 - The app links to `/terms.html`, `/privacy.html`, `/legal.html` with `?lang=fr` or `?lang=en`, and
   to `/feedback.html?lang=…&app=…&os=…`: never rename them. The script in `_head.html` sends these
   links to the page in that language (`/fr/privacy.html`), keeping the other parameters.

@@ -18,8 +18,6 @@
     "get_app": "Download de app"
   },
   "hero": {
-    "free_badge": "GRATIS",
-    "free_text": "Geen abonnement of aankopen",
     "title": "Rij zonder schokken.",
     "title_2": "Parkeer correct.",
     "lead": "De gids voor deelfietsen en elektrische deelsteps in Brussel en Parijs (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo leidt je om kasseien en verboden zones heen, en eindigt je rit op een echte parkeerplek.",
@@ -37,8 +35,8 @@
     "zones_text": "De trage en verboden zones van je operator zitten in de route. Kies of je ze omzeilt of te voet doorkruist, en zie precies waar dat gebeurt.",
     "parking_title": "Weet waar je parkeert",
     "parking_text": "Kies je parkeerplek voor je vertrekt, met het aantal vrije plaatsen als de operator dat publiceert. De begeleiding brengt je er rechtstreeks naartoe.",
-    "walking_title": "Eerlijk als wandelen wint",
-    "walking_text": "Elke rit wordt vergeleken met wandelen. Ben je te voet sneller, dan zegt KasseiGo het en bespaar je de ontgrendelkosten. Het voertuig blijft één tik verwijderd."
+    "nearest_title": "Parkeren met één tik, waar je ook bent",
+    "nearest_text": "Onderweg en wil je nu stoppen? “Dichtstbijzijnde parkeerplek” vindt de dichtste plek van je operator en leidt je erheen. Toch niet? Ongedaan maken, en de begeleiding gaat terug naar je bestemming."
   },
   "mock": {
     "no_cobbles": "Geen kasseien gevonden",
@@ -55,31 +53,36 @@
     "slabs": "Tegels",
     "cobbles": "Kasseien",
     "rough": "Ruw",
-    "bike_8": "8 min met de fiets",
-    "to_parking_22": "≈ 2,2 km tot de parkeerplek",
-    "cobbles_70": "Kasseien, 70 m",
-    "tolerance": "Jouw tolerantie:",
-    "tolerance_slabs": "Jouw tolerantie: tegels",
-    "cycle_tracks": "Fietspaden, 11 % van de rit",
     "no_ride_zones": "Verboden zones",
     "no_ride_desc": "Zones waar de operator rijden verbiedt: afstappen en duwen, of omrijden.",
     "go_around": "Omrijden",
     "cross_on_foot": "Te voet doorkruisen",
-    "bike_9": "9 min met de fiets",
-    "to_parking_24": "≈ 2,4 km tot de parkeerplek",
-    "no_ride_120": "Verboden zone, 120 m",
     "push": "Afstappen en duwen",
     "choose_parking": "Kies een parkeerplek",
     "closest": "Het dichtst bij de bestemming",
     "dott_parking": "Dott-parking",
-    "full": "Vol",
-    "walking_faster": "Wandelen is sneller: 7 min te voet, tegenover 8 min met de fiets.",
-    "walk": "Wandelen",
-    "min_on_foot": "min te voet",
-    "arrival": "Aankomst om 10:26",
-    "bike_with_walk": "Fiets: 10 min, met de wandeling ernaartoe.",
-    "ride_anyway": "Toch rijden",
-    "start": "Starten"
+    "full": "Vol"
+  },
+  "demo": {
+    "_comment": "Words of the app for the interactive demos; {n}, {km}, {m}, {s}, {p}, {op} are filled in by the page.",
+    "computing": "Route berekenen",
+    "min_by_bike": "{n} min met de fiets",
+    "to_parking": "≈ {km} km tot de parkeerplek",
+    "cobbles": "Kasseien, {m}",
+    "tolerance": "Jouw tolerantie: {s}",
+    "cycle_tracks": "Fietspaden, {p} % van de rit",
+    "slow_zone": "Trage zone, {m}",
+    "speed_limited": "Snelheid beperkt door {op}",
+    "no_ride": "Verboden zone, {m}",
+    "nearest_parking": "Dichtstbijzijnde parkeerplek",
+    "finding_parking": "Parkeerplek zoeken…",
+    "back_to_destination": "Terug naar de bestemming",
+    "nearest_parking_at": "Dichtstbijzijnde parkeerplek: {m}",
+    "continue_to_parking": "Ga verder naar de parkeerplek",
+    "more_options": "Meer opties",
+    "turn_right": "Sla rechtsaf",
+    "turn_left": "Sla linksaf",
+    "straight": "Rij rechtdoor"
   },
   "facts": {
     "free_title": "Echt gratis",
@@ -94,6 +97,19 @@
     "title": "Je ritten gaan niemand iets aan.",
     "text": "Je locatie, ritten, favorieten en zones blijven op je telefoon, net als het zoeken naar adressen. Het netwerk dient alleen voor live voertuigen, stadsbestanden en kaarttegels.",
     "no_telemetry": "Geen telemetrie"
+  },
+  "feedback": {
+    "badge": "Bèta",
+    "title": "Jouw feedback maakt de app beter.",
+    "text": "KasseiGo is in bèta en wordt gemaakt door één persoon, in Brussel. Een straat die niet klopt, een parkeerplek die niet meer bestaat, een idee: elk bericht wordt gelezen en helpt bepalen wat er volgt.",
+    "cta": "Feedback sturen",
+    "note": "Geen account nodig, een minuutje volstaat.",
+    "bug_title": "Iets werkt niet",
+    "bug_text": "Een verkeerde route, een scherm dat vastloopt, een crash.",
+    "data_title": "Foute gegevens op de kaart",
+    "data_text": "Een ontbrekende straat, kasseien die niet getoond worden, een verdwenen parkeerplek.",
+    "idea_title": "Een idee",
+    "idea_text": "Een stad, een operator, een functie die je mist."
   },
   "get": {
     "title": "Je volgende rit, zonder schokken.",

@@ -130,6 +130,7 @@ const SITEKEY = '0x4AAAAAAFlVCz4v9DZM8wDq';
 const form = document.getElementById('f'), T = form.dataset, lang = T.lang;
 
 // From the app: ?app=1.0.0 (2)&os=ios Version 18.1 (and lang, handled in the head).
+// From the home page: ?type=bug|idea|data|other picks the type.
 const q = new URLSearchParams(location.search);
 q.delete('lang');
 const ctx = { app: (q.get('app') || '').slice(0, 60), os: (q.get('os') || '').slice(0, 80) };
@@ -137,9 +138,10 @@ if (ctx.app) {
   const c = document.getElementById('ctx');
   c.hidden = false;
   c.textContent = T.ctx.replace('{app}', ctx.app).replace('{os}', ctx.os || '?');
-  // Another language keeps what the app filled in.
-  document.querySelectorAll('.langs a').forEach(a => { a.search = q.toString(); });
 }
+if ([...form.elements.type].some(r => r.value === q.get('type'))) form.elements.type.value = q.get('type');
+// Another language keeps these parameters.
+if (q.toString()) document.querySelectorAll('.langs a').forEach(a => { a.search = q.toString(); });
 
 let token = '', widget = null;
 function renderCheck() {
