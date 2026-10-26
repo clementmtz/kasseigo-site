@@ -319,8 +319,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   <symbol id="flag" viewBox="0 0 24 24"><path d="M6 21V4h11l-2.5 4.5L17 13H6"/></symbol>
   <symbol id="dots" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></symbol>
   <symbol id="right" viewBox="0 0 24 24"><path d="M7 20v-6a4 4 0 0 1 4-4h7M14 6l4 4-4 4"/></symbol>
-  <symbol id="left" viewBox="0 0 24 24"><path d="M17 20v-6a4 4 0 0 0-4-4H6M10 6l-4 4 4 4"/></symbol>
-  <symbol id="up" viewBox="0 0 24 24"><path d="M12 20V5M6 11l6-6 6 6"/></symbol>
 </svg>
 
 <header class="nav">
@@ -440,10 +438,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
           </div>
           <div class="demo">
             <div class="guide" id="guide">
-              <svg class="map" viewBox="0 0 320 280" aria-hidden="true">
-                <rect class="block" x="52" y="122" width="56" height="26" rx="4"/><rect class="block" x="132" y="122" width="56" height="26" rx="4"/><rect class="park-area" x="212" y="122" width="56" height="26" rx="4"/>
-                <rect class="block" x="52" y="172" width="56" height="108" rx="4"/><rect class="park-area" x="132" y="172" width="56" height="108" rx="4"/><rect class="block" x="212" y="172" width="56" height="108" rx="4"/>
-                <path class="street" d="M0 110H320M0 160H320M40 84V280M120 84V280M200 84V280M280 84V280"/>
+              <svg class="map" viewBox="0 0 320 220" aria-hidden="true">
+                <rect class="block" x="52" y="104" width="56" height="24" rx="4"/><rect class="block" x="132" y="104" width="56" height="24" rx="4"/><rect class="park-area" x="212" y="104" width="56" height="24" rx="4"/>
+                <rect class="block" x="52" y="152" width="56" height="68" rx="4"/><rect class="park-area" x="132" y="152" width="56" height="68" rx="4"/><rect class="block" x="212" y="152" width="56" height="68" rx="4"/>
+                <path class="street" d="M0 92H320M0 140H320M40 70V220M120 70V220M200 70V220M280 70V220"/>
                 <path class="route" pathLength="1"/>
                 <g class="dest"><use href="#flag" x="-6" y="-21" width="24" height="24"/></g>
                 <g class="spot"><g class="pop"><rect x="-13" y="-13" width="26" height="26" rx="8"/><use href="#p" x="-9" y="-9" width="18" height="18"/></g></g>
@@ -523,7 +521,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   data-slow-zone="{{demo.slow_zone}}" data-speed-limited="{{demo.speed_limited}}" data-no-ride="{{demo.no_ride}}" data-push="{{mock.push}}"
   data-nearest-parking="{{demo.nearest_parking}}" data-finding-parking="{{demo.finding_parking}}" data-back-to-destination="{{demo.back_to_destination}}"
   data-nearest-parking-at="{{demo.nearest_parking_at}}" data-continue-to-parking="{{demo.continue_to_parking}}"
-  data-turn-right="{{demo.turn_right}}" data-turn-left="{{demo.turn_left}}" data-straight="{{demo.straight}}"></div>
+  data-turn-right="{{demo.turn_right}}"></div>
 
 <script>
 document.documentElement.classList.add('js');
@@ -535,11 +533,9 @@ if ('IntersectionObserver' in window) {
   els.forEach(el => io.observe(el));
 } else els.forEach(el => el.classList.add('in'));
 
-// Demos of the app: each choice computes a trip again, never quite the same one.
+// Demos of the app: each choice computes its trip again, with the app's loading shimmer.
 const T = document.getElementById('demo-texts').dataset;
 const km1 = new Intl.NumberFormat(document.documentElement.lang, {minimumFractionDigits: 1, maximumFractionDigits: 1});
-const rnd = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
-const pick = a => a[rnd(0, a.length - 1)];
 const fill = (s, v) => s.replace(/\{(\w+)\}/g, (_, k) => v[k]);
 const m = n => `${n} m`;
 const icon = id => `<svg class="ic"><use href="#${id}"/></svg>`;
@@ -548,69 +544,60 @@ const step = (ic, title, sub, c) =>
   `<div class="st${c ? ' in' : ''}"><span class="tile${c ? ' tint' : ''}"${c ? ` style="--c:var(--${c})"` : ''}>${icon(ic)}</span><div><b>${title}</b><span>${sub}</span></div></div>`;
 const ride = km => step('bike', fill(T.minByBike, {n: Math.round(km * 3.6)}), fill(T.toParking, {km: km1.format(km)}));
 const cycle = (km, pct) => step('bike', fill(T.cycleTracks, {p: pct}), m(Math.round(km * pct) * 10), 'ok');
+const computing = step('bike', '…', T.computing) + '<div class="sk" style="height:36px;border-radius:10px"></div><div class="sk" style="width:60%"></div>';
 
-// Segmented control like the app's: the thumb slides to the choice, a choice computes the trip again.
-function seg(el, onChange) {
+// Segmented control like the app's: the thumb slides to the choice, and the trip of that choice
+// (trips[i]) is computed again in the panel. The panel keeps the height of its tallest trip.
+function seg(el, panel, trips) {
   const bs = [...el.querySelectorAll('button')];
+  let cur = bs.findIndex(b => b.getAttribute('aria-pressed') === 'true');
   const set = i => {
     el.style.setProperty('--n', bs.length);
     el.style.setProperty('--i', i);
     bs.forEach((b, j) => { b.setAttribute('aria-pressed', j === i); b.classList.toggle('off', el.classList.contains('iconic') && j > i); });
   };
-  const first = bs.findIndex(b => b.getAttribute('aria-pressed') === 'true');
-  set(first);
+  const fit = () => {
+    panel.style.minHeight = '';
+    panel.style.minHeight = Math.max(...bs.map((b, j) => { panel.innerHTML = trips[j](b); return panel.offsetHeight; })) + 'px';
+    panel.innerHTML = trips[cur](bs[cur]);
+  };
+  set(cur);
+  fit();
+  window.addEventListener('resize', () => { if (!panel.hasAttribute('aria-busy')) fit(); });
   bs.forEach((b, j) => b.addEventListener('click', () => {
-    if (j === +el.style.getPropertyValue('--i')) return;
+    if (j === cur) return;
+    cur = j;
     set(j);
-    onChange(j, b, false);
+    clearTimeout(panel.timer);
+    panel.setAttribute('aria-busy', 'true');
+    panel.innerHTML = computing;
+    panel.timer = setTimeout(() => { panel.innerHTML = trips[j](b); panel.removeAttribute('aria-busy'); }, 900);
   }));
-  onChange(first, bs[first], true);
-}
-
-// Trip panel: "Computing the route" with shimmering placeholders for a moment, then the trip.
-function compute(panel, trip, now) {
-  clearTimeout(panel.timer);
-  if (now) { panel.innerHTML = trip(); return; }
-  panel.setAttribute('aria-busy', 'true');
-  panel.innerHTML = step('bike', '…', T.computing) + '<div class="sk" style="height:36px;border-radius:10px"></div><div class="sk" style="width:60%"></div>';
-  panel.timer = setTimeout(() => { panel.innerHTML = trip(); panel.removeAttribute('aria-busy'); }, rnd(650, 1200));
 }
 
 // Surface: the smoother the worst accepted surface, the longer the way around the cobbles.
-// One trip per visit (its length drawn once), so the choices compare as in the app.
-const surfaceTrip = document.getElementById('surface-trip'), surfaceKm = rnd(17, 24) / 10;
-seg(document.getElementById('surface'), (lvl, b, now) => compute(surfaceTrip, () => {
-  const km = surfaceKm + [rnd(5, 8), rnd(2, 4), rnd(0, 1), 0][lvl] / 10;
-  const cob = [0, pick([0, rnd(3, 9) * 10]), rnd(12, 30) * 10, rnd(26, 55) * 10][lvl];
-  const tol = fill(T.tolerance, {s: b.textContent.trim().toLowerCase()});
-  return ride(km)
-    + (cob ? step('cob', fill(T.cobbles, {m: m(cob)}), tol, 'warn') : step('cob', T.noCobbles, tol, 'ok'))
-    + cycle(km, Math.max(3, rnd(8, 32) - 4 * lvl));
-}, now));
+const tolerance = b => fill(T.tolerance, {s: b.textContent.trim().toLowerCase()});
+seg(document.getElementById('surface'), document.getElementById('surface-trip'), [
+  b => ride(2.9) + step('cob', T.noCobbles, tolerance(b), 'ok') + cycle(2.9, 24),
+  b => ride(2.6) + step('cob', fill(T.cobbles, {m: m(70)}), tolerance(b), 'warn') + cycle(2.6, 18),
+  b => ride(2.3) + step('cob', fill(T.cobbles, {m: m(260)}), tolerance(b), 'warn') + cycle(2.3, 12),
+  b => ride(2.0) + step('cob', fill(T.cobbles, {m: m(480)}), tolerance(b), 'warn') + cycle(2.0, 8),
+]);
 
 // No-ride zones: going around is longer; crossing on foot means pushing through the zone.
-const zonesTrip = document.getElementById('zones-trip'), zonesKm = rnd(19, 26) / 10;
-seg(document.getElementById('zones'), (i, b, now) => compute(zonesTrip, () => {
-  const cross = i === 1, km = zonesKm + (cross ? rnd(0, 1) / 10 : rnd(3, 7) / 10);
-  const slow = step('snail', fill(T.slowZone, {m: m(rnd(4, 16) * 10)}), fill(T.speedLimited, {op: pick(['Dott', 'Bolt', 'Voi'])}), 'slow');
-  return ride(km) + (cross
-    ? step('forb', fill(T.noRide, {m: m(rnd(6, 20) * 10)}), T.push, 'bad') + (Math.random() < .5 ? slow : '')
-    : slow + (Math.random() < .5 ? cycle(km, rnd(6, 28)) : ''));
-}, now));
+const slow = step('snail', fill(T.slowZone, {m: m(80)}), fill(T.speedLimited, {op: 'Bolt'}), 'slow');
+seg(document.getElementById('zones'), document.getElementById('zones-trip'), [
+  () => ride(2.8) + slow + cycle(2.8, 15),
+  () => ride(2.4) + step('forb', fill(T.noRide, {m: m(120)}), T.push, 'bad') + slow,
+]);
 
 // Guidance: "Nearest parking" finds the operator's closest spot and guides there; "Undo" or
-// "Back to destination" resumes the trip. Ways in map units: start, to the destination, to the spot.
+// "Back to destination" resumes the trip. The way in map units: start, to the destination, to the spot.
+const WAY = {from: [40, 172], dest: 'M40 172V140H200V92H280', to: [280, 92], spot: 'M40 172V140H120', at: [120, 140]};
 const guide = document.getElementById('guide');
-const route = guide.querySelector('.route'), me = guide.querySelector('.me'), toast = guide.querySelector('.gtoast');
+const route = guide.querySelector('.route'), toast = guide.querySelector('.gtoast');
 const cue = guide.querySelector('.gcue'), btn = guide.querySelector('.parkbtn');
-const WAYS = [
-  {from: [40, 205], dest: 'M40 205V160H200V110H280', to: [280, 110], spot: 'M40 205V160H120', at: [120, 160], turn: 'turnRight'},
-  {from: [120, 205], dest: 'M120 205V110H40', to: [40, 110], spot: 'M120 205V160H200', at: [200, 160], turn: 'turnLeft'},
-  {from: [200, 205], dest: 'M200 205V110', to: [200, 110], spot: 'M200 205V160H280', at: [280, 160], turn: 'straight'},
-  {from: [280, 205], dest: 'M280 205V160H40', to: [40, 160], spot: 'M280 205V160H200V110', at: [200, 110], turn: 'turnLeft'},
-];
-const STREETS = ['Chaussée d’Ixelles', 'Rue du Bailli', 'Avenue Louise', 'Rue Lesbroussart', 'Rue de la Paix', 'Rue Américaine'];
-let way, street, parked = false;
+let parked = false;
 function draw(d) {
   route.setAttribute('d', d);
   route.style.transition = 'none';
@@ -619,7 +606,7 @@ function draw(d) {
   route.style.transition = '';
   route.style.strokeDashoffset = 0;
 }
-// Instruction (icon, distance, text) and main button (icon, label, or a spinner while busy).
+// Instruction (icon, distance, text) and main button (icon and label, or a spinner while busy).
 function show(ic, dist, text) {
   cue.querySelector('use').setAttribute('href', `#${ic}`);
   cue.querySelector('b').textContent = dist;
@@ -633,31 +620,28 @@ function resume() {
   parked = false;
   guide.classList.remove('parked');
   toast.classList.remove('on');
-  draw(way.dest);
-  show({turnRight: 'right', turnLeft: 'left', straight: 'up'}[way.turn], m(rnd(6, 25) * 10), `${T[way.turn]} · ${street}`);
+  draw(WAY.dest);
+  show('right', m(160), `${T.turnRight} · Rue du Bailli`);
   button('p', T.nearestParking);
 }
 function park() {
   button(null, T.findingParking);
   setTimeout(() => {
-    const d = m(rnd(4, 18) * 10);
     parked = true;
-    guide.querySelector('.spot').setAttribute('transform', `translate(${way.at})`);
     guide.classList.add('parked');
-    draw(way.spot);
-    show('p', d, T.continueToParking);
+    draw(WAY.spot);
+    show('p', m(60), T.continueToParking);
     button('flag', T.backToDestination);
-    toast.querySelector('span').textContent = fill(T.nearestParkingAt, {m: d});
+    toast.querySelector('span').textContent = fill(T.nearestParkingAt, {m: m(60)});
     toast.classList.add('on');
     clearTimeout(toast.timer);
     toast.timer = setTimeout(() => toast.classList.remove('on'), 4500);
-  }, rnd(700, 1200));
+  }, 900);
 }
-way = pick(WAYS);
-street = pick(STREETS);
-me.setAttribute('cx', way.from[0]);
-me.setAttribute('cy', way.from[1]);
-guide.querySelector('.dest').setAttribute('transform', `translate(${way.to})`);
+guide.querySelector('.me').setAttribute('cx', WAY.from[0]);
+guide.querySelector('.me').setAttribute('cy', WAY.from[1]);
+guide.querySelector('.dest').setAttribute('transform', `translate(${WAY.to})`);
+guide.querySelector('.spot').setAttribute('transform', `translate(${WAY.at})`);
 resume();
 btn.addEventListener('click', () => { if (btn.getAttribute('aria-busy') !== 'true') parked ? resume() : park(); });
 toast.querySelector('button').addEventListener('click', resume);

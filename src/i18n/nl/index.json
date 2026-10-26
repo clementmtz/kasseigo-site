@@ -80,9 +80,7 @@
     "nearest_parking_at": "Dichtstbijzijnde parkeerplek: {m}",
     "continue_to_parking": "Ga verder naar de parkeerplek",
     "more_options": "Meer opties",
-    "turn_right": "Sla rechtsaf",
-    "turn_left": "Sla linksaf",
-    "straight": "Rij rechtdoor"
+    "turn_right": "Sla rechtsaf"
   },
   "facts": {
     "free_title": "Echt gratis",

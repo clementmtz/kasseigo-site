@@ -80,9 +80,7 @@
     "nearest_parking_at": "Nearest parking: {m}",
     "continue_to_parking": "Continue to the parking spot",
     "more_options": "More options",
-    "turn_right": "Turn right",
-    "turn_left": "Turn left",
-    "straight": "Continue straight"
+    "turn_right": "Turn right"
   },
   "facts": {
     "free_title": "Free, for real",
