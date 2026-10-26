@@ -31,7 +31,7 @@ jobs:
       - name: Assemble the published files (without the sources)
         run: |
           mkdir _site
-          rsync -a --exclude '.*' --exclude '_site' --exclude 'src' --exclude 'README.md' ./ _site/
+          rsync -a --exclude '.*' --exclude '_site' --exclude 'src' --exclude 'README.md' --exclude 'CLAUDE.md' ./ _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
