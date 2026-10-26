@@ -1,34 +1,17 @@
+<!-- Template, not a page: src/build.py fills it in and removes these three lines. -->
+<meta name="robots" content="noindex, nofollow">
+<!-- /template -->
 <!doctype html>
-<html lang="en">
+<html lang="{{site.html_lang}}">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>KasseiGo: shared bike &amp; e-scooter app for Brussels and Paris</title>
-<meta name="description" content="Free app for shared bikes and e-scooters in Brussels and Paris: routes around cobblestones and no-ride zones, straight to a parking spot. No account, no ads.">
+{{> head}}
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://kasseigo.com/">
-<link rel="alternate" hreflang="en" href="https://kasseigo.com/">
-<link rel="alternate" hreflang="fr" href="https://kasseigo.com/fr/">
-<link rel="alternate" hreflang="nl-BE" href="https://kasseigo.com/nl/">
-<link rel="alternate" hreflang="x-default" href="https://kasseigo.com/">
 <meta name="author" content="Clément Martinez">
-<meta name="theme-color" content="#f3f0fa">
-<link rel="icon" href="/favicon.ico" sizes="48x48">
-<link rel="icon" type="image/png" sizes="96x96" href="/img/icon-96.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/img/icon-64.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
-<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="KasseiGo">
-<meta property="og:url" content="https://kasseigo.com/">
-<meta property="og:title" content="KasseiGo: ride smooth, park right">
-<meta property="og:description" content="Free app for shared bikes and e-scooters in Brussels and Paris: around cobblestones and no-ride zones, to a real parking spot.">
-<meta property="og:image" content="https://kasseigo.com/img/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="KasseiGo app: ride smooth, park right. Free, no account, no ads.">
-<meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="{{meta.og_title}}">
+<meta property="og:description" content="{{meta.og_description}}">
+<meta property="og:image:alt" content="{{meta.og_image_alt}}">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,14 +21,14 @@
       "@id": "https://kasseigo.com/#website",
       "url": "https://kasseigo.com/",
       "name": "KasseiGo",
-      "inLanguage": "en"
+      "inLanguage": "{{site.html_lang}}"
     },
     {
       "@type": "MobileApplication",
       "@id": "https://kasseigo.com/#app",
       "name": "KasseiGo",
-      "url": "https://kasseigo.com/",
-      "description": "Route-planning app for shared bikes and e-scooters in Brussels and Paris: avoids cobblestones, follows operator slow and no-ride zones, and guides you to a parking spot.",
+      "url": "{{url}}",
+      "description": "{{meta.app_description}}",
       "operatingSystem": "iOS",
       "applicationCategory": "TravelApplication",
       "image": "https://kasseigo.com/img/og.jpg",
@@ -275,8 +258,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   <div class="wrap">
     <a class="brand" href="#top"><img src="/img/icon-192.png" alt="" width="38" height="38">KasseiGo</a>
     <div class="end">
-      <nav class="langs" aria-label="Language"><a href="/" hreflang="en" lang="en" aria-current="page">EN</a><a href="/fr/" hreflang="fr" lang="fr">FR</a><a href="/nl/" hreflang="nl-BE" lang="nl">NL</a></nav>
-      <a class="btn btn-primary" href="#get">Get the app</a>
+      <nav class="langs" aria-label="{{site.languages}}">{{lang_links}}</nav>
+      <a class="btn btn-primary" href="#get">{{nav.get_app}}</a>
     </div>
   </div>
 </header>
@@ -285,32 +268,32 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   <section class="hero">
     <div class="wrap">
       <div>
-        <span class="free"><b>FREE</b>No subscription, no in-app purchases</span>
-        <h1>Ride smooth.<br><span>Park right.</span></h1>
-        <p class="lead">The guide for shared bikes and e-scooters in Brussels and Paris (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo takes you around cobblestones and no-ride zones, and ends your trip at a real parking spot.</p>
+        <span class="free"><b>{{hero.free_badge}}</b>{{hero.free_text}}</span>
+        <h1>{{hero.title}}<br><span>{{hero.title_2}}</span></h1>
+        <p class="lead">{{hero.lead}}</p>
         <div class="cta">
-          <a class="btn btn-primary" href="#get">Join the iPhone beta</a>
-          <a class="btn btn-ghost" href="#why">Why KasseiGo</a>
+          <a class="btn btn-primary" href="#get">{{common.join_beta}}</a>
+          <a class="btn btn-ghost" href="#why">{{hero.why}}</a>
         </div>
         <ul class="chips">
-          <li>Free</li><li>No account</li><li>No ads</li><li>No tracking</li>
+          <li>{{common.free}}</li><li>{{common.no_account}}</li><li>{{common.no_ads}}</li><li>{{hero.no_tracking}}</li>
         </ul>
       </div>
 
       <div class="stage">
-        <div class="phone a"><img src="/img/accueil.jpg" width="640" height="1391" fetchpriority="high" alt="Home screen: shared vehicles around you on the map, and a “Where to?” search."></div>
-        <div class="phone b"><img src="/img/apercu.jpg" width="640" height="1391" fetchpriority="high" alt="Trip preview: 12 min to Place Eugène Flagey, with the departure and the parking spot already chosen."></div>
+        <div class="phone a"><img src="/img/accueil.jpg" width="640" height="1391" fetchpriority="high" alt="{{hero.shot_home_alt}}"></div>
+        <div class="phone b"><img src="/img/apercu.jpg" width="640" height="1391" fetchpriority="high" alt="{{hero.shot_preview_alt}}"></div>
         <div class="bubble b1" aria-hidden="true">
-          <div class="card-ui"><span class="tile tint" style="--c:var(--ok)"><svg class="ic"><use href="#cob"/></svg></span><div><b>No cobbles detected</b></div></div>
+          <div class="card-ui"><span class="tile tint" style="--c:var(--ok)"><svg class="ic"><use href="#cob"/></svg></span><div><b>{{mock.no_cobbles}}</b></div></div>
         </div>
         <div class="bubble b2" aria-hidden="true">
-          <div class="card-ui"><span class="tile tint" style="--c:var(--slow)"><svg class="ic"><use href="#snail"/></svg></span><div><b>Slow zone, 80 m</b><span>Speed limited by Bolt</span></div></div>
+          <div class="card-ui"><span class="tile tint" style="--c:var(--slow)"><svg class="ic"><use href="#snail"/></svg></span><div><b>{{mock.slow_zone}}</b><span>{{mock.speed_limited}}</span></div></div>
         </div>
         <div class="bubble b3" aria-hidden="true">
-          <div class="cue"><svg class="ic"><use href="#lock"/></svg><div><b>Unlock it</b><span>In the Bolt app</span></div></div>
+          <div class="cue"><svg class="ic"><use href="#lock"/></svg><div><b>{{mock.unlock}}</b><span>{{mock.in_bolt_app}}</span></div></div>
         </div>
         <div class="bubble b4" aria-hidden="true">
-          <div class="toast">Nearest parking: 60 m <u>Undo</u></div>
+          <div class="toast">{{mock.nearest_parking}} <u>{{mock.undo}}</u></div>
         </div>
       </div>
     </div>
@@ -319,31 +302,31 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   <section id="why" style="padding-top:0">
     <div class="wrap">
       <div class="head reveal">
-        <h2>Built for the vehicle under your feet.</h2>
-        <p class="mut">Regular map apps know cars and bikes. They don’t know cobblestones, operator zones, or where you’re allowed to leave a scooter.</p>
+        <h2>{{why.title}}</h2>
+        <p class="mut">{{why.intro}}</p>
       </div>
       <div class="tiles">
 
         <article class="feat reveal">
           <div>
-            <h3>You decide how much it shakes</h3>
-            <p>Every street is rated by its surface. Set the roughest one you accept, and each trip shows how many metres of cobbles are left. <em>Kassei</em> is Brussels for cobblestone.</p>
+            <h3>{{why.surface_title}}</h3>
+            <p>{{why.surface_text}}</p>
           </div>
           <div class="demo">
             <div class="ui">
-              <p class="gtitle">Surface</p>
-              <p class="gdesc">The least comfortable surface you accept.</p>
-              <div class="seg" id="surface" role="group" aria-label="Worst accepted surface">
-                <button type="button" aria-pressed="false" data-l="smooth"><svg class="ic"><use href="#s0"/></svg>Smooth</button>
-                <button type="button" aria-pressed="true" data-l="slabs"><svg class="ic"><use href="#s1"/></svg>Slabs</button>
-                <button type="button" aria-pressed="false" data-l="cobbles"><svg class="ic"><use href="#s2"/></svg>Cobbles</button>
-                <button type="button" aria-pressed="false" data-l="rough"><svg class="ic"><use href="#s3"/></svg>Rough</button>
+              <p class="gtitle">{{mock.surface}}</p>
+              <p class="gdesc">{{mock.surface_desc}}</p>
+              <div class="seg" id="surface" role="group" aria-label="{{mock.surface_label}}">
+                <button type="button" aria-pressed="false"><svg class="ic"><use href="#s0"/></svg>{{mock.smooth}}</button>
+                <button type="button" aria-pressed="true"><svg class="ic"><use href="#s1"/></svg>{{mock.slabs}}</button>
+                <button type="button" aria-pressed="false"><svg class="ic"><use href="#s2"/></svg>{{mock.cobbles}}</button>
+                <button type="button" aria-pressed="false"><svg class="ic"><use href="#s3"/></svg>{{mock.rough}}</button>
               </div>
               <div class="gap"></div>
               <div class="steps">
-                <div class="st"><span class="tile"><svg class="ic"><use href="#bike"/></svg></span><div><b>8 min by bike</b><span>≈ 2.2 km to the parking spot</span></div></div>
-                <div class="st in"><span class="tile tint" style="--c:var(--warn)"><svg class="ic"><use href="#cob"/></svg></span><div><b>Cobbles, 70 m</b><span id="tol">Your tolerance: slabs</span></div></div>
-                <div class="st in"><span class="tile tint" style="--c:var(--ok)"><svg class="ic"><use href="#bike"/></svg></span><div><b>Cycle tracks, 11 % of the trip</b><span>240 m</span></div></div>
+                <div class="st"><span class="tile"><svg class="ic"><use href="#bike"/></svg></span><div><b>{{mock.bike_8}}</b><span>{{mock.to_parking_22}}</span></div></div>
+                <div class="st in"><span class="tile tint" style="--c:var(--warn)"><svg class="ic"><use href="#cob"/></svg></span><div><b>{{mock.cobbles_70}}</b><span id="tol" data-prefix="{{mock.tolerance}}">{{mock.tolerance_slabs}}</span></div></div>
+                <div class="st in"><span class="tile tint" style="--c:var(--ok)"><svg class="ic"><use href="#bike"/></svg></span><div><b>{{mock.cycle_tracks}}</b><span>240 m</span></div></div>
               </div>
             </div>
           </div>
@@ -351,22 +334,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
 
         <article class="feat reveal">
           <div>
-            <h3>Zones, before they surprise you</h3>
-            <p>Your operator’s slow and no-ride zones are part of the route. Choose to go around them or cross on foot, and see exactly where it happens.</p>
+            <h3>{{why.zones_title}}</h3>
+            <p>{{why.zones_text}}</p>
           </div>
           <div class="demo">
             <div class="ui">
-              <p class="gtitle">No-ride zones</p>
-              <p class="gdesc">Zones where the operator forbids riding: get off and push, or go around.</p>
-              <div class="seg" role="group" aria-label="No-ride zones">
-                <button type="button" aria-pressed="false">Go around</button>
-                <button type="button" aria-pressed="true">Cross on foot</button>
+              <p class="gtitle">{{mock.no_ride_zones}}</p>
+              <p class="gdesc">{{mock.no_ride_desc}}</p>
+              <div class="seg" role="group" aria-label="{{mock.no_ride_zones}}">
+                <button type="button" aria-pressed="false">{{mock.go_around}}</button>
+                <button type="button" aria-pressed="true">{{mock.cross_on_foot}}</button>
               </div>
               <div class="gap"></div>
               <div class="steps">
-                <div class="st"><span class="tile"><svg class="ic"><use href="#bike"/></svg></span><div><b>9 min by bike</b><span>≈ 2.4 km to the parking spot</span></div></div>
-                <div class="st in"><span class="tile tint" style="--c:var(--bad)"><svg class="ic"><use href="#forb"/></svg></span><div><b>No-ride zone, 120 m</b><span>Get off and push</span></div></div>
-                <div class="st in"><span class="tile tint" style="--c:var(--slow)"><svg class="ic"><use href="#snail"/></svg></span><div><b>Slow zone, 80 m</b><span>Speed limited by Bolt</span></div></div>
+                <div class="st"><span class="tile"><svg class="ic"><use href="#bike"/></svg></span><div><b>{{mock.bike_9}}</b><span>{{mock.to_parking_24}}</span></div></div>
+                <div class="st in"><span class="tile tint" style="--c:var(--bad)"><svg class="ic"><use href="#forb"/></svg></span><div><b>{{mock.no_ride_120}}</b><span>{{mock.push}}</span></div></div>
+                <div class="st in"><span class="tile tint" style="--c:var(--slow)"><svg class="ic"><use href="#snail"/></svg></span><div><b>{{mock.slow_zone}}</b><span>{{mock.speed_limited}}</span></div></div>
               </div>
             </div>
           </div>
@@ -374,43 +357,43 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
 
         <article class="feat reveal">
           <div>
-            <h3>Know where you’ll park</h3>
-            <p>Pick your drop-off spot before you leave, with its free places when the operator publishes them. Guidance takes you straight there.</p>
+            <h3>{{why.parking_title}}</h3>
+            <p>{{why.parking_text}}</p>
           </div>
           <div class="demo">
             <div class="ui">
-              <p class="gtitle" style="font-size:22px;margin-bottom:14px">Choose a parking spot</p>
-              <p class="lbl">Closest to the destination</p>
+              <p class="gtitle" style="font-size:22px;margin-bottom:14px">{{mock.choose_parking}}</p>
+              <p class="lbl">{{mock.closest}}</p>
               <div class="it sel"><span class="tile"><svg class="ic"><use href="#p"/></svg></span><div class="tx"><b>Place Eugène Flagey</b><div class="meta"><span class="op" style="--c:var(--dott)">Dott</span><span><svg class="ic"><use href="#walk"/></svg>1 min</span><span class="n" style="color:var(--ok)"><svg class="ic"><use href="#p"/></svg>×6</span></div></div></div>
               <div class="it"><span class="tile"><svg class="ic"><use href="#p"/></svg></span><div class="tx"><b>Rue Lesbroussart</b><div class="meta"><span class="op" style="--c:var(--dott)">Dott</span><span><svg class="ic"><use href="#walk"/></svg>2 min</span><span class="n" style="color:var(--warn)"><svg class="ic"><use href="#p"/></svg>×1</span></div></div></div>
-              <div class="it"><span class="tile"><svg class="ic"><use href="#p"/></svg></span><div class="tx"><b>Dott parking</b><div class="meta"><span class="op" style="--c:var(--dott)">Dott</span><span><svg class="ic"><use href="#walk"/></svg>3 min</span><span class="n" style="color:var(--bad)"><svg class="ic"><use href="#p"/></svg>Full</span></div></div></div>
+              <div class="it"><span class="tile"><svg class="ic"><use href="#p"/></svg></span><div class="tx"><b>{{mock.dott_parking}}</b><div class="meta"><span class="op" style="--c:var(--dott)">Dott</span><span><svg class="ic"><use href="#walk"/></svg>3 min</span><span class="n" style="color:var(--bad)"><svg class="ic"><use href="#p"/></svg>{{mock.full}}</span></div></div></div>
             </div>
           </div>
         </article>
 
         <article class="feat reveal">
           <div>
-            <h3>Honest when walking wins</h3>
-            <p>Every trip is compared with walking. When your feet are faster, KasseiGo says so and saves you the unlock fee. The vehicle stays one tap away.</p>
+            <h3>{{why.walking_title}}</h3>
+            <p>{{why.walking_text}}</p>
           </div>
           <div class="demo">
             <div class="ui">
-              <div class="banner"><svg class="ic"><use href="#walk"/></svg>Walking is faster: 7 min on foot, against 8 min by bike.<a href="#why" onclick="return false">Walk</a></div>
+              <div class="banner"><svg class="ic"><use href="#walk"/></svg>{{mock.walking_faster}}<a href="#why" onclick="return false">{{mock.walk}}</a></div>
             </div>
             <div class="gap"></div>
             <div class="ui">
-              <div class="sum"><b>6</b><em>min on foot</em><span>Arrival at 10:26</span></div>
-              <div class="banner"><svg class="ic"><use href="#bike"/></svg>Bike: 10 min with the walk to it.<a href="#why" onclick="return false">Ride anyway</a></div>
-              <div class="mainbtn"><svg class="ic" style="fill:currentColor;stroke:none;width:20px;height:20px"><use href="#play"/></svg>Start</div>
+              <div class="sum"><b>6</b><em>{{mock.min_on_foot}}</em><span>{{mock.arrival}}</span></div>
+              <div class="banner"><svg class="ic"><use href="#bike"/></svg>{{mock.bike_with_walk}}<a href="#why" onclick="return false">{{mock.ride_anyway}}</a></div>
+              <div class="mainbtn"><svg class="ic" style="fill:currentColor;stroke:none;width:20px;height:20px"><use href="#play"/></svg>{{mock.start}}</div>
             </div>
           </div>
         </article>
       </div>
 
       <ul class="facts">
-        <li class="reveal hl"><b>Free, for real</b><span>No subscription, no in-app purchases, no ads.</span></li>
-        <li class="reveal"><b>Every operator, one map</b><span><i>Brussels:</i> Dott, Bolt, Villo!<br><i>Paris:</i> Dott, Voi, Vélib’</span></li>
-        <li class="reveal"><b>Switch operator mid-trip</b><span>Battery low? Change operator from Trip options; zones, parking and route follow.</span></li>
+        <li class="reveal hl"><b>{{facts.free_title}}</b><span>{{facts.free_text}}</span></li>
+        <li class="reveal"><b>{{facts.operators_title}}</b><span><i>{{facts.brussels}}</i> Dott, Bolt, Villo!<br><i>{{facts.paris}}</i> Dott, Voi, Vélib’</span></li>
+        <li class="reveal"><b>{{facts.switch_title}}</b><span>{{facts.switch_text}}</span></li>
       </ul>
     </div>
   </section>
@@ -418,9 +401,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   <section style="padding-top:0">
     <div class="wrap">
       <div class="privacy reveal">
-        <h2>Your trips are nobody’s business.</h2>
-        <p>Your location, trips, favourites and zones stay on your phone. Address search runs on the phone too. The network is only used for live vehicles, city packs and map tiles.</p>
-        <ul class="nos"><li>Free</li><li>No account</li><li>No ads</li><li>No telemetry</li></ul>
+        <h2>{{privacy.title}}</h2>
+        <p>{{privacy.text}}</p>
+        <ul class="nos"><li>{{common.free}}</li><li>{{common.no_account}}</li><li>{{common.no_ads}}</li><li>{{privacy.no_telemetry}}</li></ul>
       </div>
     </div>
   </section>
@@ -428,20 +411,20 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   <section class="final" id="get" style="padding-top:0">
     <div class="wrap reveal">
       <img src="/img/icon-192.png" alt="" width="88" height="88" loading="lazy">
-      <h2>Your next ride, without the bumps.</h2>
-      <p class="mut">Free, in English, French and Dutch. In beta on iPhone, Android is on the way.</p>
-      <div class="cta"><a class="btn btn-primary" href="#">Join the iPhone beta</a></div>
-      <p class="cities mut"><span><b>Brussels</b> · Dott, Bolt, Villo!</span><span><b>Paris</b> · Dott, Voi, Vélib’</span></p>
+      <h2>{{get.title}}</h2>
+      <p class="mut">{{get.text}}</p>
+      <div class="cta"><a class="btn btn-primary" href="#">{{common.join_beta}}</a></div>
+      <p class="cities mut"><span><b>{{get.brussels}}</b> · Dott, Bolt, Villo!</span><span><b>{{get.paris}}</b> · Dott, Voi, Vélib’</span></p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 KasseiGo · independent, not affiliated with any operator.</span>
-    <span><a href="/legal.html?lang=en">Legal notice</a> · <a href="/terms.html?lang=en">Terms of use</a> · <a href="/privacy.html?lang=en">Privacy</a> · <a href="/feedback.html?lang=en">Feedback</a></span>
-    <span>Map data © OpenStreetMap contributors · Tiles by OpenFreeMap</span>
-    <span>Made with <span class="heart" role="img" aria-label="love">♥</span> in Brussels</span>
+    <span>© 2026 KasseiGo · {{footer.independent}}</span>
+    <span><a href="{{href.legal}}">{{footer.legal}}</a> · <a href="{{href.terms}}">{{footer.terms}}</a> · <a href="{{href.privacy}}">{{footer.privacy}}</a>{{footer.legal_languages}} · <a href="{{href.feedback}}">{{footer.feedback}}</a></span>
+    <span>{{footer.map_data}}</span>
+    <span>{{site.made_with}} <span class="heart" role="img" aria-label="{{site.love}}">♥</span> {{site.in_brussels}}</span>
   </div>
 </footer>
 
@@ -459,7 +442,7 @@ if ('IntersectionObserver' in window) {
 document.querySelectorAll('.seg').forEach(seg => seg.addEventListener('click', e => {
   const b = e.target.closest('button'); if (!b) return;
   seg.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b));
-  if (seg.id === 'surface') document.getElementById('tol').textContent = 'Your tolerance: ' + b.dataset.l;
+  if (seg.id === 'surface') { const t = document.getElementById('tol'); t.textContent = t.dataset.prefix + ' ' + b.textContent.trim().toLowerCase(); }
 }));
 </script>
 </body>

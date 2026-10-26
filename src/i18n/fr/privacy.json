@@ -1,0 +1,65 @@
+{
+  "_comment": "Texts of src/templates/privacy.html in French. Values are HTML. French is the reference text: change it first.",
+  "description": "Politique de confidentialité de KasseiGo : pas de compte, pas de publicité, pas de suivi ; votre position reste sur le téléphone.",
+  "updated": "25 octobre 2026",
+  "summary": "<b>En bref.</b> Pas de compte, pas de publicité, pas de mesure d’audience, pas de rapport de plantage. Votre position est utilisée sur le téléphone et n’est jamais envoyée. L’éditeur ne reçoit aucune donnée vous concernant, sauf les messages que vous choisissez de lui envoyer. Seuls les services contactés pour fonctionner (opérateurs, cartes, fichiers des villes) voient, comme pour toute connexion, l’adresse IP de votre téléphone.",
+  "s1": {
+    "title": "1. Responsable du traitement",
+    "p1": "Clément Martinez, particulier résidant en Belgique, éditeur de KasseiGo · <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>. Cette politique s’applique à l’application KasseiGo et au site kasseigo.com, conformément au règlement général sur la protection des données (RGPD, règlement (UE) 2016/679)."
+  },
+  "s2": {
+    "title": "2. Ce que l’éditeur collecte : rien, sauf ce que vous lui envoyez",
+    "p1": "L’application n’envoie vos données à aucun serveur de KasseiGo. L’application ne contient ni compte, ni publicité, ni outil de mesure d’audience, ni outil de rapport de plantage, ni kit de suivi tiers. L’éditeur ne reçoit, ne voit et ne conserve ni votre position, ni vos trajets, ni vos recherches, ni vos favoris. Seuls les messages que vous envoyez vous-même, par le formulaire de retour ou par e-mail, lui parviennent (section 6)."
+  },
+  "s3": {
+    "title": "3. Ce qui reste sur votre téléphone",
+    "li1": "<b>Votre position</b> : utilisée uniquement pendant l’utilisation de l’application, pour trouver les véhicules proches et vous guider. Elle n’est ni enregistrée, ni envoyée. Votre téléphone vous demande l’autorisation ; vous pouvez la retirer à tout moment dans ses réglages.",
+    "li2": "<b>Vos favoris, recherches récentes, zones personnalisées et réglages</b> : enregistrés dans l’espace privé de l’application, protégé par le chiffrement du téléphone. Supprimer l’application les efface.",
+    "li3": "<b>Les fichiers des villes et la carte</b> : rues, lieux et carte hors ligne, gérés dans « Offline cities ».",
+    "p1": "Les itinéraires, les emplacements et la recherche d’adresses sont calculés sur le téléphone : ce que vous cherchez n’est jamais envoyé."
+  },
+  "s4": {
+    "title": "4. Connexions de l’application et ce qu’elles envoient",
+    "p1": "Pour fonctionner, l’application contacte les services suivants, toujours en connexion chiffrée (HTTPS). Comme pour toute connexion à Internet, chacun voit l’adresse IP de votre téléphone et les informations techniques habituelles d’une requête. Ils agissent sous leur propre responsabilité et selon leur propre politique de confidentialité ; l’éditeur n’a pas accès à leurs journaux.",
+    "li1": "<b>Flux publics des opérateurs (GBFS)</b> : l’application demande les données de toute la ville (véhicules, stations, places, zones), sans rien envoyer qui vous concerne.",
+    "li2": "<b>Fichiers des villes</b> · GitHub (<code>github.com</code>) : liste des fichiers publiés au démarrage et sur la page « Offline cities », puis fichier d’une ville seulement s’il est nouveau ou mis à jour.",
+    "li3": "<b>Tuiles de carte</b> · OpenFreeMap (<code>tiles.openfreemap.org</code>) : les morceaux de carte de la zone affichée que le téléphone n’a pas encore.",
+    "li4": "<b>Application de l’opérateur</b> : ouverte uniquement quand vous touchez son bouton. Ses propres conditions et sa politique de confidentialité s’appliquent alors.",
+    "p2": "L’application est distribuée par Apple (App Store, TestFlight), qui peut traiter des données selon ses propres conditions, en dehors du contrôle de l’éditeur.",
+    "brussels": "Bruxelles"
+  },
+  "s5": {
+    "title": "5. Le site kasseigo.com",
+    "p1": "Le site ne dépose aucun cookie, n’utilise aucun traceur ni outil de mesure d’audience et ne charge aucune ressource externe, sauf la page de retour (section 6). Il est hébergé par GitHub Pages (GitHub, Inc., États-Unis), qui peut enregistrer l’adresse IP des visiteurs dans ses journaux, notamment pour la sécurité du service, selon la <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">déclaration de confidentialité de GitHub</a>. L’éditeur n’a pas accès à ces journaux."
+  },
+  "s6": {
+    "title": "6. Si vous envoyez un retour ou écrivez à l’éditeur",
+    "p1": "<b>Formulaire de retour</b> (<a href=\"feedback.html\">kasseigo.com/feedback</a>, aussi ouvert depuis l’application) : il transmet le type de retour, votre message, la ville si vous la choisissez, votre adresse e-mail seulement si vous la donnez, la langue de la page et, depuis l’application, la version de l’application et du système du téléphone. Rien d’autre n’est ajouté automatiquement : ni position, ni identifiant.",
+    "li1": "Pour bloquer les robots, la page utilise <b>Cloudflare Turnstile</b> (Cloudflare, Inc., États-Unis), qui analyse des signaux techniques du navigateur, selon la <a href=\"https://www.cloudflare.com/privacypolicy/\">politique de confidentialité de Cloudflare</a>.",
+    "li2": "Le message est transmis par un service de Cloudflare Workers et enregistré comme ticket dans un dépôt <b>privé</b> sur GitHub (GitHub, Inc., États-Unis), accessible uniquement à l’éditeur.",
+    "li3": "Finalité : corriger les erreurs, améliorer le service et, si vous avez donné votre e-mail, vous répondre. Base : l’intérêt légitime à traiter les retours reçus.",
+    "li4": "Les tickets sont conservés le temps nécessaire à leur traitement et à leur suivi, puis supprimés. Ils ne sont jamais vendus ni transmis à d’autres tiers. Vous pouvez demander leur suppression à tout moment.",
+    "p2": "<b>Par e-mail</b> : si vous écrivez à <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>, votre adresse e-mail et le contenu de votre message sont utilisés uniquement pour vous répondre et assurer le suivi de votre demande, sur la base de l’intérêt légitime à répondre aux messages reçus. Ils sont conservés le temps nécessaire à ce suivi, puis supprimés, et ne sont jamais vendus ni transmis à des tiers. La messagerie est hébergée par OVH SAS (France)."
+  },
+  "s7": {
+    "title": "7. Transferts hors de l’Union européenne",
+    "p1": "Certains services cités (notamment GitHub, Inc. et Cloudflare, Inc.) sont situés hors de l’Union européenne. Les données qu’ils traitent (adresse IP, données techniques de connexion et, pour les retours, le contenu du message) le sont sous leur propre responsabilité, selon leurs propres garanties."
+  },
+  "s8": {
+    "title": "8. Vos droits",
+    "p1": "Vous disposez des droits d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité. Comme l’éditeur ne détient aucune donnée issue de l’application, ces droits s’exercent surtout pour un retour ou un échange d’e-mails, à <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>. Pour les données traitées par les services tiers cités, adressez-vous à eux directement.",
+    "p2": "Vous pouvez introduire une réclamation auprès de l’<b>Autorité de protection des données</b>, rue de la Presse 35, 1000 Bruxelles, Belgique · <a href=\"https://www.autoriteprotectiondonnees.be\">autoriteprotectiondonnees.be</a>, ou auprès de l’autorité de votre pays de résidence (en France, la CNIL · <a href=\"https://www.cnil.fr\">cnil.fr</a>)."
+  },
+  "s9": {
+    "title": "9. Mineurs",
+    "p1": "Le service ne collecte sciemment aucune donnée sur quiconque, mineur compris. La location des véhicules est soumise à l’âge minimum fixé par chaque opérateur."
+  },
+  "s10": {
+    "title": "10. Sécurité",
+    "p1": "Toutes les connexions de l’application sont chiffrées (HTTPS ; les connexions non chiffrées sont refusées). Chaque fichier de ville est vérifié (taille et empreinte SHA-256) avant utilisation. Les liens issus des flux ne s’ouvrent que vers une page sécurisée (https) ou l’application de l’opérateur."
+  },
+  "s11": {
+    "title": "11. Modifications",
+    "p1": "Cette politique peut évoluer avec l’application. La date de mise à jour figure en haut de la page. En cas de différence entre la version française et la version anglaise, la version française fait foi."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "_comment": "Texts of src/templates/terms.html in English. Values are HTML. Translation of the French text, which prevails: keep it in step.",
+  "description": "Terms of use of KasseiGo, the free app for shared bikes and e-scooters in Brussels and Paris.",
+  "updated": "25 October 2026",
+  "summary": "<b>In short.</b> KasseiGo is a free aid, provided as is by a private individual. Its information may be wrong or out of date. You alone remain responsible for how you ride, for your safety, and for following the highway code and the operator’s rules. The highway code, road signs and the operator’s rules always take precedence over the app.",
+  "s1": {
+    "title": "1. Purpose and acceptance",
+    "p1": "These terms govern the use of the KasseiGo app and the kasseigo.com website (together, “the service”), published by Clément Martinez, a private individual living in Belgium (see the <a href=\"legal.html\">legal notice</a>). By installing or using the service, you accept these terms. If you do not accept them, do not use the service."
+  },
+  "s2": {
+    "title": "2. What the service does",
+    "p1": "KasseiGo helps you get around on shared bikes and e-scooters in Brussels and Paris. It shows the vehicles, stations and parking spots published by operators, plans a route (walk to the vehicle, ride, parking, walk to the destination) taking street surfaces and operator zones into account, and offers turn-by-turn guidance.",
+    "p2": "KasseiGo <b>does not rent, reserve, unlock or charge for any vehicle</b>. Rental only happens in the operator’s own app, under its own terms. Using KasseiGo creates no contract between you and an operator, nor between the publisher and an operator."
+  },
+  "s3": {
+    "title": "3. Free, no account, beta",
+    "li1": "The service is <b>free</b>: no subscription, no in-app purchases, no ads.",
+    "li2": "It requires <b>no account</b> and no sign-up.",
+    "li3": "It is offered as a personal project, in beta. It may contain errors, interruptions or incomplete features.",
+    "li4": "The publisher may at any time, without notice or compensation, change, suspend or stop all or part of the service, including a city, an operator or a feature."
+  },
+  "s4": {
+    "title": "4. Access",
+    "p1": "The service requires a compatible device. Some features (live vehicles, city downloads, map) need an Internet connection; connection costs are yours. The service also depends on third-party services (operators, OpenStreetMap, OpenFreeMap, GitHub, Apple) that the publisher does not control."
+  },
+  "s5": {
+    "title": "5. Information for guidance only, no warranty",
+    "p1": "All information in the service is <b>for guidance only</b>. It may be inaccurate, incomplete, delayed or out of date, in particular:",
+    "li1": "streets, surfaces, cycle tracks, one-way streets, stairs and addresses, taken from OpenStreetMap, a collaborative database updated once a week in the app;",
+    "li2": "vehicle positions and availability, battery levels, stations, free places and zones (slow, no-ride, parking), taken from operators’ public feeds, which may be wrong, late or unavailable; some operators do not publish free places;",
+    "li3": "durations, distances and arrival times, which are estimates;",
+    "li4": "roadworks, closures, events, weather and temporary hazards, which the service does not know about.",
+    "p2": "A suggested route may use a road that is unsuitable, closed, dangerous or forbidden to your vehicle when you get there. A parking spot shown may be full, removed or not accepted by the operator. The service is an <b>additional aid</b>: it does not replace your attention, your judgement, road signs or the operator’s information."
+  },
+  "s6": {
+    "title": "6. Your responsibility and safety",
+    "p1": "You use the service freely and at your own risk. In particular, you agree to:",
+    "li1": "follow the highway code of the country you ride in, road signs, instructions from officers and local rules, which take precedence over anything the app shows;",
+    "li2": "follow the terms and rules of the vehicle’s operator (minimum age, zones, speed, parking, number of riders, ending the rental);",
+    "li3": "not handle your phone while riding: set up your trip while stopped, use a suitable mount if you look at it, and stop in a safe place for any interaction;",
+    "li4": "adapt your riding to traffic, road conditions, weather and your own condition, and not ride under the influence of alcohol, drugs or medication that affects alertness;",
+    "li5": "check the vehicle before use and wear recommended protective equipment (a helmet in particular);",
+    "li6": "not use the service for illegal purposes or in a way that could endanger you or others.",
+    "p2": "Fines, parking fees, penalties, rental or relocation fees charged by an operator or an authority remain entirely yours, even if you followed something the service showed."
+  },
+  "s7": {
+    "title": "7. Limitation of liability",
+    "p1": "The service is provided free of charge, <b>“as is” and “as available”</b>, without any warranty, express or implied, including of accuracy, completeness, availability, freedom from errors or fitness for a particular purpose.",
+    "p2": "To the fullest extent permitted by law, the publisher is not liable for any damage, direct or indirect, material or immaterial, arising from the use of or inability to use the service, or from any information it shows, including: accident, fall, injury, damage to a vehicle, property or third party, fine, penalty or operator fee, lost time, delay, missed trip, loss of data, or damage caused by a third-party service.",
+    "p3": "This limitation does not apply where the law forbids excluding or limiting liability, in particular in case of the publisher’s intentional misconduct (fraud)."
+  },
+  "s8": {
+    "title": "8. Third-party services",
+    "p1": "The service displays data supplied by third parties (operators, OpenStreetMap, OpenFreeMap) and may open an operator’s app at your request. These third parties act under their sole responsibility and their own terms and privacy policies. The publisher is not responsible for their content, services, availability or practices."
+  },
+  "s9": {
+    "title": "9. Licence and intellectual property",
+    "p1": "The publisher grants you a personal, free, non-exclusive, non-transferable and revocable right to use the app for your own trips, for private, non-commercial purposes. The service and its code are not open source and remain the publisher’s property (see the <a href=\"legal.html\">legal notice</a>).",
+    "p2": "Except within the limits expressly allowed by law, you may not copy, modify, decompile, disassemble or try to obtain the app’s source code; resell, rent or redistribute it; extract its data automatically or in bulk; circumvent its protections; or use it to provide a competing or commercial service."
+  },
+  "s10": {
+    "title": "10. Personal data",
+    "p1": "The service works without an account and the publisher does not collect your data. Details are in the <a href=\"privacy.html\">privacy policy</a>."
+  },
+  "s11": {
+    "title": "11. Changes to these terms",
+    "p1": "The publisher may change these terms at any time, in particular to follow changes in the service or the law. The date of the last update is shown at the top of this page. Continuing to use the service after a change means you accept the new terms."
+  },
+  "s12": {
+    "title": "12. General provisions",
+    "p1": "If any clause of these terms is held void or unenforceable, it is deemed unwritten and the other clauses remain in force. Not enforcing a clause does not waive the right to enforce it later. If the French and English versions differ, the French version prevails."
+  },
+  "s13": {
+    "title": "13. Governing law and disputes",
+    "p1": "These terms are governed by Belgian law, subject to the mandatory rules that protect you in your country of residence. If there is a problem, first write to <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a> to look for an amicable solution. Failing that, the dispute will be brought before the courts that have jurisdiction under the law."
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "_comment": "Texts of the home page (src/templates/index.html) in English. Values are HTML. The keys under mock use the app's own words (kasseigo/app/lib/l10n/app_en.arb).",
+  "meta": {
+    "title": "KasseiGo: shared bike &amp; e-scooter app for Brussels and Paris",
+    "description": "Free app for shared bikes and e-scooters in Brussels and Paris: routes around cobblestones and no-ride zones, straight to a parking spot. No account, no ads.",
+    "og_title": "KasseiGo: ride smooth, park right",
+    "og_description": "Free app for shared bikes and e-scooters in Brussels and Paris: around cobblestones and no-ride zones, to a real parking spot.",
+    "og_image_alt": "KasseiGo app: ride smooth, park right. Free, no account, no ads.",
+    "app_description": "Route-planning app for shared bikes and e-scooters in Brussels and Paris: avoids cobblestones, follows operator slow and no-ride zones, and guides you to a parking spot."
+  },
+  "common": {
+    "free": "Free",
+    "no_account": "No account",
+    "no_ads": "No ads",
+    "join_beta": "Join the iPhone beta"
+  },
+  "nav": {
+    "get_app": "Get the app"
+  },
+  "hero": {
+    "free_badge": "FREE",
+    "free_text": "No subscription, no in-app purchases",
+    "title": "Ride smooth.",
+    "title_2": "Park right.",
+    "lead": "The guide for shared bikes and e-scooters in Brussels and Paris (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo takes you around cobblestones and no-ride zones, and ends your trip at a real parking spot.",
+    "why": "Why KasseiGo",
+    "no_tracking": "No tracking",
+    "shot_home_alt": "Home screen: shared vehicles around you on the map, and a “Where to?” search.",
+    "shot_preview_alt": "Trip preview: 12 min to Place Eugène Flagey, with the departure and the parking spot already chosen."
+  },
+  "why": {
+    "title": "Built for the vehicle under your feet.",
+    "intro": "Regular map apps know cars and bikes. They don’t know cobblestones, operator zones, or where you’re allowed to leave a scooter.",
+    "surface_title": "You decide how much it shakes",
+    "surface_text": "Every street is rated by its surface. Set the roughest one you accept, and each trip shows how many metres of cobbles are left. <em>Kassei</em> is Brussels for cobblestone.",
+    "zones_title": "Zones, before they surprise you",
+    "zones_text": "Your operator’s slow and no-ride zones are part of the route. Choose to go around them or cross on foot, and see exactly where it happens.",
+    "parking_title": "Know where you’ll park",
+    "parking_text": "Pick your drop-off spot before you leave, with its free places when the operator publishes them. Guidance takes you straight there.",
+    "walking_title": "Honest when walking wins",
+    "walking_text": "Every trip is compared with walking. When your feet are faster, KasseiGo says so and saves you the unlock fee. The vehicle stays one tap away."
+  },
+  "mock": {
+    "no_cobbles": "No cobbles detected",
+    "slow_zone": "Slow zone, 80 m",
+    "speed_limited": "Speed limited by Bolt",
+    "unlock": "Unlock it",
+    "in_bolt_app": "In the Bolt app",
+    "nearest_parking": "Nearest parking: 60 m",
+    "undo": "Undo",
+    "surface": "Surface",
+    "surface_desc": "The least comfortable surface you accept.",
+    "surface_label": "Worst accepted surface",
+    "smooth": "Smooth",
+    "slabs": "Slabs",
+    "cobbles": "Cobbles",
+    "rough": "Rough",
+    "bike_8": "8 min by bike",
+    "to_parking_22": "≈ 2.2 km to the parking spot",
+    "cobbles_70": "Cobbles, 70 m",
+    "tolerance": "Your tolerance:",
+    "tolerance_slabs": "Your tolerance: slabs",
+    "cycle_tracks": "Cycle tracks, 11 % of the trip",
+    "no_ride_zones": "No-ride zones",
+    "no_ride_desc": "Zones where the operator forbids riding: get off and push, or go around.",
+    "go_around": "Go around",
+    "cross_on_foot": "Cross on foot",
+    "bike_9": "9 min by bike",
+    "to_parking_24": "≈ 2.4 km to the parking spot",
+    "no_ride_120": "No-ride zone, 120 m",
+    "push": "Get off and push",
+    "choose_parking": "Choose a parking spot",
+    "closest": "Closest to the destination",
+    "dott_parking": "Dott parking",
+    "full": "Full",
+    "walking_faster": "Walking is faster: 7 min on foot, against 8 min by bike.",
+    "walk": "Walk",
+    "min_on_foot": "min on foot",
+    "arrival": "Arrival at 10:26",
+    "bike_with_walk": "Bike: 10 min with the walk to it.",
+    "ride_anyway": "Ride anyway",
+    "start": "Start"
+  },
+  "facts": {
+    "free_title": "Free, for real",
+    "free_text": "No subscription, no in-app purchases, no ads.",
+    "operators_title": "Every operator, one map",
+    "brussels": "Brussels:",
+    "paris": "Paris:",
+    "switch_title": "Switch operator mid-trip",
+    "switch_text": "Battery low? Change operator from Trip options; zones, parking and route follow."
+  },
+  "privacy": {
+    "title": "Your trips are nobody’s business.",
+    "text": "Your location, trips, favourites and zones stay on your phone. Address search runs on the phone too. The network is only used for live vehicles, city packs and map tiles.",
+    "no_telemetry": "No telemetry"
+  },
+  "get": {
+    "title": "Your next ride, without the bumps.",
+    "text": "Free, in English, French and Dutch. In beta on iPhone, Android is on the way.",
+    "brussels": "Brussels",
+    "paris": "Paris"
+  },
+  "footer": {
+    "independent": "independent, not affiliated with any operator.",
+    "legal": "Legal notice",
+    "terms": "Terms of use",
+    "privacy": "Privacy",
+    "legal_languages": "",
+    "feedback": "Feedback",
+    "map_data": "Map data © OpenStreetMap contributors · Tiles by OpenFreeMap"
+  }
+}

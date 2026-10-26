@@ -1,0 +1,77 @@
+{
+  "_comment": "Texts of src/templates/terms.html in French. Values are HTML. French is the reference text: change it first.",
+  "description": "Conditions d’utilisation de l’application gratuite KasseiGo, pour vélos et trottinettes partagés à Bruxelles et à Paris.",
+  "updated": "25 octobre 2026",
+  "summary": "<b>En bref.</b> KasseiGo est une aide gratuite, fournie telle quelle par un particulier. Ses informations peuvent être fausses ou dépassées. Vous restez seul responsable de votre conduite, de votre sécurité, du respect du code de la route et des règles de l’opérateur. Le code de la route, la signalisation et les règles de l’opérateur priment toujours sur l’application.",
+  "s1": {
+    "title": "1. Objet et acceptation",
+    "p1": "Les présentes conditions encadrent l’utilisation de l’application KasseiGo et du site kasseigo.com (ensemble, « le service »), édités par Clément Martinez, particulier résidant en Belgique (voir les <a href=\"legal.html\">mentions légales</a>). En installant ou en utilisant le service, vous acceptez ces conditions. Si vous ne les acceptez pas, n’utilisez pas le service."
+  },
+  "s2": {
+    "title": "2. Description du service",
+    "p1": "KasseiGo aide à se déplacer en vélo ou en trottinette partagés à Bruxelles et à Paris. Il affiche les véhicules, stations et emplacements publiés par les opérateurs, calcule un itinéraire (marche jusqu’au véhicule, trajet, stationnement, marche jusqu’à la destination) en tenant compte du revêtement des rues et des zones des opérateurs, et propose un guidage.",
+    "p2": "KasseiGo <b>ne loue, ne réserve, ne déverrouille et ne facture aucun véhicule</b>. La location se fait uniquement dans l’application de l’opérateur, selon ses propres conditions. Utiliser KasseiGo ne crée aucun lien contractuel entre vous et un opérateur, ni entre l’éditeur et un opérateur."
+  },
+  "s3": {
+    "title": "3. Gratuité, absence de compte, version bêta",
+    "li1": "Le service est <b>gratuit</b> : aucun abonnement, aucun achat intégré, aucune publicité.",
+    "li2": "Il ne demande <b>aucun compte</b> ni aucune inscription.",
+    "li3": "Il est proposé dans le cadre d’un projet personnel, en version bêta. Il peut comporter des erreurs, des interruptions ou des fonctions incomplètes.",
+    "li4": "L’éditeur peut à tout moment, sans préavis ni indemnité, modifier, suspendre ou arrêter tout ou partie du service, notamment une ville, un opérateur ou une fonction."
+  },
+  "s4": {
+    "title": "4. Accès",
+    "p1": "Le service nécessite un appareil compatible. Certaines fonctions (véhicules en temps réel, téléchargement des villes, carte) nécessitent une connexion à Internet ; les frais de connexion restent à votre charge. La disponibilité du service dépend aussi de services tiers (opérateurs, OpenStreetMap, OpenFreeMap, GitHub, Apple) que l’éditeur ne contrôle pas."
+  },
+  "s5": {
+    "title": "5. Informations indicatives, sans garantie",
+    "p1": "Toutes les informations du service sont <b>indicatives</b>. Elles peuvent être inexactes, incomplètes, retardées ou dépassées, en particulier :",
+    "li1": "les rues, revêtements, pistes cyclables, sens de circulation, escaliers et adresses, issus d’OpenStreetMap, base de données collaborative mise à jour une fois par semaine dans l’application ;",
+    "li2": "la position et la disponibilité des véhicules, l’état de leur batterie, les stations, les places libres et les zones (lentes, interdites, de stationnement), issues des flux publics des opérateurs, qui peuvent être erronés, en retard ou indisponibles ; certains opérateurs ne publient pas les places libres ;",
+    "li3": "les durées, distances et heures d’arrivée, qui sont des estimations ;",
+    "li4": "les travaux, fermetures, événements, conditions météo et dangers temporaires, que le service ne connaît pas.",
+    "p2": "Un itinéraire proposé peut emprunter une voie inadaptée, fermée, dangereuse ou interdite à votre véhicule au moment où vous passez. Un emplacement de stationnement affiché peut être plein, supprimé ou ne pas être accepté par l’opérateur. Le service est une <b>aide supplémentaire</b> : il ne remplace ni votre attention, ni votre jugement, ni la signalisation, ni les informations de l’opérateur."
+  },
+  "s6": {
+    "title": "6. Votre responsabilité et votre sécurité",
+    "p1": "Vous utilisez le service librement et sous votre seule responsabilité. En particulier, vous vous engagez à :",
+    "li1": "respecter le code de la route du pays où vous circulez, la signalisation, les instructions des agents et les règles locales, qui priment sur toute indication de l’application ;",
+    "li2": "respecter les conditions générales et les règles de l’opérateur du véhicule (âge minimum, zones, vitesse, stationnement, nombre de personnes, fin de location) ;",
+    "li3": "ne pas manipuler votre téléphone en roulant : réglez votre trajet à l’arrêt, utilisez un support adapté si vous le consultez, et arrêtez-vous dans un endroit sûr pour toute manipulation ;",
+    "li4": "adapter votre conduite à la circulation, à l’état de la chaussée, à la météo et à votre propre état, et ne pas conduire sous l’influence de l’alcool, de drogues ou de médicaments qui altèrent la vigilance ;",
+    "li5": "vérifier l’état du véhicule avant de l’utiliser et porter les équipements de protection recommandés (casque notamment) ;",
+    "li6": "ne pas utiliser le service à des fins illégales ou d’une manière qui pourrait vous mettre en danger ou mettre en danger d’autres personnes.",
+    "p2": "Les amendes, frais de stationnement, pénalités, frais de location ou de déplacement du véhicule facturés par un opérateur ou une autorité restent entièrement à votre charge, même si vous avez suivi une indication du service."
+  },
+  "s7": {
+    "title": "7. Limitation de responsabilité",
+    "p1": "Le service est fourni gratuitement, <b>« tel quel » et « selon disponibilité »</b>, sans aucune garantie, expresse ou implicite, notamment d’exactitude, d’exhaustivité, de disponibilité, d’absence d’erreur ou d’adéquation à un usage particulier.",
+    "p2": "Dans toute la mesure permise par la loi, l’éditeur ne peut être tenu responsable d’aucun dommage, direct ou indirect, matériel ou immatériel, résultant de l’utilisation ou de l’impossibilité d’utiliser le service, ou d’une information qu’il affiche, notamment : accident, chute, blessure, dommage à un véhicule, à un bien ou à un tiers, amende, pénalité ou frais d’un opérateur, perte de temps, retard, trajet manqué, perte de données, ou dommage causé par un service tiers.",
+    "p3": "Cette limitation ne s’applique pas dans les cas où la loi interdit d’exclure ou de limiter la responsabilité, notamment en cas de faute intentionnelle (dol) de l’éditeur."
+  },
+  "s8": {
+    "title": "8. Services tiers",
+    "p1": "Le service affiche des données fournies par des tiers (opérateurs, OpenStreetMap, OpenFreeMap) et peut ouvrir l’application d’un opérateur à votre demande. Ces tiers agissent sous leur seule responsabilité et selon leurs propres conditions et politiques de confidentialité. L’éditeur n’est pas responsable de leurs contenus, de leurs services, de leur disponibilité ni de leurs pratiques."
+  },
+  "s9": {
+    "title": "9. Licence d’utilisation et propriété intellectuelle",
+    "p1": "L’éditeur vous accorde un droit personnel, gratuit, non exclusif, non transférable et révocable d’utiliser l’application pour vos déplacements, à des fins privées et non commerciales. Le service et son code ne sont pas open source et restent la propriété de l’éditeur (voir les <a href=\"legal.html\">mentions légales</a>).",
+    "p2": "Sauf dans les limites expressément autorisées par la loi, il est interdit de copier, modifier, décompiler, désassembler ou tenter d’obtenir le code source de l’application ; de la revendre, la louer ou la redistribuer ; d’extraire ses données de manière automatisée ou massive ; de contourner ses protections ; ou de l’utiliser pour fournir un service concurrent ou commercial."
+  },
+  "s10": {
+    "title": "10. Données personnelles",
+    "p1": "Le service fonctionne sans compte et l’éditeur ne collecte pas vos données. Les détails figurent dans la <a href=\"privacy.html\">politique de confidentialité</a>."
+  },
+  "s11": {
+    "title": "11. Modification des conditions",
+    "p1": "L’éditeur peut modifier ces conditions à tout moment, notamment pour suivre l’évolution du service ou de la loi. La date de mise à jour figure en haut de cette page. Continuer à utiliser le service après une modification vaut acceptation des nouvelles conditions."
+  },
+  "s12": {
+    "title": "12. Dispositions générales",
+    "p1": "Si une clause de ces conditions est jugée nulle ou inapplicable, elle est réputée non écrite et les autres clauses restent en vigueur. Le fait de ne pas se prévaloir d’une clause ne vaut pas renonciation à s’en prévaloir plus tard. En cas de différence entre la version française et la version anglaise, la version française fait foi."
+  },
+  "s13": {
+    "title": "13. Droit applicable et litiges",
+    "p1": "Ces conditions sont régies par le droit belge, sous réserve des règles impératives qui vous protègent dans votre pays de résidence. En cas de difficulté, écrivez d’abord à <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a> pour chercher une solution amiable. À défaut, le litige sera porté devant les juridictions compétentes selon les règles légales."
+  }
+}

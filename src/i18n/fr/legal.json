@@ -1,0 +1,65 @@
+{
+  "_comment": "Texts of src/templates/legal.html in French. Values are HTML. French is the reference text: change it first.",
+  "description": "Mentions légales de KasseiGo : éditeur, hébergement, propriété intellectuelle.",
+  "updated": "25 octobre 2026",
+  "s1": {
+    "title": "Éditeur",
+    "dt1": "Éditeur",
+    "dd1": "Clément Martinez, particulier, agissant à titre personnel et non professionnel",
+    "dt2": "Résidence",
+    "dd2": "Belgique",
+    "dt3": "Statut",
+    "dd3": "Aucune entreprise, aucun numéro d’entreprise (BCE) ni de TVA : KasseiGo est un projet personnel, gratuit et sans but lucratif.",
+    "dt4": "Responsable de la publication"
+  },
+  "s2": {
+    "title": "Hébergement",
+    "dt1": "Site kasseigo.com",
+    "dd1": "GitHub Pages, service de GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis · <a href=\"https://github.com\">github.com</a>",
+    "dt2": "Fichiers des villes",
+    "dd2": "Publiés sur GitHub (GitHub, Inc., même adresse), dépôt <code>clementmtz/kasseigo-packs</code>",
+    "dt3": "Formulaire de retour",
+    "dd3": "Cloudflare Workers et Cloudflare Turnstile, services de Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis ; tickets enregistrés dans un dépôt privé sur GitHub",
+    "dt4": "Nom de domaine",
+    "dd4": "Enregistré auprès d’OVH SAS, 2 rue Kellermann, 59100 Roubaix, France · <a href=\"https://www.ovhcloud.com\">ovhcloud.com</a>",
+    "dt5": "Application",
+    "dd5": "Distribuée par Apple (App Store, TestFlight) ; une version Android est prévue."
+  },
+  "s3": {
+    "title": "Objet",
+    "p1": "KasseiGo est une application d’aide à l’itinéraire pour les vélos et trottinettes partagés à Bruxelles et à Paris. Le site kasseigo.com la présente. L’application et le site sont gratuits, sans compte, sans publicité et sans mesure d’audience."
+  },
+  "s4": {
+    "title": "Propriété intellectuelle",
+    "p1": "Le nom KasseiGo, le logo, les textes, la présentation, les images, le site et l’application (y compris son code source et son moteur d’itinéraire) sont la propriété de Clément Martinez. <b>Le projet n’est pas open source</b> : tous droits réservés. Toute reproduction, représentation, adaptation, extraction ou diffusion, totale ou partielle, sans autorisation écrite préalable est interdite, sauf dans les limites prévues par la loi.",
+    "p2": "Restent la propriété de leurs titulaires, et soumis à leurs propres licences :",
+    "li1": "les données cartographiques d’<b>OpenStreetMap</b>, © les contributeurs d’OpenStreetMap, disponibles sous licence <a href=\"https://opendatacommons.org/licenses/odbl/\">Open Database License (ODbL)</a> ;",
+    "li2": "les tuiles de carte d’<b>OpenFreeMap</b>, fondées sur OpenStreetMap ;",
+    "li3": "les données des véhicules, stations, places et zones, publiées par chaque opérateur dans son flux public GBFS ;",
+    "li4": "les briques logicielles tierces utilisées par l’application (notamment Flutter, Rust et MapLibre), sous leurs licences respectives."
+  },
+  "s5": {
+    "title": "Marques et absence d’affiliation",
+    "p1": "Dott, Bolt, Voi, Villo! et Vélib’ sont des marques de leurs propriétaires respectifs. Elles sont citées uniquement pour indiquer les services dont KasseiGo affiche les données publiques. <b>KasseiGo est indépendant</b> : il n’est ni affilié, ni partenaire, ni soutenu, ni autorisé par ces opérateurs, par les villes de Bruxelles ou de Paris, ni par Apple ou Google."
+  },
+  "s6": {
+    "title": "Responsabilité",
+    "p1": "Les informations du site et de l’application sont fournies à titre indicatif, gratuitement et sans garantie. Les règles d’utilisation et les limites de responsabilité sont détaillées dans les <a href=\"terms.html\">conditions d’utilisation</a>."
+  },
+  "s7": {
+    "title": "Liens externes",
+    "p1": "Le site et l’application peuvent renvoyer vers des sites ou applications tiers (opérateurs, sources de données). L’éditeur n’en contrôle ni le contenu ni la disponibilité et n’en est pas responsable."
+  },
+  "s8": {
+    "title": "Données personnelles",
+    "p1": "Voir la <a href=\"privacy.html\">politique de confidentialité</a>. Le site ne dépose aucun cookie et n’utilise aucun traceur ; seule la page de retour utilise le contrôle anti-robot Cloudflare Turnstile."
+  },
+  "s9": {
+    "title": "Signalement",
+    "p1": "Pour signaler un contenu, une erreur ou une atteinte à vos droits : <a href=\"feedback.html\">formulaire de retour</a> ou <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>."
+  },
+  "s10": {
+    "title": "Droit applicable",
+    "p1": "Les présentes mentions sont régies par le droit belge. En cas de différence entre la version française et la version anglaise, la version française fait foi."
+  }
+}

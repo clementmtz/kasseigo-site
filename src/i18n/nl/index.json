@@ -1,0 +1,113 @@
+{
+  "_comment": "Texts of the home page (src/templates/index.html) in Belgian Dutch. Values are HTML. The keys under mock use the app's own words (kasseigo/app/lib/l10n/app_nl.arb).",
+  "meta": {
+    "title": "KasseiGo: app voor deelfietsen en deelsteps in Brussel en Parijs",
+    "description": "Gratis app voor deelfietsen en elektrische deelsteps in Brussel en Parijs: routes zonder kasseien, met de zones van de operator, tot aan een parkeerplek. Zonder account, zonder reclame.",
+    "og_title": "KasseiGo: rij zonder schokken, parkeer correct",
+    "og_description": "Gratis app voor deelfietsen en deelsteps in Brussel en Parijs: om kasseien en verboden zones heen, tot aan een echte parkeerplek.",
+    "og_image_alt": "KasseiGo-app: rij zonder schokken, parkeer correct. Gratis, zonder account, zonder reclame.",
+    "app_description": "Routeplanner voor deelfietsen en elektrische deelsteps in Brussel en Parijs: vermijdt kasseien, volgt de trage en verboden zones van de operator en leidt je naar een parkeerplek."
+  },
+  "common": {
+    "free": "Gratis",
+    "no_account": "Geen account",
+    "no_ads": "Geen reclame",
+    "join_beta": "Doe mee aan de iPhone-bèta"
+  },
+  "nav": {
+    "get_app": "Download de app"
+  },
+  "hero": {
+    "free_badge": "GRATIS",
+    "free_text": "Geen abonnement of aankopen",
+    "title": "Rij zonder schokken.",
+    "title_2": "Parkeer correct.",
+    "lead": "De gids voor deelfietsen en elektrische deelsteps in Brussel en Parijs (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo leidt je om kasseien en verboden zones heen, en eindigt je rit op een echte parkeerplek.",
+    "why": "Waarom KasseiGo",
+    "no_tracking": "Geen tracking",
+    "shot_home_alt": "Startscherm: de deelvoertuigen rondom jou op de kaart, en de zoekbalk “Where to?”.",
+    "shot_preview_alt": "Overzicht van de rit: 12 min naar het Flageyplein, met vertrekpunt en parkeerplek al gekozen."
+  },
+  "why": {
+    "title": "Gemaakt voor het voertuig onder je voeten.",
+    "intro": "Gewone kaartapps kennen auto’s en fietsen. Ze kennen geen kasseien, geen zones van operatoren en weten niet waar je een step mag achterlaten.",
+    "surface_title": "Jij beslist hoeveel het schudt",
+    "surface_text": "Elke straat krijgt een score voor haar wegdek. Kies het ruwste wegdek dat je aanvaardt, en elke rit toont hoeveel meter kasseien er nog overblijft. Vandaar de naam: elke Brusselaar kent de <em>kassei</em>.",
+    "zones_title": "Zones, nog voor ze je verrassen",
+    "zones_text": "De trage en verboden zones van je operator zitten in de route. Kies of je ze omzeilt of te voet doorkruist, en zie precies waar dat gebeurt.",
+    "parking_title": "Weet waar je parkeert",
+    "parking_text": "Kies je parkeerplek voor je vertrekt, met het aantal vrije plaatsen als de operator dat publiceert. De begeleiding brengt je er rechtstreeks naartoe.",
+    "walking_title": "Eerlijk als wandelen wint",
+    "walking_text": "Elke rit wordt vergeleken met wandelen. Ben je te voet sneller, dan zegt KasseiGo het en bespaar je de ontgrendelkosten. Het voertuig blijft één tik verwijderd."
+  },
+  "mock": {
+    "no_cobbles": "Geen kasseien gevonden",
+    "slow_zone": "Trage zone, 80 m",
+    "speed_limited": "Snelheid beperkt door Bolt",
+    "unlock": "Ontgrendel de fiets",
+    "in_bolt_app": "In de Bolt-app",
+    "nearest_parking": "Dichtstbijzijnde parkeerplek: 60 m",
+    "undo": "Ongedaan maken",
+    "surface": "Wegdek",
+    "surface_desc": "Het minst comfortabele wegdek dat je aanvaardt.",
+    "surface_label": "Minst comfortabele aanvaarde wegdek",
+    "smooth": "Glad",
+    "slabs": "Tegels",
+    "cobbles": "Kasseien",
+    "rough": "Ruw",
+    "bike_8": "8 min met de fiets",
+    "to_parking_22": "≈ 2,2 km tot de parkeerplek",
+    "cobbles_70": "Kasseien, 70 m",
+    "tolerance": "Jouw tolerantie:",
+    "tolerance_slabs": "Jouw tolerantie: tegels",
+    "cycle_tracks": "Fietspaden, 11 % van de rit",
+    "no_ride_zones": "Verboden zones",
+    "no_ride_desc": "Zones waar de operator rijden verbiedt: afstappen en duwen, of omrijden.",
+    "go_around": "Omrijden",
+    "cross_on_foot": "Te voet doorkruisen",
+    "bike_9": "9 min met de fiets",
+    "to_parking_24": "≈ 2,4 km tot de parkeerplek",
+    "no_ride_120": "Verboden zone, 120 m",
+    "push": "Afstappen en duwen",
+    "choose_parking": "Kies een parkeerplek",
+    "closest": "Het dichtst bij de bestemming",
+    "dott_parking": "Dott-parking",
+    "full": "Vol",
+    "walking_faster": "Wandelen is sneller: 7 min te voet, tegenover 8 min met de fiets.",
+    "walk": "Wandelen",
+    "min_on_foot": "min te voet",
+    "arrival": "Aankomst om 10:26",
+    "bike_with_walk": "Fiets: 10 min, met de wandeling ernaartoe.",
+    "ride_anyway": "Toch rijden",
+    "start": "Starten"
+  },
+  "facts": {
+    "free_title": "Echt gratis",
+    "free_text": "Geen abonnement, geen in-app aankopen, geen reclame.",
+    "operators_title": "Alle operatoren, één kaart",
+    "brussels": "Brussel:",
+    "paris": "Parijs:",
+    "switch_title": "Wissel onderweg van operator",
+    "switch_text": "Batterij bijna leeg? Wissel van operator via “Trip options”: zones, parkeren en route volgen mee."
+  },
+  "privacy": {
+    "title": "Je ritten gaan niemand iets aan.",
+    "text": "Je locatie, ritten, favorieten en zones blijven op je telefoon, net als het zoeken naar adressen. Het netwerk dient alleen voor live voertuigen, stadsbestanden en kaarttegels.",
+    "no_telemetry": "Geen telemetrie"
+  },
+  "get": {
+    "title": "Je volgende rit, zonder schokken.",
+    "text": "Gratis, in het Nederlands, Frans en Engels. In bèta op iPhone, Android komt eraan.",
+    "brussels": "Brussel",
+    "paris": "Parijs"
+  },
+  "footer": {
+    "independent": "onafhankelijk, niet verbonden aan een operator.",
+    "legal": "Juridische vermeldingen",
+    "terms": "Gebruiksvoorwaarden",
+    "privacy": "Privacy",
+    "legal_languages": " (FR/EN)",
+    "feedback": "Feedback",
+    "map_data": "Kaartgegevens © OpenStreetMap-bijdragers · Kaarttegels van OpenFreeMap"
+  }
+}

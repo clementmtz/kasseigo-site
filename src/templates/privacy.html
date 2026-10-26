@@ -1,0 +1,83 @@
+<!-- Template, not a page: src/build.py fills it in and removes these three lines. -->
+<meta name="robots" content="noindex, nofollow">
+<!-- /template -->
+<!doctype html>
+<html lang="{{site.html_lang}}">
+<head>
+{{> head}}
+<title>{{site.legal.privacy}} · KasseiGo</title>
+<meta name="description" content="{{description}}">
+<meta property="og:title" content="{{site.legal.privacy}} · KasseiGo">
+<meta property="og:description" content="{{description}}">
+{{> legal_style}}
+</head>
+<body>
+{{> legal_header}}
+<main class="wrap">
+<article>
+<h1>{{site.legal.privacy}}</h1>
+<p class="upd">{{site.legal.updated}} {{updated}}</p>
+<div class="box"><p>{{summary}}</p></div>
+
+<h2>{{s1.title}}</h2>
+<p>{{s1.p1}}</p>
+
+<h2>{{s2.title}}</h2>
+<p>{{s2.p1}}</p>
+
+<h2>{{s3.title}}</h2>
+<ul>
+<li>{{s3.li1}}</li>
+<li>{{s3.li2}}</li>
+<li>{{s3.li3}}</li>
+</ul>
+<p>{{s3.p1}}</p>
+
+<h2>{{s4.title}}</h2>
+<p>{{s4.p1}}</p>
+<ul>
+<li>{{s4.li1}}
+<ul><li><b>Dott</b> ({{s4.brussels}}, Paris) · <code>gbfs.api.ridedott.com</code></li>
+<li><b>Bolt</b> ({{s4.brussels}}) · <code>mds.bolt.eu</code></li>
+<li><b>Villo!</b> ({{s4.brussels}}) · <code>api.cyclocity.fr</code></li>
+<li><b>Voi</b> (Paris) · <code>api.voiapp.io</code></li>
+<li><b>Vélib’ Métropole</b> (Paris) · <code>velib-metropole-opendata.smovengo.cloud</code></li></ul></li>
+<li>{{s4.li2}}</li>
+<li>{{s4.li3}}</li>
+<li>{{s4.li4}}</li>
+</ul>
+<p>{{s4.p2}}</p>
+
+<h2>{{s5.title}}</h2>
+<p>{{s5.p1}}</p>
+
+<h2>{{s6.title}}</h2>
+<p>{{s6.p1}}</p>
+<ul>
+<li>{{s6.li1}}</li>
+<li>{{s6.li2}}</li>
+<li>{{s6.li3}}</li>
+<li>{{s6.li4}}</li>
+</ul>
+<p>{{s6.p2}}</p>
+
+<h2>{{s7.title}}</h2>
+<p>{{s7.p1}}</p>
+
+<h2>{{s8.title}}</h2>
+<p>{{s8.p1}}</p>
+<p>{{s8.p2}}</p>
+
+<h2>{{s9.title}}</h2>
+<p>{{s9.p1}}</p>
+
+<h2>{{s10.title}}</h2>
+<p>{{s10.p1}}</p>
+
+<h2>{{s11.title}}</h2>
+<p>{{s11.p1}}</p>
+</article>
+</main>
+{{> legal_footer}}
+</body>
+</html>

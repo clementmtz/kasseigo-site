@@ -1,0 +1,65 @@
+{
+  "_comment": "Texts of src/templates/privacy.html in English. Values are HTML. Translation of the French text, which prevails: keep it in step.",
+  "description": "Privacy policy of KasseiGo: no account, no ads, no tracking; your location stays on your phone.",
+  "updated": "25 October 2026",
+  "summary": "<b>In short.</b> No account, no ads, no analytics, no crash reports. Your location is used on the phone and never sent. The publisher receives no data about you, except the messages you choose to send. Only the services contacted to make the app work (operators, maps, city files) see, as with any connection, your phone’s IP address.",
+  "s1": {
+    "title": "1. Data controller",
+    "p1": "Clément Martinez, a private individual living in Belgium, publisher of KasseiGo · <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>. This policy covers the KasseiGo app and the kasseigo.com website, under the General Data Protection Regulation (GDPR, Regulation (EU) 2016/679)."
+  },
+  "s2": {
+    "title": "2. What the publisher collects: nothing, except what you send",
+    "p1": "The app sends your data to no KasseiGo server. The app has no account, no ads, no analytics, no crash reporting and no third-party tracking SDK. The publisher does not receive, see or keep your location, trips, searches or favourites. Only the messages you send yourself, through the feedback form or by email, reach the publisher (section 6)."
+  },
+  "s3": {
+    "title": "3. What stays on your phone",
+    "li1": "<b>Your location</b>: used only while the app is in use, to find nearby vehicles and guide you. It is neither stored nor sent. Your phone asks for permission; you can withdraw it at any time in its settings.",
+    "li2": "<b>Your favourites, recent searches, custom zones and settings</b>: stored in the app’s private space, protected by the phone’s encryption. Deleting the app erases them.",
+    "li3": "<b>City files and the map</b>: streets, places and offline map, managed in “Offline cities”.",
+    "p1": "Routes, parking spots and address search are computed on the phone: what you search for is never sent."
+  },
+  "s4": {
+    "title": "4. App connections and what they send",
+    "p1": "To work, the app contacts the following services, always over an encrypted connection (HTTPS). As with any Internet connection, each one sees your phone’s IP address and the usual technical details of a request. They act under their own responsibility and privacy policies; the publisher has no access to their logs.",
+    "li1": "<b>Operators’ public feeds (GBFS)</b>: the app asks for the data of the whole city (vehicles, stations, places, zones), sending nothing about you.",
+    "li2": "<b>City files</b> · GitHub (<code>github.com</code>): the list of published files at start-up and on the “Offline cities” page, then a city’s file only when it is new or updated.",
+    "li3": "<b>Map tiles</b> · OpenFreeMap (<code>tiles.openfreemap.org</code>): the map pieces of the area shown that the phone does not have yet.",
+    "li4": "<b>Operator app</b>: opened only when you tap its button. Its own terms and privacy policy then apply.",
+    "p2": "The app is distributed by Apple (App Store, TestFlight), which may process data under its own terms, outside the publisher’s control.",
+    "brussels": "Brussels"
+  },
+  "s5": {
+    "title": "5. The kasseigo.com website",
+    "p1": "The website sets no cookies, uses no trackers or analytics and loads no external resources, except the feedback page (section 6). It is hosted on GitHub Pages (GitHub, Inc., United States), which may log visitors’ IP addresses, in particular for the security of the service, under the <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub Privacy Statement</a>. The publisher has no access to these logs."
+  },
+  "s6": {
+    "title": "6. If you send feedback or write to the publisher",
+    "p1": "<b>Feedback form</b> (<a href=\"feedback.html\">kasseigo.com/feedback</a>, also opened from the app): it sends the type of feedback, your message, the city if you choose one, your email address only if you give it, the page language and, from the app, the app and phone system versions. Nothing else is added automatically: no location, no identifier.",
+    "li1": "To block robots, the page uses <b>Cloudflare Turnstile</b> (Cloudflare, Inc., United States), which analyses technical signals from the browser, under the <a href=\"https://www.cloudflare.com/privacypolicy/\">Cloudflare privacy policy</a>.",
+    "li2": "The message goes through a Cloudflare Workers service and is stored as a ticket in a <b>private</b> GitHub repository (GitHub, Inc., United States), accessible to the publisher only.",
+    "li3": "Purpose: fixing errors, improving the service and, if you gave your email, replying to you. Basis: the legitimate interest in handling the feedback received.",
+    "li4": "Tickets are kept as long as needed to handle and follow them up, then deleted. They are never sold or passed on to other third parties. You can ask for their deletion at any time.",
+    "p2": "<b>By email</b>: if you write to <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>, your email address and message are used only to reply and follow up on your request, on the basis of the legitimate interest in answering messages received. They are kept as long as needed for that follow-up, then deleted, and are never sold or passed on to third parties. The mailbox is hosted by OVH SAS (France)."
+  },
+  "s7": {
+    "title": "7. Transfers outside the European Union",
+    "p1": "Some of the services listed (GitHub, Inc. and Cloudflare, Inc. in particular) are located outside the European Union. The data they process (IP address, technical connection data and, for feedback, the message content) is processed under their own responsibility and safeguards."
+  },
+  "s8": {
+    "title": "8. Your rights",
+    "p1": "You have the rights of access, rectification, erasure, restriction, objection and portability. Since the publisher holds no data from the app, these rights mainly apply to feedback or an email exchange, at <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>. For data processed by the third-party services listed, contact them directly.",
+    "p2": "You can lodge a complaint with the Belgian <b>Data Protection Authority</b> (Autorité de protection des données), rue de la Presse 35, 1000 Brussels, Belgium · <a href=\"https://www.dataprotectionauthority.be\">dataprotectionauthority.be</a>, or with the authority of your country of residence (in France, the CNIL · <a href=\"https://www.cnil.fr\">cnil.fr</a>)."
+  },
+  "s9": {
+    "title": "9. Minors",
+    "p1": "The service knowingly collects no data about anyone, minors included. Vehicle rental is subject to the minimum age set by each operator."
+  },
+  "s10": {
+    "title": "10. Security",
+    "p1": "All app connections are encrypted (HTTPS; plain connections are refused). Each city file is checked (size and SHA-256 hash) before use. Links from the feeds only open if they lead to a secure page (https) or to the operator app."
+  },
+  "s11": {
+    "title": "11. Changes",
+    "p1": "This policy may change with the app. The date of the last update is shown at the top of the page. If the French and English versions differ, the French version prevails."
+  }
+}

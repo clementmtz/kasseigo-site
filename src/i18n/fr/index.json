@@ -1,0 +1,113 @@
+{
+  "_comment": "Texts of the home page (src/templates/index.html) in French. Values are HTML. The keys under mock use the app's own words (kasseigo/app/lib/l10n/app_fr.arb).",
+  "meta": {
+    "title": "KasseiGo : appli vélos et trottinettes partagés à Bruxelles et Paris",
+    "description": "Appli gratuite pour vélos et trottinettes partagés à Bruxelles et Paris : itinéraires sans pavés, zones des opérateurs respectées, jusqu’à une place de stationnement. Sans compte, sans pub.",
+    "og_title": "KasseiGo : roulez en douceur, garez-vous juste",
+    "og_description": "Appli gratuite pour vélos et trottinettes partagés à Bruxelles et Paris : sans pavés, sans zones interdites, jusqu’à une vraie place de stationnement.",
+    "og_image_alt": "Appli KasseiGo : roulez en douceur, garez-vous juste. Gratuite, sans compte, sans pub.",
+    "app_description": "Appli d’itinéraire pour vélos et trottinettes partagés à Bruxelles et Paris : évite les pavés, suit les zones lentes et interdites des opérateurs et guide jusqu’à une place de stationnement."
+  },
+  "common": {
+    "free": "Gratuit",
+    "no_account": "Sans compte",
+    "no_ads": "Sans pub",
+    "join_beta": "Rejoindre la bêta iPhone"
+  },
+  "nav": {
+    "get_app": "Obtenir l’appli"
+  },
+  "hero": {
+    "free_badge": "GRATUIT",
+    "free_text": "Sans abonnement ni achat intégré",
+    "title": "Roulez en douceur.",
+    "title_2": "Garez-vous juste.",
+    "lead": "Le guide des vélos et trottinettes partagés à Bruxelles et à Paris (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo vous fait éviter les pavés et les zones interdites, et termine votre trajet sur une vraie place de stationnement.",
+    "why": "Pourquoi KasseiGo",
+    "no_tracking": "Sans pistage",
+    "shot_home_alt": "Écran d’accueil : les véhicules partagés autour de vous sur la carte, et la recherche « Where to? ».",
+    "shot_preview_alt": "Aperçu du trajet : 12 min jusqu’à la place Eugène Flagey, départ et place de stationnement déjà choisis."
+  },
+  "why": {
+    "title": "Pensé pour le véhicule sous vos pieds.",
+    "intro": "Les applis de cartes classiques connaissent les voitures et les vélos. Elles ignorent les pavés, les zones des opérateurs et les endroits où l’on peut laisser une trottinette.",
+    "surface_title": "Vous décidez à quel point ça secoue",
+    "surface_text": "Chaque rue est classée selon son revêtement. Choisissez le plus inconfortable que vous acceptez, et chaque trajet indique combien de mètres de pavés il reste. <em>Kassei</em>, c’est un pavé en bruxellois.",
+    "zones_title": "Les zones, avant qu’elles vous surprennent",
+    "zones_text": "Les zones lentes et interdites de votre opérateur font partie de l’itinéraire. Choisissez de les contourner ou de les traverser à pied, et voyez exactement où ça se passe.",
+    "parking_title": "Sachez où vous garer",
+    "parking_text": "Choisissez votre place avant de partir, avec le nombre de places libres quand l’opérateur le publie. Le guidage vous y mène directement.",
+    "walking_title": "Honnête quand la marche gagne",
+    "walking_text": "Chaque trajet est comparé à la marche. Quand vos pieds vont plus vite, KasseiGo le dit et vous évite les frais de déverrouillage. Le véhicule reste à portée de doigt."
+  },
+  "mock": {
+    "no_cobbles": "Aucun pavé détecté",
+    "slow_zone": "Zone lente, 80 m",
+    "speed_limited": "Vitesse limitée par Bolt",
+    "unlock": "Déverrouillez-le",
+    "in_bolt_app": "Dans l’appli Bolt",
+    "nearest_parking": "Emplacement le plus proche : 60 m",
+    "undo": "Annuler",
+    "surface": "Revêtement",
+    "surface_desc": "Le revêtement le moins confortable que vous acceptez.",
+    "surface_label": "Revêtement le moins confortable accepté",
+    "smooth": "Lisse",
+    "slabs": "Dalles",
+    "cobbles": "Pavés",
+    "rough": "Irrégulier",
+    "bike_8": "8 min à vélo",
+    "to_parking_22": "≈ 2,2 km jusqu’à l’emplacement",
+    "cobbles_70": "Pavés, 70 m",
+    "tolerance": "Votre tolérance :",
+    "tolerance_slabs": "Votre tolérance : dalles",
+    "cycle_tracks": "Pistes cyclables, 11 % du trajet",
+    "no_ride_zones": "Zones interdites",
+    "no_ride_desc": "Zones où l’opérateur interdit de rouler : descendre et pousser, ou contourner.",
+    "go_around": "Contourner",
+    "cross_on_foot": "Traverser à pied",
+    "bike_9": "9 min à vélo",
+    "to_parking_24": "≈ 2,4 km jusqu’à l’emplacement",
+    "no_ride_120": "Zone interdite, 120 m",
+    "push": "Descendez et poussez",
+    "choose_parking": "Choisir un emplacement",
+    "closest": "Les plus proches de la destination",
+    "dott_parking": "Parking Dott",
+    "full": "Complet",
+    "walking_faster": "La marche est plus rapide : 7 min à pied, contre 8 min à vélo.",
+    "walk": "Marcher",
+    "min_on_foot": "min à pied",
+    "arrival": "Arrivée à 10:26",
+    "bike_with_walk": "Vélo : 10 min avec la marche pour le rejoindre.",
+    "ride_anyway": "Rouler quand même",
+    "start": "Démarrer"
+  },
+  "facts": {
+    "free_title": "Gratuit, vraiment",
+    "free_text": "Sans abonnement, sans achat intégré, sans publicité.",
+    "operators_title": "Tous les opérateurs, une seule carte",
+    "brussels": "Bruxelles :",
+    "paris": "Paris :",
+    "switch_title": "Changez d’opérateur en route",
+    "switch_text": "Batterie faible ? Changez d’opérateur depuis « Trip options » : zones, stationnement et itinéraire suivent."
+  },
+  "privacy": {
+    "title": "Vos trajets ne regardent que vous.",
+    "text": "Votre position, vos trajets, vos favoris et vos zones restent sur votre téléphone, tout comme la recherche d’adresses. Le réseau ne sert qu’aux véhicules en temps réel, aux fichiers des villes et aux tuiles de la carte.",
+    "no_telemetry": "Sans télémétrie"
+  },
+  "get": {
+    "title": "Votre prochain trajet, sans les secousses.",
+    "text": "Gratuit, en français, néerlandais et anglais. En bêta sur iPhone, Android arrive bientôt.",
+    "brussels": "Bruxelles",
+    "paris": "Paris"
+  },
+  "footer": {
+    "independent": "indépendant, sans lien avec aucun opérateur.",
+    "legal": "Mentions légales",
+    "terms": "Conditions d’utilisation",
+    "privacy": "Confidentialité",
+    "legal_languages": "",
+    "feedback": "Envoyer un retour",
+    "map_data": "Données cartographiques © contributeurs OpenStreetMap · Tuiles OpenFreeMap"
+  }
+}

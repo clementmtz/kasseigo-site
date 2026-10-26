@@ -1,0 +1,72 @@
+<!-- Template, not a page: src/build.py fills it in and removes these three lines. -->
+<meta name="robots" content="noindex, nofollow">
+<!-- /template -->
+<!doctype html>
+<html lang="{{site.html_lang}}">
+<head>
+{{> head}}
+<title>{{site.legal.legal}} · KasseiGo</title>
+<meta name="description" content="{{description}}">
+<meta property="og:title" content="{{site.legal.legal}} · KasseiGo">
+<meta property="og:description" content="{{description}}">
+{{> legal_style}}
+</head>
+<body>
+{{> legal_header}}
+<main class="wrap">
+<article>
+<h1>{{site.legal.legal}}</h1>
+<p class="upd">{{site.legal.updated}} {{updated}}</p>
+<h2>{{s1.title}}</h2>
+<dl>
+<dt>{{s1.dt1}}</dt><dd>{{s1.dd1}}</dd>
+<dt>{{s1.dt2}}</dt><dd>{{s1.dd2}}</dd>
+<dt>{{s1.dt3}}</dt><dd>{{s1.dd3}}</dd>
+<dt>Contact</dt><dd><a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a></dd>
+<dt>{{s1.dt4}}</dt><dd>Clément Martinez</dd>
+</dl>
+
+<h2>{{s2.title}}</h2>
+<dl>
+<dt>{{s2.dt1}}</dt><dd>{{s2.dd1}}</dd>
+<dt>{{s2.dt2}}</dt><dd>{{s2.dd2}}</dd>
+<dt>{{s2.dt3}}</dt><dd>{{s2.dd3}}</dd>
+<dt>{{s2.dt4}}</dt><dd>{{s2.dd4}}</dd>
+<dt>{{s2.dt5}}</dt><dd>{{s2.dd5}}</dd>
+</dl>
+
+<h2>{{s3.title}}</h2>
+<p>{{s3.p1}}</p>
+
+<h2>{{s4.title}}</h2>
+<p>{{s4.p1}}</p>
+<p>{{s4.p2}}</p>
+<ul>
+<li>{{s4.li1}}</li>
+<li>{{s4.li2}}</li>
+<li>{{s4.li3}}</li>
+<li>{{s4.li4}}</li>
+</ul>
+
+<h2>{{s5.title}}</h2>
+<p>{{s5.p1}}</p>
+
+<h2>{{s6.title}}</h2>
+<p>{{s6.p1}}</p>
+
+<h2>{{s7.title}}</h2>
+<p>{{s7.p1}}</p>
+
+<h2>{{s8.title}}</h2>
+<p>{{s8.p1}}</p>
+
+<h2>{{s9.title}}</h2>
+<p>{{s9.p1}}</p>
+
+<h2>{{s10.title}}</h2>
+<p>{{s10.p1}}</p>
+</article>
+</main>
+{{> legal_footer}}
+</body>
+</html>

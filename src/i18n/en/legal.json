@@ -1,0 +1,65 @@
+{
+  "_comment": "Texts of src/templates/legal.html in English. Values are HTML. Translation of the French text, which prevails: keep it in step.",
+  "description": "Legal notice of KasseiGo: publisher, hosting, intellectual property.",
+  "updated": "25 October 2026",
+  "s1": {
+    "title": "Publisher",
+    "dt1": "Publisher",
+    "dd1": "Clément Martinez, a private individual acting in a personal, non-professional capacity",
+    "dt2": "Residence",
+    "dd2": "Belgium",
+    "dt3": "Status",
+    "dd3": "No company, no enterprise (BCE/KBO) or VAT number: KasseiGo is a personal, free, non-profit project.",
+    "dt4": "Publication manager"
+  },
+  "s2": {
+    "title": "Hosting",
+    "dt1": "Website kasseigo.com",
+    "dd1": "GitHub Pages, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States · <a href=\"https://github.com\">github.com</a>",
+    "dt2": "City files",
+    "dd2": "Published on GitHub (GitHub, Inc., same address), repository <code>clementmtz/kasseigo-packs</code>",
+    "dt3": "Feedback form",
+    "dd3": "Cloudflare Workers and Cloudflare Turnstile, services of Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, United States; tickets stored in a private GitHub repository",
+    "dt4": "Domain name",
+    "dd4": "Registered with OVH SAS, 2 rue Kellermann, 59100 Roubaix, France · <a href=\"https://www.ovhcloud.com\">ovhcloud.com</a>",
+    "dt5": "App",
+    "dd5": "Distributed by Apple (App Store, TestFlight); an Android version is planned."
+  },
+  "s3": {
+    "title": "Purpose",
+    "p1": "KasseiGo is a route-planning aid for shared bikes and e-scooters in Brussels and Paris. The website kasseigo.com presents it. The app and the website are free, with no account, no ads and no audience measurement."
+  },
+  "s4": {
+    "title": "Intellectual property",
+    "p1": "The KasseiGo name, logo, texts, layout, images, website and app (including its source code and routing engine) are the property of Clément Martinez. <b>The project is not open source</b>: all rights reserved. Any reproduction, representation, adaptation, extraction or distribution, in whole or in part, without prior written permission is forbidden, except within the limits set by law.",
+    "p2": "The following remain the property of their owners and are subject to their own licences:",
+    "li1": "<b>OpenStreetMap</b> map data, © OpenStreetMap contributors, available under the <a href=\"https://opendatacommons.org/licenses/odbl/\">Open Database License (ODbL)</a>;",
+    "li2": "<b>OpenFreeMap</b> map tiles, based on OpenStreetMap;",
+    "li3": "vehicle, station, parking and zone data, published by each operator in its public GBFS feed;",
+    "li4": "third-party software components used by the app (including Flutter, Rust and MapLibre), under their respective licences."
+  },
+  "s5": {
+    "title": "Trademarks and no affiliation",
+    "p1": "Dott, Bolt, Voi, Villo! and Vélib’ are trademarks of their respective owners. They are named only to show which services’ public data KasseiGo displays. <b>KasseiGo is independent</b>: it is not affiliated with, partnered with, endorsed or authorised by these operators, the cities of Brussels or Paris, Apple or Google."
+  },
+  "s6": {
+    "title": "Liability",
+    "p1": "Information on the website and in the app is provided for guidance only, free of charge and without warranty. Rules of use and limits of liability are set out in the <a href=\"terms.html\">terms of use</a>."
+  },
+  "s7": {
+    "title": "External links",
+    "p1": "The website and the app may link to third-party websites or apps (operators, data sources). The publisher does not control their content or availability and is not responsible for them."
+  },
+  "s8": {
+    "title": "Personal data",
+    "p1": "See the <a href=\"privacy.html\">privacy policy</a>. The website sets no cookies and uses no trackers; only the feedback page uses the Cloudflare Turnstile anti-robot check."
+  },
+  "s9": {
+    "title": "Reporting",
+    "p1": "To report content, an error or an infringement of your rights: <a href=\"feedback.html\">feedback form</a> or <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>."
+  },
+  "s10": {
+    "title": "Governing law",
+    "p1": "This notice is governed by Belgian law. If the French and English versions differ, the French version prevails."
+  }
+}

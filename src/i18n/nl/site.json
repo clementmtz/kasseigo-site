@@ -1,0 +1,10 @@
+{
+  "_comment": "Texts shared by several pages (the legal pages exist in French and English only), in Belgian Dutch: {{site.key}} in the templates. Values are HTML.",
+  "html_lang": "nl-BE",
+  "og_locale": "nl_BE",
+  "og_locale_alternate": "nl_NL",
+  "languages": "Taal",
+  "made_with": "Gemaakt met",
+  "love": "liefde",
+  "in_brussels": "in Brussel"
+}

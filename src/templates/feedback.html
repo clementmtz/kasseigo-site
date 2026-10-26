@@ -1,0 +1,181 @@
+<!-- Template, not a page: src/build.py fills it in and removes these three lines. -->
+<meta name="robots" content="noindex, nofollow">
+<!-- /template -->
+<!doctype html>
+<html lang="{{site.html_lang}}">
+<head>
+{{> head}}
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+<style>
+:root{--bg:#f3f0fa;--card:#fff;--ink:#1d1830;--mut:#6c6584;--line:#e6e1f2;--p:#bba6f4;--pt:#efe9fe;--pd:#6a4bc4;--ok:#1f7048;--bad:#c23a3a;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1628;--card:#241e37;--ink:#f2eefc;--mut:#a8a0c3;--line:#372f51;--p:#c4b2f8;--pt:#30274f;--pd:#c4b2f8;--ok:#63c896;--bad:#ef7a7a;color-scheme:dark}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--pd)}
+:focus-visible{outline:3px solid var(--pd);outline-offset:3px;border-radius:8px}
+.wrap{width:min(680px,100% - 32px);margin-inline:auto}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;text-decoration:none;color:var(--ink)}
+.brand img{width:36px;height:36px}
+.langs{display:flex;gap:2px;padding:3px;border-radius:13px;background:var(--card);border:1px solid var(--line)}
+.langs a{display:grid;place-items:center;min-width:40px;min-height:36px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px;color:var(--mut)}
+.langs a[aria-current="page"]{background:var(--pt);color:var(--ink)}
+main{padding:8px 0 48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,5vw,40px)}
+h1{font-size:clamp(30px,5vw,40px);line-height:1.1;letter-spacing:-.02em;margin:0 0 8px}
+.lead{color:var(--mut);margin:0 0 28px}
+fieldset{border:0;margin:0 0 22px;padding:0}
+legend,label.t{display:block;font-weight:700;margin:0 0 10px;padding:0}
+.opt{font-weight:500;color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chips span{display:flex;align-items:center;min-height:48px;padding:0 16px;border-radius:16px;background:var(--bg);border:2px solid transparent;font-weight:650;font-size:15px;cursor:pointer}
+.chips input:checked+span{background:var(--pt);border-color:var(--pd)}
+.chips input:focus-visible+span{outline:3px solid var(--pd);outline-offset:2px}
+textarea,input[type=email]{width:100%;border:2px solid var(--line);border-radius:16px;background:var(--bg);color:var(--ink);font-weight:500;font-size:17px;line-height:1.5;font-family:inherit;padding:14px 16px}
+textarea{min-height:160px;resize:vertical}
+textarea:focus,input[type=email]:focus{outline:none;border-color:var(--pd)}
+.hint{color:var(--mut);font-size:14px;margin:6px 4px 0}
+.field{margin:0 0 22px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.check{margin:0 0 18px;min-height:65px}
+button.send{width:100%;min-height:64px;border:0;border-radius:20px;background:var(--p);color:#1d1830;font-weight:700;font-size:18px;line-height:1;font-family:inherit;cursor:pointer}
+button.send[disabled]{opacity:.6;cursor:default}
+.msg{display:none;margin:16px 0 0;padding:14px 16px;border-radius:16px;font-weight:600}
+.msg.err{display:block;background:color-mix(in srgb,var(--bad) 12%,var(--card));color:var(--bad)}
+.done{text-align:center;padding:24px 0}
+.done b{display:block;font-size:26px;margin-bottom:8px}
+.done p{color:var(--mut);margin:0 0 24px}
+.done a{display:inline-flex;align-items:center;min-height:56px;padding:0 24px;border-radius:18px;background:var(--p);color:#1d1830;font-weight:700;text-decoration:none}
+.note{color:var(--mut);font-size:14px;margin:18px 4px 0}
+.ctx{color:var(--mut);font-size:14px;margin:0 4px 18px}
+footer{padding:0 0 48px;color:var(--mut);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px}
+footer a{color:var(--mut)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="{{href.index}}"><img src="/img/icon-192.png" alt="" width="36" height="36">KasseiGo</a>
+  <nav class="langs" aria-label="{{site.languages}}">{{lang_links}}</nav>
+</div></header>
+
+<main class="wrap">
+  <div class="card">
+    <div id="form-view">
+      <h1>{{h1}}</h1>
+      <p class="lead">{{lead}}</p>
+      <form id="f" novalidate data-lang="{{lang}}" data-send="{{send}}" data-sending="{{sending}}" data-ctx="{{ctx}}"
+        data-err-short="{{err_short}}" data-err-email="{{err_email}}" data-err-check="{{err_check}}" data-err-send="{{err_send}}">
+        <fieldset>
+          <legend>{{type}}</legend>
+          <div class="chips">
+            <label><input type="radio" name="type" value="bug" checked><span>{{bug}}</span></label>
+            <label><input type="radio" name="type" value="idea"><span>{{idea}}</span></label>
+            <label><input type="radio" name="type" value="data"><span>{{data}}</span></label>
+            <label><input type="radio" name="type" value="other"><span>{{other}}</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>{{city}}</span> <span class="opt">{{optional}}</span></legend>
+          <div class="chips">
+            <label><input type="radio" name="city" value="brussels"><span>{{brussels}}</span></label>
+            <label><input type="radio" name="city" value="paris"><span>{{paris}}</span></label>
+            <label><input type="radio" name="city" value="" checked><span>{{nocity}}</span></label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label class="t" for="message">{{message}}</label>
+          <textarea id="message" name="message" maxlength="5000" required></textarea>
+          <p class="hint">{{message_hint}}</p>
+        </div>
+        <div class="field">
+          <label class="t" for="email"><span>{{email}}</span> <span class="opt">{{optional}}</span></label>
+          <input type="email" id="email" name="email" maxlength="200" autocomplete="email">
+          <p class="hint">{{email_hint}}</p>
+        </div>
+        <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <p class="ctx" id="ctx" hidden></p>
+        <div class="check" id="check"></div>
+        <button class="send" type="submit">{{send}}</button>
+        <p class="msg" id="err" role="alert"></p>
+        <p class="note"><span>{{privacy}}</span> <a href="{{href.privacy}}">{{privacy_link}}</a>.</p>
+      </form>
+    </div>
+    <div id="done-view" class="done" hidden>
+      <b>{{thanks}}</b>
+      <p>{{thanks_text}}</p>
+      <a href="{{href.index}}">{{home}}</a>
+    </div>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <a href="{{href.index}}">kasseigo.com</a>
+  <a href="{{href.terms}}">{{terms}}</a>
+  <a href="{{href.privacy}}">{{privacy_link}}</a>
+  <a href="mailto:contact@kasseigo.com">contact@kasseigo.com</a>
+</div></footer>
+
+<script>
+// Where messages go (backend/feedback in the main repository) and the anti-robot check of the form.
+const ENDPOINT = 'https://kasseigo-feedback.kasseigo.workers.dev';
+const SITEKEY = '0x4AAAAAAFlVCz4v9DZM8wDq';
+
+const form = document.getElementById('f'), T = form.dataset, lang = T.lang;
+
+// From the app: ?app=1.0.0 (2)&os=ios Version 18.1 (and lang, handled in the head).
+const q = new URLSearchParams(location.search);
+q.delete('lang');
+const ctx = { app: (q.get('app') || '').slice(0, 60), os: (q.get('os') || '').slice(0, 80) };
+if (ctx.app) {
+  const c = document.getElementById('ctx');
+  c.hidden = false;
+  c.textContent = T.ctx.replace('{app}', ctx.app).replace('{os}', ctx.os || '?');
+  // Another language keeps what the app filled in.
+  document.querySelectorAll('.langs a').forEach(a => { a.search = q.toString(); });
+}
+
+let token = '', widget = null;
+function renderCheck() {
+  if (!window.turnstile || widget !== null) return;
+  widget = turnstile.render('#check', { sitekey: SITEKEY, language: lang, callback: t => { token = t; }, 'expired-callback': () => { token = ''; } });
+}
+window.addEventListener('load', renderCheck);
+
+const err = document.getElementById('err'), send = form.querySelector('.send');
+function fail(key) { err.textContent = T[key]; err.className = 'msg err'; }
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  err.className = 'msg';
+  const d = new FormData(form);
+  const message = (d.get('message') || '').trim(), email = (d.get('email') || '').trim();
+  if (message.length < 10) return fail('errShort');
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return fail('errEmail');
+  renderCheck();
+  if (!token) return fail('errCheck');
+  send.disabled = true; send.textContent = T.sending;
+  try {
+    const r = await fetch(ENDPOINT, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: d.get('type'), city: d.get('city'), message, email, website: d.get('website'), lang, app: ctx.app, os: ctx.os, turnstile: token }),
+    });
+    if (!r.ok) throw r.status;
+    document.getElementById('form-view').hidden = true;
+    document.getElementById('done-view').hidden = false;
+    window.scrollTo(0, 0);
+  } catch (s) {
+    fail(s === 403 ? 'errCheck' : 'errSend');
+    if (window.turnstile && widget !== null) { turnstile.reset(widget); token = ''; }
+  } finally {
+    send.disabled = false; send.textContent = T.send;
+  }
+});
+</script>
+</body>
+</html>

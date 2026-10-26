@@ -1,0 +1,18 @@
+{
+  "_comment": "Texts shared by several pages, in French: {{site.key}} in the templates. Values are HTML.",
+  "html_lang": "fr",
+  "og_locale": "fr_BE",
+  "og_locale_alternate": "fr_FR",
+  "languages": "Langue",
+  "made_with": "Fait avec",
+  "love": "amour",
+  "in_brussels": "à Bruxelles",
+  "legal": {
+    "pages": "Pages légales",
+    "legal": "Mentions légales",
+    "terms": "Conditions d’utilisation",
+    "privacy": "Politique de confidentialité",
+    "updated": "Dernière mise à jour :",
+    "feedback": "Envoyer un retour"
+  }
+}

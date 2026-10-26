@@ -1,5 +1,5 @@
-# kasseigo.com: on every push, the translated home pages and the legal pages are generated from
-# their sources (src/), then the site is published by GitHub Pages. Nothing generated is committed.
+# kasseigo.com: on every push, the pages are generated from their templates and dictionaries (src/),
+# then the site is published by GitHub Pages. Nothing generated is committed.
 name: Site
 
 on:
@@ -24,10 +24,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Generate (French and Dutch home pages, legal pages)
-        run: |
-          python3 src/build_i18n.py
-          python3 src/build_legal.py
+      - name: Generate the pages in every language, and the sitemap
+        run: python3 src/build.py
       - name: Assemble the published files (without the sources)
         run: |
           mkdir _site

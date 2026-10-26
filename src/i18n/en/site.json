@@ -1,0 +1,18 @@
+{
+  "_comment": "Texts shared by several pages, in English: {{site.key}} in the templates. Values are HTML.",
+  "html_lang": "en",
+  "og_locale": "en_GB",
+  "og_locale_alternate": "en_US",
+  "languages": "Language",
+  "made_with": "Made with",
+  "love": "love",
+  "in_brussels": "in Brussels",
+  "legal": {
+    "pages": "Legal pages",
+    "legal": "Legal notice",
+    "terms": "Terms of use",
+    "privacy": "Privacy policy",
+    "updated": "Last updated:",
+    "feedback": "Send feedback"
+  }
+}
