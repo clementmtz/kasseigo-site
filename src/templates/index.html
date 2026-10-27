@@ -269,6 +269,22 @@ section{padding:72px 0}
 .asks .go{width:20px;height:20px;color:var(--mut);transition:transform .18s var(--ez)}
 @media (max-width:480px){.voice{padding:24px 16px}}
 
+/* Beta: how to join with TestFlight */
+.join{position:fixed;width:min(520px,100% - 32px);max-height:calc(100% - 32px);overflow:auto;padding:28px 24px 24px;border:0;border-radius:30px;background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+.join::backdrop{background:rgba(20,10,50,.45);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.join[open]{animation:joinin .32s var(--ez)}
+@keyframes joinin{from{opacity:0;transform:translateY(14px) scale(.98)}}
+.join h2{font-size:clamp(26px,4vw,32px);margin:0 52px 10px 0}
+.join-x{position:absolute;top:16px;right:16px;margin:0}
+.join-x button{display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:14px;background:var(--bg);color:var(--ink);cursor:pointer}
+.join-steps{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
+.join-steps li{display:flex;gap:14px;padding:14px;border-radius:20px;background:var(--bg)}
+.join-steps .n{flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:var(--pt);color:var(--pd);font-weight:800}
+.join-steps b{display:block;font-size:17px;margin-bottom:2px}
+.join-steps li>div>span{display:block;color:var(--mut);font-size:15px}
+.join-steps .btn{margin-top:12px;min-height:48px;padding:0 18px;border-radius:14px;font-size:16px}
+.join-note{margin:14px 4px 0;font-size:14px;color:var(--mut)}
+
 /* Final */
 .final{text-align:center}
 .final img{width:88px;height:88px;margin:0 auto 20px}
@@ -311,6 +327,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   <symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s-6-5.6-6-11a6 6 0 0 1 12 0c0 5.4-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></symbol>
   <symbol id="star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></symbol>
   <symbol id="chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
   <symbol id="flag" viewBox="0 0 24 24"><path d="M6 21V4h11l-2.5 4.5L17 13H6"/></symbol>
   <symbol id="dots" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></symbol>
 </svg>
@@ -332,7 +349,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
         <h1>{{hero.title}}<br><span>{{hero.title_2}}</span></h1>
         <p class="lead">{{hero.lead}}</p>
         <div class="cta">
-          <a class="btn btn-primary" href="#get">{{common.join_beta}}</a>
+          <a class="btn btn-primary" href="https://testflight.apple.com/join/Zmt9uXr4" data-beta>{{common.join_beta}}</a>
           <a class="btn btn-ghost" href="#why">{{hero.why}}</a>
         </div>
         <ul class="chips">
@@ -494,15 +511,28 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
       <img src="/img/icon-192.png" alt="" width="88" height="88" loading="lazy">
       <h2>{{get.title}}</h2>
       <p class="mut">{{get.text}}</p>
-      <div class="cta"><a class="btn btn-primary" href="#">{{common.join_beta}}</a></div>
+      <div class="cta"><a class="btn btn-primary" href="https://testflight.apple.com/join/Zmt9uXr4" data-beta>{{common.join_beta}}</a></div>
       <p class="cities mut"><span><b>{{get.brussels}}</b> · Dott, Bolt, Villo!</span><span><b>{{get.paris}}</b> · Dott, Voi, Vélib’</span></p>
     </div>
   </section>
+
+  <dialog class="join" id="join" aria-labelledby="join-title">
+    <form method="dialog" class="join-x"><button aria-label="{{beta.close}}"><svg class="ic"><use href="#x"/></svg></button></form>
+    <h2 id="join-title">{{beta.title}}</h2>
+    <p class="mut">{{beta.lead}}</p>
+    <ol class="join-steps">
+      <li><span class="n">1</span><div><b>{{beta.step1_title}}</b><span>{{beta.step1_text}}</span><a class="btn btn-ghost" href="https://apps.apple.com/app/testflight/id899247664">{{beta.step1_button}}</a></div></li>
+      <li><span class="n">2</span><div><b>{{beta.step2_title}}</b><span>{{beta.step2_text}}</span><a class="btn btn-primary" href="https://testflight.apple.com/join/Zmt9uXr4">{{beta.step2_button}}</a></div></li>
+      <li><span class="n">3</span><div><b>{{beta.step3_title}}</b><span>{{beta.step3_text}}</span></div></li>
+    </ol>
+    <p class="join-note" id="join-desktop" hidden>{{beta.desktop}}</p>
+    <p class="join-note">{{beta.android}}</p>
+  </dialog>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 KasseiGo · {{footer.independent}}</span>
+    <span>© 2026 Clément Martinez · {{footer.independent}}</span>
     <span><a href="{{href.legal}}">{{footer.legal}}</a> · <a href="{{href.terms}}">{{footer.terms}}</a> · <a href="{{href.privacy}}">{{footer.privacy}}</a>{{footer.legal_languages}} · <a href="{{href.feedback}}">{{footer.feedback}}</a></span>
     <span>{{footer.map_data}}</span>
     <span>{{site.made_with}} <span class="heart" role="img" aria-label="{{site.love}}">♥</span> {{site.in_brussels}}</span>
@@ -525,6 +555,14 @@ if ('IntersectionObserver' in window) {
   }), {rootMargin:'0px 0px -8% 0px'});
   els.forEach(el => io.observe(el));
 } else els.forEach(el => el.classList.add('in'));
+
+// "Join the beta": the steps with TestFlight in a dialog (without dialogs: the invitation link).
+const join = document.getElementById('join');
+if (join && join.showModal) {
+  document.querySelectorAll('[data-beta]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); join.showModal(); }));
+  join.addEventListener('click', e => { if (e.target === join) join.close(); });
+  if (!/iPhone|iPad|iPod/.test(navigator.userAgent)) document.getElementById('join-desktop').hidden = false;
+}
 
 // Demos of the app: each choice computes its trip again, with the app's loading shimmer.
 const T = document.getElementById('demo-texts').dataset;

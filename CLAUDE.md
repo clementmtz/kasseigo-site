@@ -35,6 +35,9 @@ How `src/build.py` works (details at the top of the script):
 - Texts: `src/i18n/<lang>/<page>.json`, in every language of the page. A new text is a new `{{key}}`
   in the template and the same key in each dictionary of that page. Layout, styles and scripts: the
   template.
+- "Join the iPhone beta" buttons (`data-beta`) open the TestFlight steps (`<dialog id="join">` in
+  `src/templates/index.html`, texts `beta.*`); the invitation link is in the template, and the buttons
+  lead to it straight without JavaScript.
 - Home page: the `mock` and `demo` keys are the app's own words: keep them in sync with
   `kasseigo/app/lib/l10n/app_*.arb`. The `demo` keys are patterns (`{n}`, `{km}`, `{m}`…) filled by
   the page's script: the surface and no-ride zone selectors recompute a trip (drawn at random, with

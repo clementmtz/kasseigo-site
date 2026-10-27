@@ -113,8 +113,23 @@
     "brussels": "Brussel",
     "paris": "Parijs"
   },
+  "beta": {
+    "title": "Doe mee aan de iPhone-bèta",
+    "lead": "KasseiGo wordt getest met TestFlight, de officiële app van Apple om apps uit te proberen voor ze in de App Store verschijnen. Het is gratis, duurt twee minuten en je kunt de bèta altijd verlaten.",
+    "step1_title": "Installeer TestFlight",
+    "step1_text": "De gratis app van Apple, in de App Store. Op een iPhone met iOS 15 of nieuwer.",
+    "step1_button": "TestFlight downloaden",
+    "step2_title": "Open de uitnodiging",
+    "step2_text": "Open op je iPhone de uitnodiging voor KasseiGo en tik op ‘Accepteer’ en ‘Installeer’.",
+    "step2_button": "Uitnodiging openen",
+    "step3_title": "Rijden maar",
+    "step3_text": "KasseiGo staat op je beginscherm. Nieuwe versies verschijnen in TestFlight en installeer je met één tik.",
+    "desktop": "Op een computer? Open deze pagina op je iPhone.",
+    "android": "Android: binnenkort beschikbaar.",
+    "close": "Sluiten"
+  },
   "footer": {
-    "independent": "onafhankelijk, niet verbonden aan een operator.",
+    "independent": "KasseiGo is onafhankelijk, niet verbonden aan een operator.",
     "legal": "Juridische vermeldingen",
     "terms": "Gebruiksvoorwaarden",
     "privacy": "Privacy",
