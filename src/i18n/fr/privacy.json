@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/privacy.html in French. Values are HTML. French is the reference text: change it first.",
   "description": "Politique de confidentialité de KasseiGo : pas de compte, pas de publicité, pas de suivi ; votre position reste sur le téléphone.",
-  "updated": "25 octobre 2026",
+  "updated": "31 octobre 2026",
   "summary": "<b>En bref.</b> Pas de compte, pas de publicité, pas de mesure d’audience, pas de rapport de plantage. Votre position est utilisée sur le téléphone et n’est jamais envoyée. L’éditeur ne reçoit aucune donnée vous concernant, sauf les messages que vous choisissez de lui envoyer. Seuls les services contactés pour fonctionner (opérateurs, cartes, fichiers des villes) voient, comme pour toute connexion, l’adresse IP de votre téléphone.",
   "s1": {
     "title": "1. Responsable du traitement",
@@ -13,7 +13,7 @@
   },
   "s3": {
     "title": "3. Ce qui reste sur votre téléphone",
-    "li1": "<b>Votre position</b> : utilisée uniquement pendant l’utilisation de l’application, pour trouver les véhicules proches et vous guider. Elle n’est ni enregistrée, ni envoyée. Votre téléphone vous demande l’autorisation ; vous pouvez la retirer à tout moment dans ses réglages.",
+    "li1": "<b>Votre position</b> : utilisée uniquement pendant l’utilisation de l’application, pour trouver les véhicules proches et vous guider, y compris écran verrouillé pendant un trajet guidé (iOS affiche alors l’indicateur de localisation). Elle n’est ni enregistrée, ni envoyée. Votre téléphone vous demande l’autorisation ; vous pouvez la retirer à tout moment dans ses réglages.",
     "li2": "<b>Vos favoris, recherches récentes, zones personnalisées et réglages</b> : enregistrés dans l’espace privé de l’application, protégé par le chiffrement du téléphone. Supprimer l’application les efface.",
     "li3": "<b>Les fichiers des villes et la carte</b> : rues, lieux et carte hors ligne, gérés dans « Offline cities ».",
     "p1": "Les itinéraires, les emplacements et la recherche d’adresses sont calculés sur le téléphone : ce que vous cherchez n’est jamais envoyé."

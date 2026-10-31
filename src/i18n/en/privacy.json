@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/privacy.html in English. Values are HTML. Translation of the French text, which prevails: keep it in step.",
   "description": "Privacy policy of KasseiGo: no account, no ads, no tracking; your location stays on your phone.",
-  "updated": "25 October 2026",
+  "updated": "31 October 2026",
   "summary": "<b>In short.</b> No account, no ads, no analytics, no crash reports. Your location is used on the phone and never sent. The publisher receives no data about you, except the messages you choose to send. Only the services contacted to make the app work (operators, maps, city files) see, as with any connection, your phone’s IP address.",
   "s1": {
     "title": "1. Data controller",
@@ -13,7 +13,7 @@
   },
   "s3": {
     "title": "3. What stays on your phone",
-    "li1": "<b>Your location</b>: used only while the app is in use, to find nearby vehicles and guide you. It is neither stored nor sent. Your phone asks for permission; you can withdraw it at any time in its settings.",
+    "li1": "<b>Your location</b>: used only while the app is in use, to find nearby vehicles and guide you, including with the screen locked during a guided trip (iOS then shows its location indicator). It is neither stored nor sent. Your phone asks for permission; you can withdraw it at any time in its settings.",
     "li2": "<b>Your favourites, recent searches, custom zones and settings</b>: stored in the app’s private space, protected by the phone’s encryption. Deleting the app erases them.",
     "li3": "<b>City files and the map</b>: streets, places and offline map, managed in “Offline cities”.",
     "p1": "Routes, parking spots and address search are computed on the phone: what you search for is never sent."
