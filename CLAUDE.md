@@ -1,7 +1,10 @@
 # kasseigo-site — kasseigo.com
 
 The public website of KasseiGo, published by GitHub Pages at https://kasseigo.com (domain at OVH,
-managed by the owner). Workspace-wide rules are in `../CLAUDE.md`: read it too.
+managed by the owner). Workspace-wide rules are in `../CLAUDE.md`: read it too. What the app relies
+on here (page names and their `?lang=`, the feedback form's fields, the demo texts mirroring the
+app's, the privacy promises) is in `../kasseigo/docs/workspace/contracts.md`, checked by `./kg test`
+in `kasseigo`.
 
 ## How it works
 
