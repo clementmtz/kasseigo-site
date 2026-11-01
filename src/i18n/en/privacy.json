@@ -1,8 +1,8 @@
 {
   "_comment": "Texts of src/templates/privacy.html in English. Values are HTML. Translation of the French text, which prevails: keep it in step.",
   "description": "Privacy policy of KasseiGo: no account, no ads, no tracking; your location stays on your phone.",
-  "updated": "31 October 2026",
-  "summary": "<b>In short.</b> No account, no ads, no analytics, no crash reports. Your location is used on the phone and never sent. The publisher receives no data about you, except the messages you choose to send. Only the services contacted to make the app work (operators, maps, city files) see, as with any connection, your phone’s IP address.",
+  "updated": "1 November 2026",
+  "summary": "<b>In short.</b> No account, no ads, no analytics, no crash reports. Your location is used on the phone and never sent. The publisher receives no data about you, except the messages you choose to send. Only the services contacted to make the app work (operators, maps, city files) see, as with any connection, your phone’s IP address; the map service also sees which area of the map is shown (section 4).",
   "s1": {
     "title": "1. Data controller",
     "p1": "Clément Martinez, a private individual living in Belgium, publisher of KasseiGo · <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>. This policy covers the KasseiGo app and the kasseigo.com website, under the General Data Protection Regulation (GDPR, Regulation (EU) 2016/679)."
@@ -14,8 +14,9 @@
   "s3": {
     "title": "3. What stays on your phone",
     "li1": "<b>Your location</b>: used only while the app is in use, to find nearby vehicles and guide you, including with the screen locked during a guided trip (iOS then shows its location indicator). It is neither stored nor sent. Your phone asks for permission; you can withdraw it at any time in its settings.",
-    "li2": "<b>Your favourites, recent searches, custom zones and settings</b>: stored in the app’s private space, protected by the phone’s encryption. Deleting the app erases them.",
-    "li3": "<b>City files and the map</b>: streets, places and offline map, managed in “Offline cities”.",
+    "li2": "<b>Your favourites, recent searches, custom zones, settings and the last city you were in</b>: stored in the app’s private space, protected by the phone’s encryption. Deleting the app erases them, except from the phone’s backups (iCloud or a computer), if you make any: these include them, as for any app. The publisher has no access to them.",
+    "li3": "<b>City files and the map</b>: streets, places and offline map, managed in “Offline cities”. City files stay out of the phone’s backups.",
+    "li4": "<b>The trip in progress</b>: its destination and the time, stored during the trip so that it can be offered again, for 3 hours, if the phone closes the app. They are erased when the trip ends or you drop it, and at the first launch after those 3 hours, except from phone backups already made.",
     "p1": "Routes, parking spots and address search are computed on the phone: what you search for is never sent."
   },
   "s4": {
@@ -23,7 +24,7 @@
     "p1": "To work, the app contacts the following services, always over an encrypted connection (HTTPS). As with any Internet connection, each one sees your phone’s IP address and the usual technical details of a request. They act under their own responsibility and privacy policies; the publisher has no access to their logs.",
     "li1": "<b>Operators’ public feeds (GBFS)</b>: the app asks for the data of the whole city (vehicles, stations, places, zones), sending nothing about you.",
     "li2": "<b>City files</b> · GitHub (<code>github.com</code>): the list of published files at start-up and on the “Offline cities” page, then a city’s file only when it is new or updated.",
-    "li3": "<b>Map tiles</b> · OpenFreeMap (<code>tiles.openfreemap.org</code>): the map pieces of the area shown that the phone does not have yet.",
+    "li3": "<b>Map tiles</b> · OpenFreeMap (<code>tiles.openfreemap.org</code>): the map pieces of the area shown that the phone does not have yet, and the offline map of the city you are in.",
     "li4": "<b>Operator app</b>: opened only when you tap its button. Its own terms and privacy policy then apply.",
     "p2": "The app is distributed by Apple (App Store, TestFlight), which may process data under its own terms, outside the publisher’s control.",
     "brussels": "Brussels"
@@ -38,12 +39,12 @@
     "li1": "To block robots, the page uses <b>Cloudflare Turnstile</b> (Cloudflare, Inc., United States), which analyses technical signals from the browser, under the <a href=\"https://www.cloudflare.com/privacypolicy/\">Cloudflare privacy policy</a>.",
     "li2": "The message goes through a Cloudflare Workers service and is stored as a ticket in a <b>private</b> GitHub repository (GitHub, Inc., United States), accessible to the publisher only.",
     "li3": "Purpose: fixing errors, improving the service and, if you gave your email, replying to you. Basis: the legitimate interest in handling the feedback received.",
-    "li4": "Tickets are kept as long as needed to handle and follow them up, then deleted. They are never sold or passed on to other third parties. You can ask for their deletion at any time.",
+    "li4": "Tickets are kept for as long as they are being handled and followed up, 24 months at most, then deleted. They are never sold or passed on to other third parties. You can ask for their deletion at any time.",
     "p2": "<b>By email</b>: if you write to <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>, your email address and message are used only to reply and follow up on your request, on the basis of the legitimate interest in answering messages received. They are kept as long as needed for that follow-up, then deleted, and are never sold or passed on to third parties. The mailbox is hosted by OVH SAS (France)."
   },
   "s7": {
     "title": "7. Transfers outside the European Union",
-    "p1": "Some of the services listed (GitHub, Inc. and Cloudflare, Inc. in particular) are located outside the European Union. The data they process (IP address, technical connection data and, for feedback, the message content) is processed under their own responsibility and safeguards."
+    "p1": "Some services named here (notably GitHub, Inc. and Cloudflare, Inc.) are outside the European Union. For feedback, they process the IP address, technical connection data and the content of the message on the publisher’s behalf, as processors. These transfers to the United States rely on the EU-US Data Privacy Framework (European Commission adequacy decision of 10 July 2023) and, failing that, on these services’ standard contractual clauses."
   },
   "s8": {
     "title": "8. Your rights",
@@ -52,7 +53,7 @@
   },
   "s9": {
     "title": "9. Minors",
-    "p1": "The service knowingly collects no data about anyone, minors included. Vehicle rental is subject to the minimum age set by each operator."
+    "p1": "Apart from the messages sent to it, the service knowingly collects no data about anyone, minors included. Vehicle rental is subject to the minimum age set by each operator."
   },
   "s10": {
     "title": "10. Security",

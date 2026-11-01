@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/terms.html in English. Values are HTML. Translation of the French text, which prevails: keep it in step.",
-  "description": "Terms of use of KasseiGo, the free app for shared bikes and e-scooters in Brussels and Paris.",
-  "updated": "25 October 2026",
+  "description": "Terms of use of KasseiGo, the free app for shared bikes in Brussels and Paris, and e-scooters in Brussels.",
+  "updated": "1 November 2026",
   "summary": "<b>In short.</b> KasseiGo is a free aid, provided as is by a private individual. Its information may be wrong or out of date. You alone remain responsible for how you ride, for your safety, and for following the highway code and the operator’s rules. The highway code, road signs and the operator’s rules always take precedence over the app.",
   "s1": {
     "title": "1. Purpose and acceptance",
@@ -9,7 +9,7 @@
   },
   "s2": {
     "title": "2. What the service does",
-    "p1": "KasseiGo helps you get around on shared bikes and e-scooters in Brussels and Paris. It shows the vehicles, stations and parking spots published by operators, plans a route (walk to the vehicle, ride, parking, walk to the destination) taking street surfaces and operator zones into account, and offers turn-by-turn guidance.",
+    "p1": "KasseiGo helps you get around on shared bikes in Brussels and Paris, and shared e-scooters in Brussels. It shows the vehicles, stations and parking spots published by operators, plans a route (walk to the vehicle, ride, parking, walk to the destination) taking street surfaces and operator zones into account, and offers turn-by-turn guidance. With your own bike or e-scooter, it also guides you to a bicycle parking from OpenStreetMap: its existence, access and safety are not guaranteed, and you remain responsible for your vehicle, including against theft.",
     "p2": "KasseiGo <b>does not rent, reserve, unlock or charge for any vehicle</b>. Rental only happens in the operator’s own app, under its own terms. Using KasseiGo creates no contract between you and an operator, nor between the publisher and an operator."
   },
   "s3": {
@@ -47,7 +47,7 @@
     "title": "7. Limitation of liability",
     "p1": "The service is provided free of charge, <b>“as is” and “as available”</b>, without any warranty, express or implied, including of accuracy, completeness, availability, freedom from errors or fitness for a particular purpose.",
     "p2": "To the fullest extent permitted by law, the publisher is not liable for any damage, direct or indirect, material or immaterial, arising from the use of or inability to use the service, or from any information it shows, including: accident, fall, injury, damage to a vehicle, property or third party, fine, penalty or operator fee, lost time, delay, missed trip, loss of data, or damage caused by a third-party service.",
-    "p3": "This limitation does not apply where the law forbids excluding or limiting liability, in particular in case of the publisher’s intentional misconduct (fraud)."
+    "p3": "This limitation does not apply where the law forbids excluding or limiting liability, in particular for death or personal injury caused by the publisher’s fault, gross negligence or intentional misconduct (fraud)."
   },
   "s8": {
     "title": "8. Third-party services",
@@ -56,15 +56,15 @@
   "s9": {
     "title": "9. Licence and intellectual property",
     "p1": "The publisher grants you a personal, free, non-exclusive, non-transferable and revocable right to use the app for your own trips, for private, non-commercial purposes. The service and its code are not open source and remain the publisher’s property (see the <a href=\"legal.html\">legal notice</a>).",
-    "p2": "Except within the limits expressly allowed by law, you may not copy, modify, decompile, disassemble or try to obtain the app’s source code; resell, rent or redistribute it; extract its data automatically or in bulk; circumvent its protections; or use it to provide a competing or commercial service."
+    "p2": "Except within the limits expressly allowed by law, you may not copy, modify, decompile, disassemble or try to obtain the app’s source code; resell, rent or redistribute it; extract its data automatically or in bulk; circumvent its protections; or use it to provide a competing or commercial service. Map data published under the ODbL (© OpenStreetMap contributors) remains usable under that licence."
   },
   "s10": {
     "title": "10. Personal data",
-    "p1": "The service works without an account and the publisher does not collect your data. Details are in the <a href=\"privacy.html\">privacy policy</a>."
+    "p1": "The service works without an account and the publisher does not collect your data, except the messages you send. Details are in the <a href=\"privacy.html\">privacy policy</a>."
   },
   "s11": {
     "title": "11. Changes to these terms",
-    "p1": "The publisher may change these terms at any time, in particular to follow changes in the service or the law. The date of the last update is shown at the top of this page. Continuing to use the service after a change means you accept the new terms."
+    "p1": "The publisher may change these terms for a valid reason, in particular to follow changes in the service or the law, and announces any important change on this page before it applies. The date of the last update is shown at the top of this page. Continuing to use the service after a change means you accept the new terms."
   },
   "s12": {
     "title": "12. General provisions",

@@ -22,6 +22,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>
 // The app opens /privacy.html?lang=fr: go to the page in that language, keeping the other parameters.
-(function(){var q=new URLSearchParams(location.search),p={{lang_paths}}[q.get('lang')];if(!p||p===location.pathname)return;
+(function(){var q=new URLSearchParams(location.search),m={{lang_paths}},l=q.get('lang'),p=Object.prototype.hasOwnProperty.call(m,l)&&m[l];if(!p||p===location.pathname)return;
 q.delete('lang');var s=q.toString();location.replace(p+(s?'?'+s:'')+location.hash)})();
 </script>

@@ -17,7 +17,7 @@
   "message": "Je bericht",
   "message_hint": "Wat er gebeurde, waar, en wat je verwachtte. Bij foute gegevens: geef de straat of de plek.",
   "email": "Je e-mail",
-  "email_hint": "Alleen als je een antwoord wilt. Het wordt nooit gedeeld.",
+  "email_hint": "Alleen als je een antwoord wilt. Het dient alleen om je te antwoorden.",
   "send": "Versturen",
   "sending": "Versturen…",
   "privacy": "Je bericht wordt privé bewaard om KasseiGo te verbeteren, zie het",

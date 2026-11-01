@@ -1,12 +1,12 @@
 {
   "_comment": "Texts of the home page (src/templates/index.html) in Belgian Dutch. Values are HTML. The keys under mock use the app's own words (kasseigo/app/lib/l10n/app_nl.arb).",
   "meta": {
-    "title": "KasseiGo: app voor deelfietsen en deelsteps in Brussel en Parijs",
-    "description": "Gratis app voor deelfietsen en elektrische deelsteps in Brussel en Parijs: routes zonder kasseien, met de zones van de operator, tot aan een parkeerplek. Zonder account, zonder reclame.",
+    "title": "KasseiGo: app voor deelfietsen in Brussel en Parijs, en deelsteps in Brussel",
+    "description": "Gratis app voor deelfietsen in Brussel en Parijs, en elektrische deelsteps in Brussel: routes zonder kasseien, met de zones van de operator, tot aan een parkeerplek. Zonder account, zonder reclame.",
     "og_title": "KasseiGo: rij zonder schokken, parkeer correct",
-    "og_description": "Gratis app voor deelfietsen en deelsteps in Brussel en Parijs: om kasseien en verboden zones heen, tot aan een echte parkeerplek.",
+    "og_description": "Gratis app voor deelfietsen in Brussel en Parijs, en deelsteps in Brussel: om kasseien en verboden zones heen, tot aan een echte parkeerplek.",
     "og_image_alt": "KasseiGo-app: rij zonder schokken, parkeer correct. Gratis, zonder account, zonder reclame.",
-    "app_description": "Routeplanner voor deelfietsen en elektrische deelsteps in Brussel en Parijs: vermijdt kasseien, volgt de trage en verboden zones van de operator en leidt je naar een parkeerplek."
+    "app_description": "Routeplanner voor deelfietsen in Brussel en Parijs, en elektrische deelsteps in Brussel: vermijdt kasseien, volgt de trage en verboden zones van de operator en leidt je naar een parkeerplek."
   },
   "common": {
     "free": "Gratis",
@@ -20,7 +20,7 @@
   "hero": {
     "title": "Rij zonder schokken.",
     "title_2": "Parkeer correct.",
-    "lead": "De gids voor deelfietsen en elektrische deelsteps in Brussel en Parijs (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo leidt je om kasseien en verboden zones heen, en eindigt je rit op een echte parkeerplek.",
+    "lead": "De gids voor deelfietsen in Brussel en Parijs, en elektrische deelsteps in Brussel (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo leidt je om kasseien en verboden zones heen, en eindigt je rit op een echte parkeerplek.",
     "why": "Waarom KasseiGo",
     "no_tracking": "Geen tracking",
     "shot_home_alt": "Startscherm: de deelvoertuigen rondom jou op de kaart, en de zoekbalk “Where to?”.",

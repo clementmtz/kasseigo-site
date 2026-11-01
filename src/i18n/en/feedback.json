@@ -17,7 +17,7 @@
   "message": "Your message",
   "message_hint": "What happened, where, and what you expected. For wrong data, give the street or the place.",
   "email": "Your email",
-  "email_hint": "Only if you want an answer. It is never shared.",
+  "email_hint": "Only if you want an answer. It is used only to answer you.",
   "send": "Send",
   "sending": "Sending…",
   "privacy": "Your message is stored privately to improve KasseiGo, see the",

@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/legal.html in French. Values are HTML. French is the reference text: change it first.",
   "description": "Mentions légales de KasseiGo : éditeur, hébergement, propriété intellectuelle.",
-  "updated": "25 octobre 2026",
+  "updated": "1er novembre 2026",
   "s1": {
     "title": "Éditeur",
     "dt1": "Éditeur",
@@ -27,7 +27,7 @@
   },
   "s3": {
     "title": "Objet",
-    "p1": "KasseiGo est une application d’aide à l’itinéraire pour les vélos et trottinettes partagés à Bruxelles et à Paris. Le site kasseigo.com la présente. L’application et le site sont gratuits, sans compte, sans publicité et sans mesure d’audience."
+    "p1": "KasseiGo est une application d’aide à l’itinéraire pour les vélos partagés à Bruxelles et à Paris et les trottinettes partagées à Bruxelles, ou avec votre propre vélo ou trottinette. Le site kasseigo.com la présente. L’application et le site sont gratuits, sans compte, sans publicité et sans mesure d’audience."
   },
   "s4": {
     "title": "Propriété intellectuelle",

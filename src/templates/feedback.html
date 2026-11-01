@@ -158,7 +158,8 @@ form.addEventListener('submit', async e => {
   const d = new FormData(form);
   const message = (d.get('message') || '').trim(), email = (d.get('email') || '').trim();
   if (message.length < 10) return fail('errShort');
-  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return fail('errEmail');
+  // The same rule as the Worker's: what passes here is not refused there.
+  if (email && !/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email)) return fail('errEmail');
   renderCheck();
   if (!token) return fail('errCheck');
   send.disabled = true; send.textContent = T.sending;
@@ -169,7 +170,11 @@ form.addEventListener('submit', async e => {
     });
     if (!r.ok) throw r.status;
     document.getElementById('form-view').hidden = true;
-    document.getElementById('done-view').hidden = false;
+    const done = document.getElementById('done-view');
+    done.hidden = false;
+    // The form it replaces had the focus: keyboards and screen readers are told.
+    done.tabIndex = -1;
+    done.focus();
     window.scrollTo(0, 0);
   } catch (s) {
     fail(s === 403 ? 'errCheck' : 'errSend');

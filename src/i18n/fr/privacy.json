@@ -1,8 +1,8 @@
 {
   "_comment": "Texts of src/templates/privacy.html in French. Values are HTML. French is the reference text: change it first.",
   "description": "Politique de confidentialité de KasseiGo : pas de compte, pas de publicité, pas de suivi ; votre position reste sur le téléphone.",
-  "updated": "31 octobre 2026",
-  "summary": "<b>En bref.</b> Pas de compte, pas de publicité, pas de mesure d’audience, pas de rapport de plantage. Votre position est utilisée sur le téléphone et n’est jamais envoyée. L’éditeur ne reçoit aucune donnée vous concernant, sauf les messages que vous choisissez de lui envoyer. Seuls les services contactés pour fonctionner (opérateurs, cartes, fichiers des villes) voient, comme pour toute connexion, l’adresse IP de votre téléphone.",
+  "updated": "1er novembre 2026",
+  "summary": "<b>En bref.</b> Pas de compte, pas de publicité, pas de mesure d’audience, pas de rapport de plantage. Votre position est utilisée sur le téléphone et n’est jamais envoyée. L’éditeur ne reçoit aucune donnée vous concernant, sauf les messages que vous choisissez de lui envoyer. Seuls les services contactés pour fonctionner (opérateurs, cartes, fichiers des villes) voient, comme pour toute connexion, l’adresse IP de votre téléphone ; le service de cartes voit aussi quelle zone de la carte est affichée (section 4).",
   "s1": {
     "title": "1. Responsable du traitement",
     "p1": "Clément Martinez, particulier résidant en Belgique, éditeur de KasseiGo · <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>. Cette politique s’applique à l’application KasseiGo et au site kasseigo.com, conformément au règlement général sur la protection des données (RGPD, règlement (UE) 2016/679)."
@@ -14,16 +14,17 @@
   "s3": {
     "title": "3. Ce qui reste sur votre téléphone",
     "li1": "<b>Votre position</b> : utilisée uniquement pendant l’utilisation de l’application, pour trouver les véhicules proches et vous guider, y compris écran verrouillé pendant un trajet guidé (iOS affiche alors l’indicateur de localisation). Elle n’est ni enregistrée, ni envoyée. Votre téléphone vous demande l’autorisation ; vous pouvez la retirer à tout moment dans ses réglages.",
-    "li2": "<b>Vos favoris, recherches récentes, zones personnalisées et réglages</b> : enregistrés dans l’espace privé de l’application, protégé par le chiffrement du téléphone. Supprimer l’application les efface.",
-    "li3": "<b>Les fichiers des villes et la carte</b> : rues, lieux et carte hors ligne, gérés dans « Offline cities ».",
+    "li2": "<b>Vos favoris, recherches récentes, zones personnalisées, réglages et la dernière ville où vous étiez</b> : enregistrés dans l’espace privé de l’application, protégé par le chiffrement du téléphone. Supprimer l’application les efface, sauf dans les sauvegardes du téléphone (iCloud ou ordinateur), si vous en faites : elles les contiennent, comme pour toute application. L’éditeur n’y a pas accès.",
+    "li3": "<b>Les fichiers des villes et la carte</b> : rues, lieux et carte hors ligne, gérés dans « Villes hors ligne ». Les fichiers des villes restent hors des sauvegardes du téléphone.",
+    "li4": "<b>Le trajet en cours</b> : sa destination et l’heure, enregistrées pendant le trajet pour vous le proposer à nouveau, pendant 3 heures, si le téléphone ferme l’application. Elles sont effacées quand le trajet se termine ou que vous l’abandonnez, et au lancement suivant ces 3 heures, sauf dans les sauvegardes du téléphone déjà faites.",
     "p1": "Les itinéraires, les emplacements et la recherche d’adresses sont calculés sur le téléphone : ce que vous cherchez n’est jamais envoyé."
   },
   "s4": {
     "title": "4. Connexions de l’application et ce qu’elles envoient",
     "p1": "Pour fonctionner, l’application contacte les services suivants, toujours en connexion chiffrée (HTTPS). Comme pour toute connexion à Internet, chacun voit l’adresse IP de votre téléphone et les informations techniques habituelles d’une requête. Ils agissent sous leur propre responsabilité et selon leur propre politique de confidentialité ; l’éditeur n’a pas accès à leurs journaux.",
     "li1": "<b>Flux publics des opérateurs (GBFS)</b> : l’application demande les données de toute la ville (véhicules, stations, places, zones), sans rien envoyer qui vous concerne.",
-    "li2": "<b>Fichiers des villes</b> · GitHub (<code>github.com</code>) : liste des fichiers publiés au démarrage et sur la page « Offline cities », puis fichier d’une ville seulement s’il est nouveau ou mis à jour.",
-    "li3": "<b>Tuiles de carte</b> · OpenFreeMap (<code>tiles.openfreemap.org</code>) : les morceaux de carte de la zone affichée que le téléphone n’a pas encore.",
+    "li2": "<b>Fichiers des villes</b> · GitHub (<code>github.com</code>) : liste des fichiers publiés au démarrage et sur la page « Villes hors ligne », puis fichier d’une ville seulement s’il est nouveau ou mis à jour.",
+    "li3": "<b>Tuiles de carte</b> · OpenFreeMap (<code>tiles.openfreemap.org</code>) : les morceaux de carte de la zone affichée que le téléphone n’a pas encore, et la carte hors ligne de la ville où vous êtes.",
     "li4": "<b>Application de l’opérateur</b> : ouverte uniquement quand vous touchez son bouton. Ses propres conditions et sa politique de confidentialité s’appliquent alors.",
     "p2": "L’application est distribuée par Apple (App Store, TestFlight), qui peut traiter des données selon ses propres conditions, en dehors du contrôle de l’éditeur.",
     "brussels": "Bruxelles"
@@ -38,12 +39,12 @@
     "li1": "Pour bloquer les robots, la page utilise <b>Cloudflare Turnstile</b> (Cloudflare, Inc., États-Unis), qui analyse des signaux techniques du navigateur, selon la <a href=\"https://www.cloudflare.com/privacypolicy/\">politique de confidentialité de Cloudflare</a>.",
     "li2": "Le message est transmis par un service de Cloudflare Workers et enregistré comme ticket dans un dépôt <b>privé</b> sur GitHub (GitHub, Inc., États-Unis), accessible uniquement à l’éditeur.",
     "li3": "Finalité : corriger les erreurs, améliorer le service et, si vous avez donné votre e-mail, vous répondre. Base : l’intérêt légitime à traiter les retours reçus.",
-    "li4": "Les tickets sont conservés le temps nécessaire à leur traitement et à leur suivi, puis supprimés. Ils ne sont jamais vendus ni transmis à d’autres tiers. Vous pouvez demander leur suppression à tout moment.",
+    "li4": "Les tickets sont conservés le temps de leur traitement et de leur suivi, 24 mois au plus, puis supprimés. Ils ne sont jamais vendus ni transmis à d’autres tiers. Vous pouvez demander leur suppression à tout moment.",
     "p2": "<b>Par e-mail</b> : si vous écrivez à <a href=\"mailto:contact@kasseigo.com\">contact@kasseigo.com</a>, votre adresse e-mail et le contenu de votre message sont utilisés uniquement pour vous répondre et assurer le suivi de votre demande, sur la base de l’intérêt légitime à répondre aux messages reçus. Ils sont conservés le temps nécessaire à ce suivi, puis supprimés, et ne sont jamais vendus ni transmis à des tiers. La messagerie est hébergée par OVH SAS (France)."
   },
   "s7": {
     "title": "7. Transferts hors de l’Union européenne",
-    "p1": "Certains services cités (notamment GitHub, Inc. et Cloudflare, Inc.) sont situés hors de l’Union européenne. Les données qu’ils traitent (adresse IP, données techniques de connexion et, pour les retours, le contenu du message) le sont sous leur propre responsabilité, selon leurs propres garanties."
+    "p1": "Certains services cités (notamment GitHub, Inc. et Cloudflare, Inc.) sont situés hors de l’Union européenne. Pour les retours, ils traitent l’adresse IP, les données techniques de connexion et le contenu du message pour le compte de l’éditeur, en sous-traitants. Ces transferts vers les États-Unis reposent sur le cadre de protection des données UE-États-Unis (décision d’adéquation de la Commission européenne du 10 juillet 2023) et, à défaut, sur les clauses contractuelles types de ces services."
   },
   "s8": {
     "title": "8. Vos droits",
@@ -52,7 +53,7 @@
   },
   "s9": {
     "title": "9. Mineurs",
-    "p1": "Le service ne collecte sciemment aucune donnée sur quiconque, mineur compris. La location des véhicules est soumise à l’âge minimum fixé par chaque opérateur."
+    "p1": "En dehors des messages qu’on lui envoie, le service ne collecte sciemment aucune donnée sur quiconque, mineur compris. La location des véhicules est soumise à l’âge minimum fixé par chaque opérateur."
   },
   "s10": {
     "title": "10. Sécurité",

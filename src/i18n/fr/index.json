@@ -1,12 +1,12 @@
 {
   "_comment": "Texts of the home page (src/templates/index.html) in French. Values are HTML. The keys under mock use the app's own words (kasseigo/app/lib/l10n/app_fr.arb).",
   "meta": {
-    "title": "KasseiGo : appli vélos et trottinettes partagés à Bruxelles et Paris",
-    "description": "Appli gratuite pour vélos et trottinettes partagés à Bruxelles et Paris : itinéraires sans pavés, zones des opérateurs respectées, jusqu’à une place de stationnement. Sans compte, sans pub.",
+    "title": "KasseiGo : appli vélos partagés à Bruxelles et Paris, trottinettes à Bruxelles",
+    "description": "Appli gratuite pour vélos partagés à Bruxelles et Paris, et trottinettes à Bruxelles : itinéraires sans pavés, zones des opérateurs respectées, jusqu’à une place de stationnement. Sans compte, sans pub.",
     "og_title": "KasseiGo : roulez en douceur, garez-vous juste",
-    "og_description": "Appli gratuite pour vélos et trottinettes partagés à Bruxelles et Paris : sans pavés, sans zones interdites, jusqu’à une vraie place de stationnement.",
+    "og_description": "Appli gratuite pour vélos partagés à Bruxelles et Paris, et trottinettes à Bruxelles : sans pavés, sans zones interdites, jusqu’à une vraie place de stationnement.",
     "og_image_alt": "Appli KasseiGo : roulez en douceur, garez-vous juste. Gratuite, sans compte, sans pub.",
-    "app_description": "Appli d’itinéraire pour vélos et trottinettes partagés à Bruxelles et Paris : évite les pavés, suit les zones lentes et interdites des opérateurs et guide jusqu’à une place de stationnement."
+    "app_description": "Appli d’itinéraire pour vélos partagés à Bruxelles et Paris, et trottinettes à Bruxelles : évite les pavés, suit les zones lentes et interdites des opérateurs et guide jusqu’à une place de stationnement."
   },
   "common": {
     "free": "Gratuit",
@@ -20,7 +20,7 @@
   "hero": {
     "title": "Roulez en douceur.",
     "title_2": "Garez-vous juste.",
-    "lead": "Le guide des vélos et trottinettes partagés à Bruxelles et à Paris (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo vous fait éviter les pavés et les zones interdites, et termine votre trajet sur une vraie place de stationnement.",
+    "lead": "Le guide des vélos partagés à Bruxelles et à Paris, et des trottinettes à Bruxelles (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo vous fait éviter les pavés et les zones interdites, et termine votre trajet sur une vraie place de stationnement.",
     "why": "Pourquoi KasseiGo",
     "no_tracking": "Sans pistage",
     "shot_home_alt": "Écran d’accueil : les véhicules partagés autour de vous sur la carte, et la recherche « Where to? ».",
@@ -44,7 +44,7 @@
     "speed_limited": "Vitesse limitée par Bolt",
     "unlock": "Déverrouillez-le",
     "in_bolt_app": "Dans l’appli Bolt",
-    "nearest_parking": "Emplacement le plus proche : 60 m",
+    "nearest_parking": "Emplacement le plus proche : 60 m",
     "undo": "Annuler",
     "surface": "Revêtement",
     "surface_desc": "Le revêtement le moins confortable que vous acceptez.",
@@ -54,7 +54,7 @@
     "cobbles": "Pavés",
     "rough": "Irrégulier",
     "no_ride_zones": "Zones interdites",
-    "no_ride_desc": "Zones où l’opérateur interdit de rouler : descendre et pousser, ou contourner.",
+    "no_ride_desc": "Zones où l’opérateur interdit de rouler : descendre et pousser, ou contourner.",
     "go_around": "Contourner",
     "cross_on_foot": "Traverser à pied",
     "push": "Descendez et poussez",
@@ -69,15 +69,15 @@
     "min_by_bike": "{n} min à vélo",
     "to_parking": "≈ {km} km jusqu’à l’emplacement",
     "cobbles": "Pavés, {m}",
-    "tolerance": "Votre tolérance : {s}",
-    "cycle_tracks": "Pistes cyclables, {p} % du trajet",
+    "tolerance": "Votre tolérance : {s}",
+    "cycle_tracks": "Pistes cyclables, {p} % du trajet",
     "slow_zone": "Zone lente, {m}",
     "speed_limited": "Vitesse limitée par {op}",
     "no_ride": "Zone interdite, {m}",
     "nearest_parking": "Emplacement le plus proche",
     "finding_parking": "Recherche d’un emplacement…",
     "back_to_destination": "Retour à la destination",
-    "nearest_parking_at": "Emplacement le plus proche : {m}",
+    "nearest_parking_at": "Emplacement le plus proche : {m}",
     "more_options": "Plus d’options"
   },
   "facts": {

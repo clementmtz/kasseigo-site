@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/legal.html in English. Values are HTML. Translation of the French text, which prevails: keep it in step.",
   "description": "Legal notice of KasseiGo: publisher, hosting, intellectual property.",
-  "updated": "25 October 2026",
+  "updated": "1 November 2026",
   "s1": {
     "title": "Publisher",
     "dt1": "Publisher",
@@ -27,7 +27,7 @@
   },
   "s3": {
     "title": "Purpose",
-    "p1": "KasseiGo is a route-planning aid for shared bikes and e-scooters in Brussels and Paris. The website kasseigo.com presents it. The app and the website are free, with no account, no ads and no audience measurement."
+    "p1": "KasseiGo is a route-planning aid for shared bikes in Brussels and Paris and shared e-scooters in Brussels, or with your own bike or e-scooter. The website kasseigo.com presents it. The app and the website are free, with no account, no ads and no audience measurement."
   },
   "s4": {
     "title": "Intellectual property",

@@ -17,7 +17,7 @@
   "message": "Votre message",
   "message_hint": "Ce qui s’est passé, où, et ce que vous attendiez. Pour une donnée fausse, indiquez la rue ou le lieu.",
   "email": "Votre e-mail",
-  "email_hint": "Seulement si vous voulez une réponse. Il n’est jamais partagé.",
+  "email_hint": "Seulement si vous voulez une réponse. Il sert seulement à vous répondre.",
   "send": "Envoyer",
   "sending": "Envoi…",
   "privacy": "Votre message est conservé de façon privée pour améliorer KasseiGo, voir la",
