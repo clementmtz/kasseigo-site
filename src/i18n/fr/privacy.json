@@ -23,7 +23,7 @@
     "title": "4. Connexions de l’application et ce qu’elles envoient",
     "p1": "Pour fonctionner, l’application contacte les services suivants, toujours en connexion chiffrée (HTTPS). Comme pour toute connexion à Internet, chacun voit l’adresse IP de votre téléphone et les informations techniques habituelles d’une requête. Ils agissent sous leur propre responsabilité et selon leur propre politique de confidentialité ; l’éditeur n’a pas accès à leurs journaux.",
     "li1": "<b>Flux publics des opérateurs (GBFS)</b> : l’application demande les données de toute la ville (véhicules, stations, places, zones), sans rien envoyer qui vous concerne.",
-    "li2": "<b>Fichiers des villes</b> · GitHub (<code>github.com</code>) : liste des fichiers publiés au démarrage et sur la page « Villes hors ligne », puis fichier d’une ville seulement s’il est nouveau ou mis à jour.",
+    "li2": "<b>Fichiers des villes</b> · GitHub (<code>github.com</code>, <code>release-assets.githubusercontent.com</code>) : liste des fichiers publiés au démarrage et sur la page « Villes hors ligne », puis fichier d’une ville seulement s’il est nouveau ou mis à jour.",
     "li3": "<b>Tuiles de carte</b> · OpenFreeMap (<code>tiles.openfreemap.org</code>) : les morceaux de carte de la zone affichée que le téléphone n’a pas encore, et la carte hors ligne de la ville où vous êtes.",
     "li4": "<b>Application de l’opérateur</b> : ouverte uniquement quand vous touchez son bouton. Ses propres conditions et sa politique de confidentialité s’appliquent alors.",
     "p2": "L’application est distribuée par Apple (App Store, TestFlight), qui peut traiter des données selon ses propres conditions, en dehors du contrôle de l’éditeur.",

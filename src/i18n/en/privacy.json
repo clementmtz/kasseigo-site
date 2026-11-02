@@ -23,7 +23,7 @@
     "title": "4. App connections and what they send",
     "p1": "To work, the app contacts the following services, always over an encrypted connection (HTTPS). As with any Internet connection, each one sees your phone’s IP address and the usual technical details of a request. They act under their own responsibility and privacy policies; the publisher has no access to their logs.",
     "li1": "<b>Operators’ public feeds (GBFS)</b>: the app asks for the data of the whole city (vehicles, stations, places, zones), sending nothing about you.",
-    "li2": "<b>City files</b> · GitHub (<code>github.com</code>): the list of published files at start-up and on the “Offline cities” page, then a city’s file only when it is new or updated.",
+    "li2": "<b>City files</b> · GitHub (<code>github.com</code>, <code>release-assets.githubusercontent.com</code>): the list of published files at start-up and on the “Offline cities” page, then a city’s file only when it is new or updated.",
     "li3": "<b>Map tiles</b> · OpenFreeMap (<code>tiles.openfreemap.org</code>): the map pieces of the area shown that the phone does not have yet, and the offline map of the city you are in.",
     "li4": "<b>Operator app</b>: opened only when you tap its button. Its own terms and privacy policy then apply.",
     "p2": "The app is distributed by Apple (App Store, TestFlight), which may process data under its own terms, outside the publisher’s control.",

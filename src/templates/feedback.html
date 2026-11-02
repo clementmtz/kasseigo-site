@@ -146,7 +146,7 @@ if (q.toString()) document.querySelectorAll('.langs a').forEach(a => { a.search 
 let token = '', widget = null;
 function renderCheck() {
   if (!window.turnstile || widget !== null) return;
-  widget = turnstile.render('#check', { sitekey: SITEKEY, language: lang, callback: t => { token = t; }, 'expired-callback': () => { token = ''; } });
+  widget = turnstile.render('#check', { sitekey: SITEKEY, language: lang, callback: t => { token = t; }, 'expired-callback': () => { token = ''; }, 'error-callback': () => { token = ''; fail('errSend'); } });
 }
 window.addEventListener('load', renderCheck);
 
@@ -161,7 +161,8 @@ form.addEventListener('submit', async e => {
   // The same rule as the Worker's: what passes here is not refused there.
   if (email && !/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email)) return fail('errEmail');
   renderCheck();
-  if (!token) return fail('errCheck');
+  // The check blocked or not loaded (a content blocker, no network): no check to complete here.
+  if (!token) return fail(window.turnstile ? 'errCheck' : 'errSend');
   send.disabled = true; send.textContent = T.sending;
   try {
     const r = await fetch(ENDPOINT, {
