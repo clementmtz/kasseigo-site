@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/legal.html in English. Values are HTML. Translation of the French text, which prevails: keep it in step.",
   "description": "Legal notice of KasseiGo: publisher, hosting, intellectual property.",
-  "updated": "1 November 2026",
+  "updated": "3 November 2026",
   "s1": {
     "title": "Publisher",
     "dt1": "Publisher",
@@ -35,7 +35,7 @@
     "p2": "The following remain the property of their owners and are subject to their own licences:",
     "li1": "<b>OpenStreetMap</b> map data, © OpenStreetMap contributors, available under the <a href=\"https://opendatacommons.org/licenses/odbl/\">Open Database License (ODbL)</a>;",
     "li2": "<b>OpenFreeMap</b> map tiles, based on OpenStreetMap;",
-    "li3": "vehicle, station, parking and zone data, published by each operator in its public GBFS feed;",
+    "li3": "vehicle, station, parking and zone data, published by each operator in its public GBFS feed (for Villo!, source: JCDecaux, under the <a href=\"https://developer.jcdecaux.com/files/Open-Licence-fr.pdf\">Open Licence</a>; KasseiGo is not recognised or endorsed by JCDecaux);",
     "li4": "third-party software components used by the app (including Flutter, Rust and MapLibre), under their respective licences."
   },
   "s5": {

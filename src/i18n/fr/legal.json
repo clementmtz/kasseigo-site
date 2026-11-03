@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/legal.html in French. Values are HTML. French is the reference text: change it first.",
   "description": "Mentions légales de KasseiGo : éditeur, hébergement, propriété intellectuelle.",
-  "updated": "1er novembre 2026",
+  "updated": "3 novembre 2026",
   "s1": {
     "title": "Éditeur",
     "dt1": "Éditeur",
@@ -35,7 +35,7 @@
     "p2": "Restent la propriété de leurs titulaires, et soumis à leurs propres licences :",
     "li1": "les données cartographiques d’<b>OpenStreetMap</b>, © les contributeurs d’OpenStreetMap, disponibles sous licence <a href=\"https://opendatacommons.org/licenses/odbl/\">Open Database License (ODbL)</a> ;",
     "li2": "les tuiles de carte d’<b>OpenFreeMap</b>, fondées sur OpenStreetMap ;",
-    "li3": "les données des véhicules, stations, places et zones, publiées par chaque opérateur dans son flux public GBFS ;",
+    "li3": "les données des véhicules, stations, places et zones, publiées par chaque opérateur dans son flux public GBFS (pour Villo!, source : JCDecaux, sous <a href=\"https://developer.jcdecaux.com/files/Open-Licence-fr.pdf\">Licence Ouverte</a> ; KasseiGo n’est ni reconnu ni cautionné par JCDecaux) ;",
     "li4": "les briques logicielles tierces utilisées par l’application (notamment Flutter, Rust et MapLibre), sous leurs licences respectives."
   },
   "s5": {
