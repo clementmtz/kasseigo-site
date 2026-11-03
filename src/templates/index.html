@@ -32,9 +32,9 @@
       "operatingSystem": "iOS",
       "applicationCategory": "TravelApplication",
       "image": "https://kasseigo.com/img/og.jpg",
-      "screenshot": ["https://kasseigo.com/img/accueil.jpg", "https://kasseigo.com/img/apercu.jpg"],
+      "screenshot": ["https://kasseigo.com/img/shots/en/home.jpg", "https://kasseigo.com/img/shots/en/preview.jpg", "https://kasseigo.com/img/shots/en/parking.jpg", "https://kasseigo.com/img/shots/en/riding.jpg"],
       "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
-      "areaServed": [{"@type": "City", "name": "Brussels"}, {"@type": "City", "name": "Paris"}],
+      "areaServed": [{"@type": "City", "name": "Brussels"}],
       "author": {"@type": "Person", "name": "Clément Martinez"},
       "publisher": {"@id": "https://kasseigo.com/#website"}
     }
@@ -104,6 +104,7 @@ html[lang="fr"] .hero h1{font-size:clamp(40px,5.6vw,62px)}
 
 .stage{position:relative;width:480px;height:600px}
 .phone{position:absolute;width:250px;border-radius:40px;padding:8px;background:#14102a;box-shadow:var(--shadow);animation:float 7s ease-in-out infinite}
+.phone{container-type:inline-size}
 .phone img{border-radius:32px;width:100%}
 .phone.a{left:10px;top:56px;--r:-5deg}
 .phone.b{right:10px;top:8px;--r:4deg;animation-delay:-3.5s}
@@ -296,6 +297,20 @@ footer{padding:32px 0 48px;color:var(--mut);font-size:14px}
 .heart{color:var(--bad)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;border-top:1px solid var(--line);padding-top:24px}
 
+/* Real screens of the app: side by side, or one after the other under a finger. */
+.tour{padding-block:0 72px}
+.tour h2{font-size:clamp(30px,4vw,44px);font-weight:800;margin-bottom:8px}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;list-style:none;margin:32px 0 0;padding:0}
+.shots figure{margin:0}
+.shots .frame{position:relative;container-type:inline-size;border-radius:36px;padding:7px;background:#14102a;box-shadow:0 0 0 1px var(--line),var(--shadow)}
+/* The island of the phone: captures show it on some screens only. */
+.shots .frame::after,.phone::after{content:'';position:absolute;left:34.6%;top:calc(7px + 2.7cqw);width:30.8%;aspect-ratio:3.4;border-radius:999px;background:#000}
+.shots img{width:100%;border-radius:29px}
+.shots figcaption{margin-top:16px;font-size:16px;font-weight:700;line-height:1.3;text-wrap:balance}
+@media (max-width:820px){
+  .shots{display:flex;gap:16px;margin-inline:-16px;padding:8px 16px 16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:16px;-webkit-overflow-scrolling:touch}
+  .shots li{flex:0 0 min(62vw,260px);scroll-snap-align:start}
+}
 .js .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s var(--ez),transform .6s var(--ez)}
 .js .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){
@@ -358,8 +373,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
       </div>
 
       <div class="stage">
-        <div class="phone a"><img src="/img/accueil.jpg" width="640" height="1391" fetchpriority="high" alt="{{hero.shot_home_alt}}"></div>
-        <div class="phone b"><img src="/img/apercu.jpg" width="640" height="1391" fetchpriority="high" alt="{{hero.shot_preview_alt}}"></div>
+        <div class="phone a"><img src="/img/shots/{{lang}}/home.jpg" width="640" height="1391" fetchpriority="high" alt="{{hero.shot_home_alt}}"></div>
+        <div class="phone b"><img src="/img/shots/{{lang}}/preview.jpg" width="640" height="1391" fetchpriority="high" alt="{{hero.shot_preview_alt}}"></div>
         <div class="bubble b1" aria-hidden="true">
           <div class="card-ui"><span class="tile tint" style="--c:var(--ok)"><svg class="ic"><use href="#cob"/></svg></span><div><b>{{mock.no_cobbles}}</b></div></div>
         </div>
@@ -373,6 +388,21 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
           <div class="toast">{{mock.nearest_parking}} <u>{{mock.undo}}</u></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="tour" aria-labelledby="tour-title">
+    <div class="wrap">
+      <div class="reveal">
+        <h2 id="tour-title">{{tour.title}}</h2>
+        <p class="mut">{{tour.lead}}</p>
+      </div>
+      <ul class="shots" tabindex="0" aria-labelledby="tour-title">
+        <li class="reveal"><figure><div class="frame"><img src="/img/shots/{{lang}}/steps.jpg" width="640" height="1391" loading="lazy" alt="{{tour.steps_alt}}"></div><figcaption>{{tour.steps}}</figcaption></figure></li>
+        <li class="reveal"><figure><div class="frame"><img src="/img/shots/{{lang}}/parking.jpg" width="640" height="1391" loading="lazy" alt="{{tour.parking_alt}}"></div><figcaption>{{tour.parking}}</figcaption></figure></li>
+        <li class="reveal"><figure><div class="frame"><img src="/img/shots/{{lang}}/riding.jpg" width="640" height="1391" loading="lazy" alt="{{tour.riding_alt}}"></div><figcaption>{{tour.riding}}</figcaption></figure></li>
+        <li class="reveal"><figure><div class="frame"><img src="/img/shots/{{lang}}/settings.jpg" width="640" height="1391" loading="lazy" alt="{{tour.settings_alt}}"></div><figcaption>{{tour.settings}}</figcaption></figure></li>
+      </ul>
     </div>
   </section>
 
@@ -471,7 +501,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
 
       <ul class="facts">
         <li class="reveal hl"><b>{{facts.free_title}}</b><span>{{facts.free_text}}</span></li>
-        <li class="reveal"><b>{{facts.operators_title}}</b><span><i>{{facts.brussels}}</i> Dott, Bolt, Villo!<br><i>{{facts.paris}}</i> Dott, Voi, Vélib’</span></li>
+        <li class="reveal"><b>{{facts.operators_title}}</b><span><i>{{facts.brussels}}</i> Dott, Bolt, Villo!</span></li>
         <li class="reveal"><b>{{facts.switch_title}}</b><span>{{facts.switch_text}}</span></li>
       </ul>
     </div>
@@ -512,7 +542,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
       <h2>{{get.title}}</h2>
       <p class="mut">{{get.text}}</p>
       <div class="cta"><a class="btn btn-primary" href="https://testflight.apple.com/join/Zmt9uXr4" data-beta>{{common.join_beta}}</a></div>
-      <p class="cities mut"><span><b>{{get.brussels}}</b> · Dott, Bolt, Villo!</span><span><b>{{get.paris}}</b> · Dott, Voi, Vélib’</span></p>
+      <p class="cities mut"><span><b>{{get.brussels}}</b> · Dott, Bolt, Villo!</span></p>
     </div>
   </section>
 

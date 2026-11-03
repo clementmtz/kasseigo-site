@@ -12,7 +12,6 @@
   "city": "Stad",
   "optional": "(optioneel)",
   "brussels": "Brussel",
-  "paris": "Parijs",
   "nocity": "Geen specifieke stad",
   "message": "Je bericht",
   "message_hint": "Wat er gebeurde, waar, en wat je verwachtte. Bij foute gegevens: geef de straat of de plek.",

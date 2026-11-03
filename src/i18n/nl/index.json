@@ -1,12 +1,12 @@
 {
   "_comment": "Texts of the home page (src/templates/index.html) in Belgian Dutch. Values are HTML. The keys under mock use the app's own words (kasseigo/app/lib/l10n/app_nl.arb).",
   "meta": {
-    "title": "KasseiGo: app voor deelfietsen in Brussel en Parijs, en deelsteps in Brussel",
-    "description": "Gratis app voor deelfietsen in Brussel en Parijs, en elektrische deelsteps in Brussel: routes zonder kasseien, met de zones van de operator, tot aan een parkeerplek. Zonder account, zonder reclame.",
+    "title": "KasseiGo: app voor deelfietsen en deelsteps in Brussel",
+    "description": "Gratis app voor deelfietsen en elektrische deelsteps in Brussel: routes zonder kasseien, met de zones van de operator, tot aan een parkeerplek. Zonder account, zonder reclame.",
     "og_title": "KasseiGo: rij zonder schokken, parkeer correct",
-    "og_description": "Gratis app voor deelfietsen in Brussel en Parijs, en deelsteps in Brussel: om kasseien en verboden zones heen, tot aan een echte parkeerplek.",
+    "og_description": "Gratis app voor deelfietsen en deelsteps in Brussel: om kasseien en verboden zones heen, tot aan een echte parkeerplek.",
     "og_image_alt": "KasseiGo-app: rij zonder schokken, parkeer correct. Gratis, zonder account, zonder reclame.",
-    "app_description": "Routeplanner voor deelfietsen in Brussel en Parijs, en elektrische deelsteps in Brussel: vermijdt kasseien, volgt de trage en verboden zones van de operator en leidt je naar een parkeerplek."
+    "app_description": "Routeplanner voor deelfietsen en elektrische deelsteps in Brussel: vermijdt kasseien, volgt de trage en verboden zones van de operator en leidt je naar een parkeerplek."
   },
   "common": {
     "free": "Gratis",
@@ -20,11 +20,23 @@
   "hero": {
     "title": "Rij zonder schokken.",
     "title_2": "Parkeer correct.",
-    "lead": "De gids voor deelfietsen in Brussel en Parijs, en elektrische deelsteps in Brussel (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo leidt je om kasseien en verboden zones heen, en eindigt je rit op een echte parkeerplek.",
+    "lead": "De gids voor deelfietsen en elektrische deelsteps in Brussel (Dott, Bolt, Villo!). KasseiGo leidt je om kasseien en verboden zones heen, en eindigt je rit op een echte parkeerplek.",
     "why": "Waarom KasseiGo",
     "no_tracking": "Geen tracking",
     "shot_home_alt": "Startscherm: de deelvoertuigen rondom jou op de kaart, en de zoekbalk “Where to?”.",
-    "shot_preview_alt": "Overzicht van de rit: 12 min naar het Flageyplein, met vertrekpunt en parkeerplek al gekozen."
+    "shot_preview_alt": "Overzicht van de rit: 15 min naar het Flageyplein, met vertrekpunt en parkeerplek al gekozen."
+  },
+  "tour": {
+    "title": "Bekijk ze voor je vertrekt.",
+    "lead": "Echte schermen van de app, in Brussel.",
+    "steps": "Elke afslag, nog voor je vertrekt",
+    "steps_alt": "Stappen van de rit naar het Eugène Flageyplein: te voet naar de fiets, dan elke afslag.",
+    "parking": "Kies waar je parkeert",
+    "parking_alt": "Parkeerplekken bij de bestemming, in een lijst en genummerd op de kaart, met hun vrije plaatsen.",
+    "riding": "Begeleid, afslag per afslag",
+    "riding_alt": "Begeleiding tijdens de rit: de volgende afslag, de route op de kaart en de resterende tijd.",
+    "settings": "Jouw wegdek, jouw zones, jouw operatoren",
+    "settings_alt": "Instellingen: het ruwste wegdek dat je aanvaardt, trage en verboden zones, voertuigen en operatoren."
   },
   "why": {
     "title": "Gemaakt voor het voertuig onder je voeten.",
@@ -85,7 +97,6 @@
     "free_text": "Geen abonnement, geen in-app aankopen, geen reclame.",
     "operators_title": "Alle operatoren, één kaart",
     "brussels": "Brussel:",
-    "paris": "Parijs:",
     "switch_title": "Wissel onderweg van operator",
     "switch_text": "Batterij bijna leeg? Wissel van operator via “Trip options”: zones, parkeren en route volgen mee."
   },
@@ -110,8 +121,7 @@
   "get": {
     "title": "Je volgende rit, zonder schokken.",
     "text": "Gratis, in het Nederlands, Frans en Engels. In bèta op iPhone, Android komt eraan.",
-    "brussels": "Brussel",
-    "paris": "Parijs"
+    "brussels": "Brussel"
   },
   "beta": {
     "title": "Doe mee aan de iPhone-bèta",

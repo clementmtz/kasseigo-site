@@ -12,7 +12,6 @@
   "city": "Ville",
   "optional": "(facultatif)",
   "brussels": "Bruxelles",
-  "paris": "Paris",
   "nocity": "Pas une ville en particulier",
   "message": "Votre message",
   "message_hint": "Ce qui s’est passé, où, et ce que vous attendiez. Pour une donnée fausse, indiquez la rue ou le lieu.",

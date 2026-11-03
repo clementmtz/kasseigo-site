@@ -1,12 +1,12 @@
 {
   "_comment": "Texts of the home page (src/templates/index.html) in French. Values are HTML. The keys under mock use the app's own words (kasseigo/app/lib/l10n/app_fr.arb).",
   "meta": {
-    "title": "KasseiGo : appli vélos partagés à Bruxelles et Paris, trottinettes à Bruxelles",
-    "description": "Appli gratuite pour vélos partagés à Bruxelles et Paris, et trottinettes à Bruxelles : itinéraires sans pavés, zones des opérateurs respectées, jusqu’à une place de stationnement. Sans compte, sans pub.",
+    "title": "KasseiGo : appli vélos et trottinettes partagés à Bruxelles",
+    "description": "Appli gratuite pour vélos et trottinettes partagés à Bruxelles : itinéraires sans pavés, zones des opérateurs respectées, jusqu’à une place de stationnement. Sans compte, sans pub.",
     "og_title": "KasseiGo : roulez en douceur, garez-vous juste",
-    "og_description": "Appli gratuite pour vélos partagés à Bruxelles et Paris, et trottinettes à Bruxelles : sans pavés, sans zones interdites, jusqu’à une vraie place de stationnement.",
+    "og_description": "Appli gratuite pour vélos et trottinettes partagés à Bruxelles : sans pavés, sans zones interdites, jusqu’à une vraie place de stationnement.",
     "og_image_alt": "Appli KasseiGo : roulez en douceur, garez-vous juste. Gratuite, sans compte, sans pub.",
-    "app_description": "Appli d’itinéraire pour vélos partagés à Bruxelles et Paris, et trottinettes à Bruxelles : évite les pavés, suit les zones lentes et interdites des opérateurs et guide jusqu’à une place de stationnement."
+    "app_description": "Appli d’itinéraire pour vélos et trottinettes partagés à Bruxelles : évite les pavés, suit les zones lentes et interdites des opérateurs et guide jusqu’à une place de stationnement."
   },
   "common": {
     "free": "Gratuit",
@@ -20,11 +20,23 @@
   "hero": {
     "title": "Roulez en douceur.",
     "title_2": "Garez-vous juste.",
-    "lead": "Le guide des vélos partagés à Bruxelles et à Paris, et des trottinettes à Bruxelles (Dott, Bolt, Voi, Villo!, Vélib’). KasseiGo vous fait éviter les pavés et les zones interdites, et termine votre trajet sur une vraie place de stationnement.",
+    "lead": "Le guide des vélos et trottinettes partagés à Bruxelles (Dott, Bolt, Villo!). KasseiGo vous fait éviter les pavés et les zones interdites, et termine votre trajet sur une vraie place de stationnement.",
     "why": "Pourquoi KasseiGo",
     "no_tracking": "Sans pistage",
     "shot_home_alt": "Écran d’accueil : les véhicules partagés autour de vous sur la carte, et la recherche « Where to? ».",
-    "shot_preview_alt": "Aperçu du trajet : 12 min jusqu’à la place Eugène Flagey, départ et place de stationnement déjà choisis."
+    "shot_preview_alt": "Aperçu du trajet : 15 min jusqu’à la place Eugène Flagey, départ et place de stationnement déjà choisis."
+  },
+  "tour": {
+    "title": "Voyez-la avant de rouler.",
+    "lead": "De vrais écrans de l’appli, à Bruxelles.",
+    "steps": "Chaque virage, avant de partir",
+    "steps_alt": "Étapes du trajet vers la place Eugène Flagey : à pied jusqu’au vélo, puis chaque virage.",
+    "parking": "Choisissez où vous garer",
+    "parking_alt": "Emplacements près de la destination, en liste et numérotés sur la carte, avec leurs places libres.",
+    "riding": "Guidé, virage après virage",
+    "riding_alt": "Guidage à vélo : le prochain virage, l’itinéraire sur la carte et le temps restant.",
+    "settings": "Vos revêtements, vos zones, vos opérateurs",
+    "settings_alt": "Réglages : le revêtement le moins confortable accepté, zones lentes et interdites, véhicules et opérateurs."
   },
   "why": {
     "title": "Pensé pour le véhicule sous vos pieds.",
@@ -85,7 +97,6 @@
     "free_text": "Sans abonnement, sans achat intégré, sans publicité.",
     "operators_title": "Tous les opérateurs, une seule carte",
     "brussels": "Bruxelles :",
-    "paris": "Paris :",
     "switch_title": "Changez d’opérateur en route",
     "switch_text": "Batterie faible ? Changez d’opérateur depuis « Trip options » : zones, stationnement et itinéraire suivent."
   },
@@ -110,8 +121,7 @@
   "get": {
     "title": "Votre prochain trajet, sans les secousses.",
     "text": "Gratuit, en français, néerlandais et anglais. En bêta sur iPhone, Android arrive bientôt.",
-    "brussels": "Bruxelles",
-    "paris": "Paris"
+    "brussels": "Bruxelles"
   },
   "beta": {
     "title": "Rejoindre la bêta iPhone",

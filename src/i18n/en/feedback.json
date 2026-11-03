@@ -12,7 +12,6 @@
   "city": "City",
   "optional": "(optional)",
   "brussels": "Brussels",
-  "paris": "Paris",
   "nocity": "Not about a city",
   "message": "Your message",
   "message_hint": "What happened, where, and what you expected. For wrong data, give the street or the place.",

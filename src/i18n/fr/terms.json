@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/terms.html in French. Values are HTML. French is the reference text: change it first.",
-  "description": "Conditions d’utilisation de l’application gratuite KasseiGo, pour vélos partagés à Bruxelles et à Paris, et trottinettes à Bruxelles.",
-  "updated": "1er novembre 2026",
+  "description": "Conditions d’utilisation de l’application gratuite KasseiGo, pour vélos et trottinettes partagés à Bruxelles.",
+  "updated": "3 novembre 2026",
   "summary": "<b>En bref.</b> KasseiGo est une aide gratuite, fournie telle quelle par un particulier. Ses informations peuvent être fausses ou dépassées. Vous restez seul responsable de votre conduite, de votre sécurité, du respect du code de la route et des règles de l’opérateur. Le code de la route, la signalisation et les règles de l’opérateur priment toujours sur l’application.",
   "s1": {
     "title": "1. Objet et acceptation",
@@ -9,7 +9,7 @@
   },
   "s2": {
     "title": "2. Description du service",
-    "p1": "KasseiGo aide à se déplacer en vélo partagé à Bruxelles et à Paris, et en trottinette partagée à Bruxelles. Il affiche les véhicules, stations et emplacements publiés par les opérateurs, calcule un itinéraire (marche jusqu’au véhicule, trajet, stationnement, marche jusqu’à la destination) en tenant compte du revêtement des rues et des zones des opérateurs, et propose un guidage. Il guide aussi, avec votre propre vélo ou trottinette, jusqu’à un stationnement vélo issu d’OpenStreetMap : son existence, son accès et sa sécurité ne sont pas garantis, et vous restez responsable de votre véhicule, notamment contre le vol.",
+    "p1": "KasseiGo aide à se déplacer en vélo ou en trottinette partagés à Bruxelles. Il affiche les véhicules, stations et emplacements publiés par les opérateurs, calcule un itinéraire (marche jusqu’au véhicule, trajet, stationnement, marche jusqu’à la destination) en tenant compte du revêtement des rues et des zones des opérateurs, et propose un guidage. Il guide aussi, avec votre propre vélo ou trottinette, jusqu’à un stationnement vélo issu d’OpenStreetMap : son existence, son accès et sa sécurité ne sont pas garantis, et vous restez responsable de votre véhicule, notamment contre le vol.",
     "p2": "KasseiGo <b>ne loue, ne réserve, ne déverrouille et ne facture aucun véhicule</b>. La location se fait uniquement dans l’application de l’opérateur, selon ses propres conditions. Utiliser KasseiGo ne crée aucun lien contractuel entre vous et un opérateur, ni entre l’éditeur et un opérateur."
   },
   "s3": {

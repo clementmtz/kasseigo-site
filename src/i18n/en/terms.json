@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/terms.html in English. Values are HTML. Translation of the French text, which prevails: keep it in step.",
-  "description": "Terms of use of KasseiGo, the free app for shared bikes in Brussels and Paris, and e-scooters in Brussels.",
-  "updated": "1 November 2026",
+  "description": "Terms of use of KasseiGo, the free app for shared bikes and e-scooters in Brussels.",
+  "updated": "3 November 2026",
   "summary": "<b>In short.</b> KasseiGo is a free aid, provided as is by a private individual. Its information may be wrong or out of date. You alone remain responsible for how you ride, for your safety, and for following the highway code and the operator’s rules. The highway code, road signs and the operator’s rules always take precedence over the app.",
   "s1": {
     "title": "1. Purpose and acceptance",
@@ -9,7 +9,7 @@
   },
   "s2": {
     "title": "2. What the service does",
-    "p1": "KasseiGo helps you get around on shared bikes in Brussels and Paris, and shared e-scooters in Brussels. It shows the vehicles, stations and parking spots published by operators, plans a route (walk to the vehicle, ride, parking, walk to the destination) taking street surfaces and operator zones into account, and offers turn-by-turn guidance. With your own bike or e-scooter, it also guides you to a bicycle parking from OpenStreetMap: its existence, access and safety are not guaranteed, and you remain responsible for your vehicle, including against theft.",
+    "p1": "KasseiGo helps you get around on shared bikes and e-scooters in Brussels. It shows the vehicles, stations and parking spots published by operators, plans a route (walk to the vehicle, ride, parking, walk to the destination) taking street surfaces and operator zones into account, and offers turn-by-turn guidance. With your own bike or e-scooter, it also guides you to a bicycle parking from OpenStreetMap: its existence, access and safety are not guaranteed, and you remain responsible for your vehicle, including against theft.",
     "p2": "KasseiGo <b>does not rent, reserve, unlock or charge for any vehicle</b>. Rental only happens in the operator’s own app, under its own terms. Using KasseiGo creates no contract between you and an operator, nor between the publisher and an operator."
   },
   "s3": {

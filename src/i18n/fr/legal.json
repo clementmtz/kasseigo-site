@@ -27,7 +27,7 @@
   },
   "s3": {
     "title": "Objet",
-    "p1": "KasseiGo est une application d’aide à l’itinéraire pour les vélos partagés à Bruxelles et à Paris et les trottinettes partagées à Bruxelles, ou avec votre propre vélo ou trottinette. Le site kasseigo.com la présente. L’application et le site sont gratuits, sans compte, sans publicité et sans mesure d’audience."
+    "p1": "KasseiGo est une application d’aide à l’itinéraire pour les vélos et trottinettes partagés à Bruxelles, ou avec votre propre vélo ou trottinette. Le site kasseigo.com la présente. L’application et le site sont gratuits, sans compte, sans publicité et sans mesure d’audience."
   },
   "s4": {
     "title": "Propriété intellectuelle",
@@ -40,7 +40,7 @@
   },
   "s5": {
     "title": "Marques et absence d’affiliation",
-    "p1": "Dott, Bolt, Voi, Villo! et Vélib’ sont des marques de leurs propriétaires respectifs. Elles sont citées uniquement pour indiquer les services dont KasseiGo affiche les données publiques. <b>KasseiGo est indépendant</b> : il n’est ni affilié, ni partenaire, ni soutenu, ni autorisé par ces opérateurs, par les villes de Bruxelles ou de Paris, ni par Apple ou Google."
+    "p1": "Dott, Bolt et Villo! sont des marques de leurs propriétaires respectifs. Elles sont citées uniquement pour indiquer les services dont KasseiGo affiche les données publiques. <b>KasseiGo est indépendant</b> : il n’est ni affilié, ni partenaire, ni soutenu, ni autorisé par ces opérateurs, par les villes de Bruxelles ou de Paris, ni par Apple ou Google."
   },
   "s6": {
     "title": "Responsabilité",

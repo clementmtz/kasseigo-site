@@ -27,7 +27,7 @@
   },
   "s3": {
     "title": "Purpose",
-    "p1": "KasseiGo is a route-planning aid for shared bikes in Brussels and Paris and shared e-scooters in Brussels, or with your own bike or e-scooter. The website kasseigo.com presents it. The app and the website are free, with no account, no ads and no audience measurement."
+    "p1": "KasseiGo is a route-planning aid for shared bikes and e-scooters in Brussels, or with your own bike or e-scooter. The website kasseigo.com presents it. The app and the website are free, with no account, no ads and no audience measurement."
   },
   "s4": {
     "title": "Intellectual property",
@@ -40,7 +40,7 @@
   },
   "s5": {
     "title": "Trademarks and no affiliation",
-    "p1": "Dott, Bolt, Voi, Villo! and Vélib’ are trademarks of their respective owners. They are named only to show which services’ public data KasseiGo displays. <b>KasseiGo is independent</b>: it is not affiliated with, partnered with, endorsed or authorised by these operators, the cities of Brussels or Paris, Apple or Google."
+    "p1": "Dott, Bolt and Villo! are trademarks of their respective owners. They are named only to show which services’ public data KasseiGo displays. <b>KasseiGo is independent</b>: it is not affiliated with, partnered with, endorsed or authorised by these operators, the cities of Brussels or Paris, Apple or Google."
   },
   "s6": {
     "title": "Liability",

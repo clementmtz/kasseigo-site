@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/privacy.html in English. Values are HTML. Translation of the French text, which prevails: keep it in step.",
   "description": "Privacy policy of KasseiGo: no account, no ads, no tracking; your location stays on your phone.",
-  "updated": "2 November 2026",
+  "updated": "3 November 2026",
   "summary": "<b>In short.</b> No account, no ads, no analytics, no crash reports. Your location is used on the phone and never sent. The publisher receives no data about you, except the messages you choose to send. Only the services contacted to make the app work (operators, maps, city files) see, as with any connection, your phone’s IP address; the map service also sees which area of the map is shown (section 4).",
   "s1": {
     "title": "1. Data controller",
