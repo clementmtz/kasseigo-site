@@ -1,7 +1,7 @@
 {
   "_comment": "Texts of src/templates/privacy.html in French. Values are HTML. French is the reference text: change it first.",
   "description": "Politique de confidentialité de KasseiGo : pas de compte, pas de publicité, pas de suivi ; votre position reste sur le téléphone.",
-  "updated": "1er novembre 2026",
+  "updated": "2 novembre 2026",
   "summary": "<b>En bref.</b> Pas de compte, pas de publicité, pas de mesure d’audience, pas de rapport de plantage. Votre position est utilisée sur le téléphone et n’est jamais envoyée. L’éditeur ne reçoit aucune donnée vous concernant, sauf les messages que vous choisissez de lui envoyer. Seuls les services contactés pour fonctionner (opérateurs, cartes, fichiers des villes) voient, comme pour toute connexion, l’adresse IP de votre téléphone ; le service de cartes voit aussi quelle zone de la carte est affichée (section 4).",
   "s1": {
     "title": "1. Responsable du traitement",
