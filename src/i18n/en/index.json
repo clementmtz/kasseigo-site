@@ -91,7 +91,7 @@
   },
   "privacy": {
     "title": "Your trips are nobody’s business.",
-    "text": "Your location, trips, favourites and zones stay on your phone. Address search runs on the phone too. The network is only used for live vehicles, city packs and map tiles.",
+    "text": "Your location, trips, favourites and zones stay on your phone, and in its backups if you make any. Address search runs on the phone too. The network is only used for live vehicles, city packs and map tiles.",
     "no_telemetry": "No telemetry"
   },
   "feedback": {

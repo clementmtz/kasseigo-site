@@ -91,7 +91,7 @@
   },
   "privacy": {
     "title": "Vos trajets ne regardent que vous.",
-    "text": "Votre position, vos trajets, vos favoris et vos zones restent sur votre téléphone, tout comme la recherche d’adresses. Le réseau ne sert qu’aux véhicules en temps réel, aux fichiers des villes et aux tuiles de la carte.",
+    "text": "Votre position, vos trajets, vos favoris et vos zones restent sur votre téléphone et dans ses sauvegardes, si vous en faites, tout comme la recherche d’adresses. Le réseau ne sert qu’aux véhicules en temps réel, aux fichiers des villes et aux tuiles de la carte.",
     "no_telemetry": "Sans télémétrie"
   },
   "feedback": {
